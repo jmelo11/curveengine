@@ -5,7 +5,6 @@ from parsing.enums import *
 def parse(**kwargs):
     results = {}
     for key, value in kwargs.items():
-
         if key in ['helperConfig', 'curveIndex', 'curveConfig']:
             results[key] = parse(**value)
 
@@ -132,6 +131,19 @@ def createInterestRate(
 
 
 def parseCompounding(compounding: str):
+    """
+    Parse a compounding string to an ORE compounding enum
+
+    Parameters
+    ----------
+    compounding : str
+        The compounding string
+
+    Returns
+    -------
+    ore.Compounding
+        The ORE compounding enum
+    """
     if compounding == 'Simple':
         return ore.Simple
     elif compounding == 'Compounded':
@@ -144,6 +156,20 @@ def parseCompounding(compounding: str):
 
 
 def parseFrequency(frequency: str):
+    """
+    Parse a frequency string to an ORE frequency enum
+
+    Parameters
+    ----------
+    frequency : str
+        The frequency string
+
+    Returns
+    -------
+    ore.Frequency
+        The ORE frequency enum
+    """
+
     if frequency == 'Once':
         return ore.Once
     elif frequency == 'Annual':
@@ -171,6 +197,19 @@ def parseFrequency(frequency: str):
 
 
 def parseDayCounter(dayCounter: ore.DayCounter) -> ore.DayCounter:
+    """
+    Parse a day counter string to an ORE day counter enum
+
+    Parameters
+    ----------
+    dayCounter : str
+        The day counter string
+
+    Returns
+    -------
+    ore.DayCounter
+        The ORE day counter enum
+    """
     if dayCounter == 'Actual365':
         return ore.Actual365Fixed()
     elif dayCounter == 'Actual360':
@@ -183,6 +222,19 @@ def parseDayCounter(dayCounter: ore.DayCounter) -> ore.DayCounter:
 
 
 def parseCalendar(calendar: str) -> ore.Calendar:
+    """
+    Parse a calendar string to an ORE calendar enum
+
+    Parameters
+    ----------
+    calendar : str
+        The calendar string
+
+    Returns
+    -------
+    ore.Calendar
+        The ORE calendar enum
+    """
     if calendar == 'TARGET':
         return ore.TARGET()
     elif calendar == 'UnitedStates':
@@ -198,6 +250,20 @@ def parseCalendar(calendar: str) -> ore.Calendar:
 
 
 def parseBusinessDayConvention(businessDayConvention: str):
+    """
+    Parse a business day convention string to an ORE business day convention enum
+
+    Parameters
+    ----------
+    businessDayConvention : str
+        The business day convention string
+
+    Returns
+    -------
+    ore.BusinessDayConvention
+        The ORE business day convention enum
+    """
+
     if businessDayConvention == 'Following':
         return ore.Following
     elif businessDayConvention == 'ModifiedFollowing':
@@ -216,6 +282,19 @@ def parseBusinessDayConvention(businessDayConvention: str):
 
 
 def parseTimeUnit(timeUnit: str):
+    """
+    Parse a time unit string to an ORE time unit enum
+
+    Parameters
+    ----------
+    timeUnit : str
+        The time unit string
+
+    Returns
+    -------
+    ore.TimeUnit
+        The ORE time unit enum
+    """
     if timeUnit == 'Days':
         return ore.Days
     elif timeUnit == 'Weeks':
@@ -229,6 +308,19 @@ def parseTimeUnit(timeUnit: str):
 
 
 def parseDateGenerationRule(dateGenerationRule: str):
+    """
+    Parse a date generation rule string to an ORE date generation rule enum
+
+    Parameters
+    ----------
+    dateGenerationRule : str
+        The date generation rule string
+
+    Returns
+    -------
+    ore.DateGeneration
+        The ORE date generation rule enum
+    """
     if dateGenerationRule == 'Backward':
         return ore.DateGeneration.Backward
     elif dateGenerationRule == 'Forward':
@@ -253,6 +345,20 @@ def parseDateGenerationRule(dateGenerationRule: str):
 
 
 def parseDate(date: str) -> ore.Date:
+    """
+    Parse a date string to an ORE date
+
+    Parameters
+    ----------
+    date : str
+        The date string
+
+    Returns
+    -------
+    ore.Date
+        The ORE date
+    """
+
     if date == 'today':
         return ore.Date.todaysDate()
     else:
@@ -260,11 +366,37 @@ def parseDate(date: str) -> ore.Date:
 
 
 def parsePeriod(period: str) -> ore.Period:
+    """
+    Parse a period string to an ORE period
+
+    Parameters
+    ----------
+    period : str
+        The period string
+
+    Returns
+    -------
+    ore.Period
+        The ORE period
+    """
     tenor = ore.PeriodParser.parse(period)
     return tenor
 
 
 def parseCurrency(currency: str) -> ore.Currency:
+    """
+    Parse a currency string to an ORE currency
+
+    Parameters
+    ----------
+    currency : str
+        The currency string
+
+    Returns
+    -------
+    ore.Currency
+        The ORE currency
+    """
     if currency == 'USD':
         return ore.USDCurrency()
     elif currency == 'EUR':
@@ -290,6 +422,19 @@ def parseCurrency(currency: str) -> ore.Currency:
 
 
 def parseMonth(month: str):
+    """
+    Parse a month string to an ORE month enum
+
+    Parameters
+    ----------
+    month : str
+        The month string
+
+    Returns
+    -------
+    ore.Month
+        The ORE month enum
+    """
     if month == 'January':
         return ore.January
     elif month == 'February':

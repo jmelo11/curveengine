@@ -4,6 +4,23 @@ from collections import deque
 
 
 def createOvernightIndex(name: str, indexConfig: dict, handle: ore.YieldTermStructureHandle):
+    """
+    Create an overnight index
+
+    Parameters
+    ----------
+    name : str
+        Name of the index
+    indexConfig : dict
+        Dictionary containing the index configuration
+    handle : ore.YieldTermStructureHandle
+        Handle to the yield term structure
+
+    Returns
+    -------
+    ore.OvernightIndex
+        Overnight index
+    """
     dayCounter = indexConfig['dayCounter']
     currency = indexConfig['currency']
     calendar = indexConfig['calendar']
@@ -14,6 +31,23 @@ def createOvernightIndex(name: str, indexConfig: dict, handle: ore.YieldTermStru
 
 
 def createIborIndex(name: str, indexConfig: dict, handle: ore.YieldTermStructureHandle):
+    """
+    Create an ibor index
+
+    Parameters
+    ----------
+    name : str
+        Name of the index
+    indexConfig : dict
+        Dictionary containing the index configuration
+    handle : ore.YieldTermStructureHandle
+        Handle to the yield term structure
+
+    Returns
+    -------
+    ore.IborIndex
+        Ibor index
+    """
     dayCounter = indexConfig['dayCounter']
     currency = indexConfig['currency']
     calendar = indexConfig['calendar']
@@ -27,6 +61,25 @@ def createIborIndex(name: str, indexConfig: dict, handle: ore.YieldTermStructure
 
 
 def getDependencyList(data: dict) -> dict:
+    """
+    Get the dependency list for the curves
+
+    Parameters
+    ----------
+    data : dict
+        Dictionary containing the curve data
+
+    Returns
+    -------
+    dict
+        Dictionary containing the dependency list
+
+    Notes
+    -----
+    The dependency list is a dictionary with the curve name as key and a set of
+    curve names as value. The set contains the names of the curves that the
+    curve depends on.
+    """
     # possible curve related keys
     pc = ['discountCurve', 'collateralCurve']
     # possible index related keys
@@ -53,7 +106,19 @@ def getDependencyList(data: dict) -> dict:
 
 
 def topologicalSort(dependencies):
+    """
+    Sort the dependency list topologically
 
+    Parameters
+    ----------
+    dependencies : dict
+        Dictionary containing the dependency list
+
+    Returns
+    -------
+    list
+        List of curve names sorted topologically
+    """
     for element, deps in dependencies.items():
         deps.discard(element)
 

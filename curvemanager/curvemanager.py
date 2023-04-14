@@ -9,7 +9,8 @@ class CurveManager:
         self.curveHandles = {None: ore.RelinkableYieldTermStructureHandle()}
         self.curves = curves
         self.indexes = indexes
-        self.initialize(data)
+        localData = data.copy()
+        self.initialize(localData)
 
     def getCurve(self, curveName):
         return self.curves[curveName]
@@ -30,7 +31,6 @@ class CurveManager:
         sortedList = topologicalSort(dependencies)
         for curveName in sortedList:
             parsed = parse(**tmpData[curveName])
-            print(parsed)
             if curveName not in self.indexes.keys():
                 self.__buildIndexes(parsed)
             if curveName not in self.curves.keys():

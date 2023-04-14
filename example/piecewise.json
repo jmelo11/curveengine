@@ -19,9 +19,6 @@
                             "convention": "Unadjusted"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409707",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64efd74390dd819e0e02",
                             "rate": {
                                 "value": 0.1125,
                                 "ticker": "CHOVCHOV INDEX"
@@ -39,9 +36,6 @@
                             "convention": "Unadjusted"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409710",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64efd74390dd819e0e0b",
                             "rate": {
                                 "value": 0.1134,
                                 "ticker": "CHSWPB ICCH CURNCY"
@@ -59,9 +53,6 @@
                             "convention": "Unadjusted"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409711",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64efd74390dd819e0e0c",
                             "rate": {
                                 "value": 0.1134,
                                 "ticker": "CHSWPC ICCH CURNCY"
@@ -79,9 +70,6 @@
                             "convention": "Unadjusted"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409712",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64efd74390dd819e0e0d",
                             "rate": {
                                 "value": 0.11085,
                                 "ticker": "CHSWPF ICCH CURNCY"
@@ -99,9 +87,6 @@
                             "convention": "Unadjusted"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409713",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64efd74390dd819e0e0e",
                             "rate": {
                                 "value": 0.10595,
                                 "ticker": "CHSWPI ICCH CURNCY"
@@ -119,9 +104,6 @@
                             "convention": "Unadjusted"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409714",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64efd74390dd819e0e0f",
                             "rate": {
                                 "value": 0.10035,
                                 "ticker": "CHSWP1 ICCH CURNCY"
@@ -139,9 +121,6 @@
                             "convention": "Unadjusted"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409715",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64efd74390dd819e0e10",
                             "rate": {
                                 "value": 0.0902,
                                 "ticker": "CHSWP1F ICCH CURNCY"
@@ -166,9 +145,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409754",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e6d",
                             "rate": {
                                 "value": 0.07915,
                                 "ticker": "CHSWP2 ICCH CURNCY"
@@ -193,9 +169,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409755",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e6e",
                             "rate": {
                                 "value": 0.06895,
                                 "ticker": "CHSWP3 ICCH CURNCY"
@@ -220,9 +193,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409756",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e6f",
                             "rate": {
                                 "value": 0.06325,
                                 "ticker": "CHSWP4 ICCH CURNCY"
@@ -247,9 +217,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409757",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e70",
                             "rate": {
                                 "value": 0.0599,
                                 "ticker": "CHSWP5 ICCH CURNCY"
@@ -274,9 +241,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409758",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e71",
                             "rate": {
                                 "value": 0.0582,
                                 "ticker": "CHSWP6 ICCH CURNCY"
@@ -301,9 +265,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409759",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e72",
                             "rate": {
                                 "value": 0.05665,
                                 "ticker": "CHSWP7 ICCH CURNCY"
@@ -328,9 +289,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840975a",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e73",
                             "rate": {
                                 "value": 0.0558,
                                 "ticker": "CHSWP8 ICCH CURNCY"
@@ -355,9 +313,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840975b",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e74",
                             "rate": {
                                 "value": 0.054900000000000004,
                                 "ticker": "CHSWP9 ICCH CURNCY"
@@ -382,9 +337,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840975c",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e75",
                             "rate": {
                                 "value": 0.05495,
                                 "ticker": "CHSWP10 ICCH CURNCY"
@@ -409,9 +361,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840975d",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e76",
                             "rate": {
                                 "value": 0.05545,
                                 "ticker": "CHSWP15 ICCH CURNCY"
@@ -436,9 +385,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840975e",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e77",
                             "rate": {
                                 "value": 0.05545,
                                 "ticker": "CHSWP20 ICCH CURNCY"
@@ -463,9 +409,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840975f",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e78",
                             "rate": {
                                 "value": 0.0553,
                                 "ticker": "CHSWP25 ICCH CURNCY"
@@ -490,9 +433,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409760",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e79",
                             "rate": {
                                 "value": 0.05545,
                                 "ticker": "CHSWP30 ICCH CURNCY"
@@ -530,9 +470,6 @@
                             "convention": "Unadjusted"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409708",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64efd74390dd819e0e03",
                             "rate": {
                                 "value": 0.0455,
                                 "ticker": "SOFRRATE CURNCY"
@@ -556,9 +493,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409734",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e4d",
                             "rate": {
                                 "value": 0.045555000000000005,
                                 "ticker": "USOSFR1Z CURNCY"
@@ -582,9 +516,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409735",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e4e",
                             "rate": {
                                 "value": 0.045568,
                                 "ticker": "USOSFR2Z CURNCY"
@@ -608,9 +539,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409736",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e4f",
                             "rate": {
                                 "value": 0.045591999999999994,
                                 "ticker": "USOSFR3Z CURNCY"
@@ -634,9 +562,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409737",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e50",
                             "rate": {
                                 "value": 0.04564,
                                 "ticker": "USOSFRA CURNCY"
@@ -660,9 +585,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409738",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e51",
                             "rate": {
                                 "value": 0.046838,
                                 "ticker": "USOSFRB CURNCY"
@@ -686,9 +608,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409739",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e52",
                             "rate": {
                                 "value": 0.047723,
                                 "ticker": "USOSFRC CURNCY"
@@ -712,9 +631,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840973a",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e53",
                             "rate": {
                                 "value": 0.048595,
                                 "ticker": "USOSFRD CURNCY"
@@ -738,9 +654,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840973b",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e54",
                             "rate": {
                                 "value": 0.049455,
                                 "ticker": "USOSFRE CURNCY"
@@ -764,9 +677,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840973c",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e55",
                             "rate": {
                                 "value": 0.050135,
                                 "ticker": "USOSFRF CURNCY"
@@ -790,9 +700,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840973d",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e56",
                             "rate": {
                                 "value": 0.050730000000000004,
                                 "ticker": "USOSFRG CURNCY"
@@ -816,9 +723,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840973e",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e57",
                             "rate": {
                                 "value": 0.051129,
                                 "ticker": "USOSFRH CURNCY"
@@ -842,9 +746,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840973f",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e58",
                             "rate": {
                                 "value": 0.051465,
                                 "ticker": "USOSFRI CURNCY"
@@ -868,9 +769,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409740",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e59",
                             "rate": {
                                 "value": 0.051711,
                                 "ticker": "USOSFRJ CURNCY"
@@ -894,9 +792,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409741",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e5a",
                             "rate": {
                                 "value": 0.051815,
                                 "ticker": "USOSFRK CURNCY"
@@ -920,9 +815,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409742",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e5b",
                             "rate": {
                                 "value": 0.051856,
                                 "ticker": "USOSFR1 CURNCY"
@@ -946,9 +838,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409743",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e5c",
                             "rate": {
                                 "value": 0.049669,
                                 "ticker": "USOSFR1F CURNCY"
@@ -972,9 +861,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409744",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e5d",
                             "rate": {
                                 "value": 0.046877,
                                 "ticker": "USOSFR2 CURNCY"
@@ -998,9 +884,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409745",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e5e",
                             "rate": {
                                 "value": 0.042443,
                                 "ticker": "USOSFR3 CURNCY"
@@ -1024,9 +907,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409746",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e5f",
                             "rate": {
                                 "value": 0.039656,
                                 "ticker": "USOSFR4 CURNCY"
@@ -1050,9 +930,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409747",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e60",
                             "rate": {
                                 "value": 0.037866,
                                 "ticker": "USOSFR5 CURNCY"
@@ -1076,9 +953,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409748",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e61",
                             "rate": {
                                 "value": 0.036718,
                                 "ticker": "USOSFR6 CURNCY"
@@ -1102,9 +976,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409749",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e62",
                             "rate": {
                                 "value": 0.035910000000000004,
                                 "ticker": "USOSFR7 CURNCY"
@@ -1128,9 +999,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840974a",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e63",
                             "rate": {
                                 "value": 0.035323,
                                 "ticker": "USOSFR8 CURNCY"
@@ -1154,9 +1022,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840974b",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e64",
                             "rate": {
                                 "value": 0.03492,
                                 "ticker": "USOSFR9 CURNCY"
@@ -1180,9 +1045,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840974c",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e65",
                             "rate": {
                                 "value": 0.03464,
                                 "ticker": "USOSFR10 CURNCY"
@@ -1206,9 +1068,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840974d",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e66",
                             "rate": {
                                 "value": 0.034319999999999996,
                                 "ticker": "USOSFR12 CURNCY"
@@ -1232,9 +1091,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840974e",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e67",
                             "rate": {
                                 "value": 0.034053,
                                 "ticker": "USOSFR15 CURNCY"
@@ -1258,9 +1114,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840974f",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e68",
                             "rate": {
                                 "value": 0.03347,
                                 "ticker": "USOSFR20 CURNCY"
@@ -1284,9 +1137,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409750",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e69",
                             "rate": {
                                 "value": 0.03234,
                                 "ticker": "USOSFR25 CURNCY"
@@ -1310,9 +1160,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409751",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e6a",
                             "rate": {
                                 "value": 0.031216,
                                 "ticker": "USOSFR30 CURNCY"
@@ -1336,9 +1183,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409752",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e6b",
                             "rate": {
                                 "value": 0.028935,
                                 "ticker": "USOSFR40 CURNCY"
@@ -1362,9 +1206,6 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409753",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e6c",
                             "rate": {
                                 "value": 0.026629999999999997,
                                 "ticker": "USOSFR50 CURNCY"
@@ -1404,9 +1245,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409721",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e3a",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1430,9 +1268,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409722",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e3b",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1456,9 +1291,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409723",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e3c",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1482,9 +1314,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409724",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e3d",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1508,9 +1337,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409725",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e3e",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1534,9 +1360,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409726",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e3f",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1560,9 +1383,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409727",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e40",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1586,9 +1406,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409728",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e41",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1612,9 +1429,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409729",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e42",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1638,9 +1452,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840972a",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e43",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1664,9 +1475,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840972b",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e44",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1690,9 +1498,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840972c",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e45",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1716,9 +1521,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840972d",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e46",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1742,9 +1544,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840972e",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e47",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1768,9 +1567,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840972f",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e48",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1794,9 +1590,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409730",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e49",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1820,9 +1613,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409731",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e4a",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1846,9 +1636,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409732",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e4b",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1872,9 +1659,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409733",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e4c",
                             "fxSpot": {
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
@@ -1901,9 +1685,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409772",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e8b",
                             "rate": {
                                 "value": 0.03435,
                                 "ticker": "CHSWC2 ICCH CURNCY"
@@ -1912,7 +1693,7 @@
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
                             }
@@ -1934,9 +1715,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409773",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e8c",
                             "rate": {
                                 "value": 0.028050000000000002,
                                 "ticker": "CHSWC3 ICCH CURNCY"
@@ -1945,11 +1723,10 @@
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
                             }
-
                         }
                     },
                     {
@@ -1968,9 +1745,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409774",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e8d",
                             "rate": {
                                 "value": 0.0253,
                                 "ticker": "CHSWC4 ICCH CURNCY"
@@ -1979,7 +1753,7 @@
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
                             }
@@ -2001,9 +1775,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409775",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e8e",
                             "rate": {
                                 "value": 0.0231,
                                 "ticker": "CHSWC5 ICCH CURNCY"
@@ -2012,7 +1783,7 @@
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
                             }
@@ -2034,9 +1805,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409776",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e8f",
                             "rate": {
                                 "value": 0.0213,
                                 "ticker": "CHSWC6 ICCH CURNCY"
@@ -2045,7 +1813,7 @@
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
                             }
@@ -2067,9 +1835,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409777",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e90",
                             "rate": {
                                 "value": 0.0207,
                                 "ticker": "CHSWC7 ICCH CURNCY"
@@ -2078,7 +1843,7 @@
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
                             }
@@ -2100,9 +1865,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409778",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e91",
                             "rate": {
                                 "value": 0.0206,
                                 "ticker": "CHSWC8 ICCH CURNCY"
@@ -2111,7 +1873,7 @@
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
                             }
@@ -2133,9 +1895,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409779",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e92",
                             "rate": {
                                 "value": 0.020099999999999996,
                                 "ticker": "CHSWC9 ICCH CURNCY"
@@ -2144,7 +1903,7 @@
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
                             }
@@ -2166,9 +1925,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840977a",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e93",
                             "rate": {
                                 "value": 0.01975,
                                 "ticker": "CHSWC10 ICCH CURNCY"
@@ -2177,7 +1933,7 @@
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
                             }
@@ -2199,9 +1955,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840977b",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e94",
                             "rate": {
                                 "value": 0.018349999999999998,
                                 "ticker": "CHSWC15 ICCH CURNCY"
@@ -2210,7 +1963,7 @@
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
                             }
@@ -2232,9 +1985,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840977c",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e95",
                             "rate": {
                                 "value": 0.0169,
                                 "ticker": "CHSWC20 ICCH CURNCY"
@@ -2243,7 +1993,7 @@
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
                             }
@@ -2265,9 +2015,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840977d",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e96",
                             "rate": {
                                 "value": 0.015,
                                 "ticker": "CHSWC25 ICCH CURNCY"
@@ -2276,7 +2023,7 @@
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
                             }
@@ -2298,9 +2045,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840977e",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e97",
                             "rate": {
                                 "value": 0.0139,
                                 "ticker": "CHSWC30 ICCH CURNCY"
@@ -2309,7 +2053,7 @@
                                 "value": 35368.49,
                                 "ticker": "CLUFUF INDEX"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
                             }
@@ -2348,9 +2092,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409716",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e2f",
                             "fxSpot": {
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
@@ -2374,9 +2115,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409717",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e30",
                             "fxSpot": {
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
@@ -2400,9 +2138,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409718",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e31",
                             "fxSpot": {
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
@@ -2426,9 +2161,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409719",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e32",
                             "fxSpot": {
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
@@ -2452,9 +2184,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840971a",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e33",
                             "fxSpot": {
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
@@ -2478,9 +2207,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840971b",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e34",
                             "fxSpot": {
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
@@ -2504,9 +2230,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840971c",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e35",
                             "fxSpot": {
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
@@ -2530,9 +2253,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840971d",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e36",
                             "fxSpot": {
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
@@ -2556,9 +2276,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840971e",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e37",
                             "fxSpot": {
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
@@ -2582,9 +2299,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840971f",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e38",
                             "fxSpot": {
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
@@ -2608,9 +2322,6 @@
                             "settlementDays": 0
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409720",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e39",
                             "fxSpot": {
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
@@ -2637,9 +2348,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840977f",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e98",
                             "rate": {
                                 "value": 0.0695,
                                 "ticker": ".BASIS2Y INDEX"
@@ -2648,10 +2356,10 @@
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -2670,9 +2378,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409780",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e99",
                             "rate": {
                                 "value": 0.06035,
                                 "ticker": ".BASIS3Y INDEX"
@@ -2681,11 +2386,10 @@
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }   
-
+                            }
                         }
                     },
                     {
@@ -2704,9 +2408,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409781",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e9a",
                             "rate": {
                                 "value": 0.05555,
                                 "ticker": ".BASIS4Y INDEX"
@@ -2715,10 +2416,10 @@
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -2737,9 +2438,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409782",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e9b",
                             "rate": {
                                 "value": 0.05325,
                                 "ticker": ".BASIS5Y INDEX"
@@ -2748,10 +2446,10 @@
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -2770,9 +2468,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409783",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e9c",
                             "rate": {
                                 "value": 0.0517,
                                 "ticker": ".BASIS6Y INDEX"
@@ -2781,10 +2476,10 @@
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -2803,9 +2498,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409784",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e9d",
                             "rate": {
                                 "value": 0.0503,
                                 "ticker": ".BASIS7Y INDEX"
@@ -2814,10 +2506,10 @@
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -2836,9 +2528,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409785",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e9e",
                             "rate": {
                                 "value": 0.0495,
                                 "ticker": ".BASIS8Y INDEX"
@@ -2847,10 +2536,10 @@
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -2869,9 +2558,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409786",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e9f",
                             "rate": {
                                 "value": 0.0486,
                                 "ticker": ".BASIS9Y INDEX"
@@ -2880,10 +2566,10 @@
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -2902,9 +2588,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409787",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ea0",
                             "rate": {
                                 "value": 0.04855,
                                 "ticker": ".BASIS10Y INDEX"
@@ -2913,10 +2596,10 @@
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -2935,9 +2618,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409788",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ea1",
                             "rate": {
                                 "value": 0.0477,
                                 "ticker": ".BASIS15Y INDEX"
@@ -2946,10 +2626,10 @@
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -2968,9 +2648,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409789",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ea2",
                             "rate": {
                                 "value": 0.0448,
                                 "ticker": ".BASIS20Y INDEX"
@@ -2979,10 +2656,10 @@
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3001,9 +2678,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840978a",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ea3",
                             "rate": {
                                 "value": 0.0417,
                                 "ticker": ".BASIS25Y INDEX"
@@ -3012,10 +2686,10 @@
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3034,9 +2708,6 @@
                             "fixedLegFrequency": "Semiannual"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840978b",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ea4",
                             "rate": {
                                 "value": 0.03875,
                                 "ticker": ".BASIS30Y INDEX"
@@ -3045,10 +2716,10 @@
                                 "value": 786.28,
                                 "ticker": "CLP CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     }
                 ]
@@ -3082,9 +2753,6 @@
                             "convention": "Unadjusted"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840970d",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64efd74390dd819e0e08",
                             "rate": {
                                 "value": 0.045899999999999996,
                                 "ticker": "US0001M INDEX"
@@ -3098,12 +2766,9 @@
                             "longIndex": "LIBOR3M",
                             "shortIndex": "LIBOR1M",
                             "discountCurve": "SOFR",
-                            "spreadOnShort": true                        
+                            "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840978c",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ea5",
                             "spread": {
                                 "value": 0.0005511,
                                 "ticker": "USBAAC BGN CURNCY"
@@ -3120,9 +2785,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840978d",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ea6",
                             "spread": {
                                 "value": 0.0005875,
                                 "ticker": "USBAAF BGN CURNCY"
@@ -3139,9 +2801,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840978e",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ea7",
                             "spread": {
                                 "value": 0.0008625,
                                 "ticker": "USBAAI BGN CURNCY"
@@ -3158,9 +2817,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840978f",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ea8",
                             "spread": {
                                 "value": 0.001,
                                 "ticker": "USBA1 BGN CURNCY"
@@ -3177,9 +2833,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409790",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ea9",
                             "spread": {
                                 "value": 0.0011560000000000001,
                                 "ticker": "USBA1F BGN CURNCY"
@@ -3196,9 +2849,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409791",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eaa",
                             "spread": {
                                 "value": 0.0012085000000000002,
                                 "ticker": "USBA2 BGN CURNCY"
@@ -3215,9 +2865,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409792",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eab",
                             "spread": {
                                 "value": 0.0013,
                                 "ticker": "USBA3 BGN CURNCY"
@@ -3234,9 +2881,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409793",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eac",
                             "spread": {
                                 "value": 0.0013255,
                                 "ticker": "USBA4 BGN CURNCY"
@@ -3253,9 +2897,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409794",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ead",
                             "spread": {
                                 "value": 0.0013599999999999999,
                                 "ticker": "USBA5 BGN CURNCY"
@@ -3272,9 +2913,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409795",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eae",
                             "spread": {
                                 "value": 0.00137,
                                 "ticker": "USBA6 BGN CURNCY"
@@ -3291,9 +2929,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409796",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eaf",
                             "spread": {
                                 "value": 0.001385,
                                 "ticker": "USBA7 BGN CURNCY"
@@ -3310,9 +2945,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409797",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eb0",
                             "spread": {
                                 "value": 0.0014,
                                 "ticker": "USBA10 BGN CURNCY"
@@ -3329,9 +2961,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409798",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eb1",
                             "spread": {
                                 "value": 0.0014210000000000002,
                                 "ticker": "USBA12 BGN CURNCY"
@@ -3348,9 +2977,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409799",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eb2",
                             "spread": {
                                 "value": 0.001429,
                                 "ticker": "USBA15 BGN CURNCY"
@@ -3367,9 +2993,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840979a",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eb3",
                             "spread": {
                                 "value": 0.0014375,
                                 "ticker": "USBA20 BGN CURNCY"
@@ -3386,9 +3009,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840979b",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eb4",
                             "spread": {
                                 "value": 0.001437,
                                 "ticker": "USBA25 BGN CURNCY"
@@ -3405,9 +3025,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840979c",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eb5",
                             "spread": {
                                 "value": 0.0014375,
                                 "ticker": "USBA30 BGN CURNCY"
@@ -3445,9 +3062,6 @@
                             "convention": "Unadjusted"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409709",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64efd74390dd819e0e04",
                             "rate": {
                                 "value": 0.045899999999999996,
                                 "ticker": "US0001M INDEX"
@@ -3465,9 +3079,6 @@
                             "convention": "Unadjusted"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840970a",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64efd74390dd819e0e05",
                             "rate": {
                                 "value": 0.0487157,
                                 "ticker": "US0003M INDEX"
@@ -3485,9 +3096,6 @@
                             "convention": "Unadjusted"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840970b",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64efd74390dd819e0e06",
                             "rate": {
                                 "value": 0.0515843,
                                 "ticker": "US0006M INDEX"
@@ -3505,9 +3113,6 @@
                             "convention": "Unadjusted"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840970c",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64efd74390dd819e0e07",
                             "rate": {
                                 "value": 0.054991399999999996,
                                 "ticker": "US0012M INDEX"
@@ -3530,17 +3135,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409761",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e7a",
                             "rate": {
                                 "value": 0.049389,
                                 "ticker": "USSWAP2 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3559,17 +3161,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409762",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e7b",
                             "rate": {
                                 "value": 0.045073,
                                 "ticker": "USSWAP3 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3588,17 +3187,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409763",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e7c",
                             "rate": {
                                 "value": 0.042344999999999994,
                                 "ticker": "USSWAP4 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3617,17 +3213,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409764",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e7d",
                             "rate": {
                                 "value": 0.04059,
                                 "ticker": "USSWAP5 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3646,17 +3239,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409765",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e7e",
                             "rate": {
                                 "value": 0.039485,
                                 "ticker": "USSW6 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3675,17 +3265,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409766",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e7f",
                             "rate": {
                                 "value": 0.038662999999999996,
                                 "ticker": "USSWAP7 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3704,17 +3291,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409767",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e80",
                             "rate": {
                                 "value": 0.038102,
                                 "ticker": "USSW8 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3733,17 +3317,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409768",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e81",
                             "rate": {
                                 "value": 0.037709,
                                 "ticker": "USSW9 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3762,17 +3343,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409769",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e82",
                             "rate": {
                                 "value": 0.037443,
                                 "ticker": "USSWAP10 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3791,17 +3369,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840976a",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e83",
                             "rate": {
                                 "value": 0.03725,
                                 "ticker": "USSWAP11 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3820,17 +3395,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840976b",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e84",
                             "rate": {
                                 "value": 0.037118000000000005,
                                 "ticker": "USSWAP12 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3849,17 +3421,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840976c",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e85",
                             "rate": {
                                 "value": 0.036861000000000005,
                                 "ticker": "USSWAP15 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3878,17 +3447,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840976d",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e86",
                             "rate": {
                                 "value": 0.036291000000000004,
                                 "ticker": "USSWAP20 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3907,17 +3473,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840976e",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e87",
                             "rate": {
                                 "value": 0.03516,
                                 "ticker": "USSWAP25 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3936,17 +3499,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840976f",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e88",
                             "rate": {
                                 "value": 0.034049,
                                 "ticker": "USSWAP30 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3965,17 +3525,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409770",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e89",
                             "rate": {
                                 "value": 0.031796000000000005,
                                 "ticker": "USSWAP40 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     },
                     {
@@ -3994,17 +3551,14 @@
                             "fwdStart": "0D"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b8409771",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0e8a",
                             "rate": {
                                 "value": 0.02962,
                                 "ticker": "USSWAP50 BGN CURNCY"
                             },
-                            "spread":{
+                            "spread": {
                                 "value": 0.0,
                                 "ticker": "None"
-                            }  
+                            }
                         }
                     }
                 ]
@@ -4038,9 +3592,6 @@
                             "convention": "Unadjusted"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840970e",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64efd74390dd819e0e09",
                             "rate": {
                                 "value": 0.0515843,
                                 "ticker": "US0006M INDEX"
@@ -4057,9 +3608,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840979d",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eb6",
                             "spread": {
                                 "value": 0.0009371000000000001,
                                 "ticker": "USBC1 BGN CURNCY"
@@ -4076,9 +3624,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840979e",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eb7",
                             "spread": {
                                 "value": 0.001175,
                                 "ticker": "USBC1F BGN CURNCY"
@@ -4095,9 +3640,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840979f",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eb8",
                             "spread": {
                                 "value": 0.0012929999999999999,
                                 "ticker": "USBC2 BGN CURNCY"
@@ -4114,9 +3656,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097a0",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eb9",
                             "spread": {
                                 "value": 0.001413,
                                 "ticker": "USBC3 BGN CURNCY"
@@ -4133,9 +3672,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097a1",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eba",
                             "spread": {
                                 "value": 0.001471,
                                 "ticker": "USBC4 BGN CURNCY"
@@ -4152,9 +3688,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097a2",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ebb",
                             "spread": {
                                 "value": 0.001485,
                                 "ticker": "USBC5 BGN CURNCY"
@@ -4171,9 +3704,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097a3",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ebc",
                             "spread": {
                                 "value": 0.0015375,
                                 "ticker": "USBC7 BGN CURNCY"
@@ -4190,9 +3720,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097a4",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ebd",
                             "spread": {
                                 "value": 0.001575,
                                 "ticker": "USBC10 BGN CURNCY"
@@ -4209,9 +3736,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097a5",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ebe",
                             "spread": {
                                 "value": 0.0015785,
                                 "ticker": "USBC12 BGN CURNCY"
@@ -4228,9 +3752,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097a6",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ebf",
                             "spread": {
                                 "value": 0.0016,
                                 "ticker": "USBC15 BGN CURNCY"
@@ -4247,9 +3768,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097a7",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ec0",
                             "spread": {
                                 "value": 0.001625,
                                 "ticker": "USBC20 BGN CURNCY"
@@ -4266,9 +3784,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097a8",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ec1",
                             "spread": {
                                 "value": 0.001625,
                                 "ticker": "USBC25 BGN CURNCY"
@@ -4285,9 +3800,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097a9",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ec2",
                             "spread": {
                                 "value": 0.0016375,
                                 "ticker": "USBC30 BGN CURNCY"
@@ -4325,9 +3837,6 @@
                             "convention": "Unadjusted"
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b840970f",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64efd74390dd819e0e0a",
                             "rate": {
                                 "value": 0.054991399999999996,
                                 "ticker": "US0012M INDEX"
@@ -4344,9 +3853,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097aa",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ec3",
                             "spread": {
                                 "value": 0.0028375,
                                 "ticker": "USBL2 PREB CURNCY"
@@ -4363,9 +3869,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097ab",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ec4",
                             "spread": {
                                 "value": 0.0034,
                                 "ticker": "USBL3 PREB CURNCY"
@@ -4382,9 +3885,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097ac",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ec5",
                             "spread": {
                                 "value": 0.0036875,
                                 "ticker": "USBL4 PREB CURNCY"
@@ -4401,9 +3901,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097ad",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ec6",
                             "spread": {
                                 "value": 0.00385,
                                 "ticker": "USBL5 PREB CURNCY"
@@ -4420,9 +3917,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097ae",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ec7",
                             "spread": {
                                 "value": 0.0040375,
                                 "ticker": "USBL7 PREB CURNCY"
@@ -4439,9 +3933,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097af",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ec8",
                             "spread": {
                                 "value": 0.0041875,
                                 "ticker": "USBL10 PREB CURNCY"
@@ -4458,9 +3949,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097b0",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ec9",
                             "spread": {
                                 "value": 0.00425,
                                 "ticker": "USBL12 PREB CURNCY"
@@ -4477,9 +3965,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097b1",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0eca",
                             "spread": {
                                 "value": 0.0043,
                                 "ticker": "USBL15 PREB CURNCY"
@@ -4496,9 +3981,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097b2",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ecb",
                             "spread": {
                                 "value": 0.0043625,
                                 "ticker": "USBL20 PREB CURNCY"
@@ -4515,9 +3997,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097b3",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ecc",
                             "spread": {
                                 "value": 0.0043875,
                                 "ticker": "USBL25 PREB CURNCY"
@@ -4534,9 +4013,6 @@
                             "spreadOnShort": true
                         },
                         "marketConfig": {
-                            "_id": "63ebd519f6f786e1b84097b4",
-                            "createdAt": "2023-02-14T18:38:09.868Z",
-                            "helperId": "63ea64f0d74390dd819e0ecd",
                             "spread": {
                                 "value": 0.0044125,
                                 "ticker": "USBL30 PREB CURNCY"
