@@ -1,5 +1,5 @@
 
-from others import *
+from parsing.others import *
 
 
 def testCreateOvernightIndex():

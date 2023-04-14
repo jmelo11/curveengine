@@ -1,24 +1,23 @@
 import ORE as ore
-from enums import *
-
-
-def createInterestRate(
-        rate: float,
-        dayCount: str,
-        compounding: str,
-        frequency: str) -> ore.InterestRate:
-    return ore.InterestRate(
-        rate,
-        parseDayCounter(dayCount),
-        parseCompounding(compounding),
-        parseFrequency(frequency))
+from parsing.enums import *
 
 
 def parse(**kwargs):
     results = {}
     for key, value in kwargs.items():
-        if key in ['helperConfig', 'marketConfig', 'curveConfig', 'curveIndex']:
+
+        if key in ['helperConfig', 'curveIndex', 'curveConfig']:
             results[key] = parse(**value)
+
+        elif key == 'nodes':
+            results[key] = [parseNode(v) for v in value]
+
+        elif key == 'marketConfig':
+            results[key] = parseMarketConfig(value)
+
+        elif key in ['curves', 'rateHelpers']:
+            results[key] = [parse(**v) for v in value]
+
         elif key in ['date', 'startDate', 'endDate']:
             results[key] = parseDate(value)
 
@@ -52,50 +51,84 @@ def parse(**kwargs):
         elif key in ['tenor', 'fwdStart', 'shortPayTenor']:
             results[key] = parsePeriod(value)
 
-        elif key in ['endOfMonth', 'telescopicValueDates', 'spreadOnShortIndex', 'baseCurrencyAsCollateral']:
+        elif key in ['endOfMonth', 'telescopicValueDates', 'spreadOnShortIndex', 'baseCurrencyAsCollateral', 'enableExtrapolation']:
             if isinstance(value, bool):
                 results[key] = value
             else:
                 raise ValueError(
-                    'unable to parse item {0} with value {0}'.format(key, value))
+                    'unable to parse item {0} with value {1}'.format(key, value))
 
         elif key in ['settlementDays', 'paymentLag', 'fixingDays', 'year']:
             if isinstance(value, int):
                 results[key] = value
             else:
                 raise ValueError(
-                    'unable to parse item {0} with value {0}'.format(key, value))
+                    'unable to parse item {0} with value {1}'.format(key, value))
 
-        elif key in ['discountCurve', 'index', 'collateralCurve', 'shortIndex', 'longIndex']:
+        elif key in ['discountCurve', 'index', 'shortIndex', 'longIndex', 'curveName']:
             if isinstance(value, str):
                 results[key] = value
             else:
                 raise ValueError(
-                    'unable to parse item {0} with value {0}'.format(key, value))
+                    'unable to parse item {0} with value {1}'.format(key, value))
 
-        elif key in ['couponRate', 'rate']:
-            if isinstance(value, float):
-                results[key] = value
-            elif isinstance(value, dict):
-                results[key] = createInterestRate(value)
-            else:
-                raise ValueError(
-                    'unable to parse item {0} with value {0}'.format(key, value))
-
-        elif key in ['spread', 'fxSpot', 'fxPoints']:
+        elif key in ['couponRate']:
             if isinstance(value, float):
                 results[key] = value
             else:
                 raise ValueError(
-                    'unable to parse item {0} with value {0}'.format(key, value))
+                    'unable to parse item {0} with value {1}'.format(key, value))
+
         elif key == 'month':
             results[key] = parseMonth(value)
 
         else:
-            raise ValueError(
-                'unable to parse item {0} with value {0}'.format(key, value))
+            results[key] = value
 
     return results
+
+
+def parseMarketConfig(marketConfig):
+    results = {}
+    if isinstance(marketConfig, dict):
+        for key, value in marketConfig.items():
+            if key in ['spread', 'fxSpot', 'fxPoints', 'price']:
+                if isinstance(value, float):
+                    results[key] = value
+                elif isinstance(value, dict):
+                    results[key] = value['value']
+                else:
+                    raise ValueError(
+                        'unable to parse item in market config {0} with value {1}'.format(key, value))
+            elif key == 'rate':
+                if isinstance(value, float):
+                    results[key] = value
+                elif isinstance(value, dict):
+                    results[key] = value['value']
+                else:
+                    raise ValueError(
+                        'unable to parse item in market config {0} with value {1}'.format(key, value))
+
+    else:
+        raise NotImplementedError(
+            'unknown market config type: {0}'.format(type(marketConfig)))
+    return results
+
+
+def parseNode(node):
+    return {'date': parseDate(node['date']), 'value': node['value']}
+
+
+def createInterestRate(
+        rate: float,
+        dayCount: str,
+        compounding: str,
+        frequency: str) -> ore.InterestRate:
+    return ore.InterestRate(
+        rate,
+        parseDayCounter(dayCount),
+        parseCompounding(compounding),
+        parseFrequency(frequency))
 
 
 def parseCompounding(compounding: str):
@@ -283,6 +316,3 @@ def parseMonth(month: str):
         return ore.December
     else:
         raise NotImplementedError('unknown month: {0}'.format(month))
-
-
-

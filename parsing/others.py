@@ -1,34 +1,34 @@
-from parsers import *
-from enums import *
+from parsing.parsers import *
+from parsing.enums import *
 from collections import deque
 
 
-def createOvernightIndex(indexName: str, settlementDays: int, currency: str, calendar: str, dayCounter: str):
-    dayCounter = parseDayCounter(dayCounter)
-    currency = parseCurrency(currency)
-    calendar = parseCalendar(calendar)
+def createOvernightIndex(name: str, indexConfig: dict, handle: ore.YieldTermStructureHandle):
+    dayCounter = indexConfig['dayCounter']
+    currency = indexConfig['currency']
+    calendar = indexConfig['calendar']
+    fixingDays = indexConfig['fixingDays']
     index = ore.OvernightIndex(
-        indexName, settlementDays, currency, calendar, dayCounter)
+        name, fixingDays, currency, calendar, dayCounter)
     return index
 
 
-def createIborIndex(indexName: str, settlementDays: int, period: str, currency: str, calendar: str, businessDayConvention: str, endOfMonth: bool, dayCounter: str):
-    dayCounter = parseDayCounter(dayCounter)
-    currency = parseCurrency(currency)
-    calendar = parseCalendar(calendar)
-    period = parsePeriod(period)
-    businessDayConvention = parseBusinessDayConvention(businessDayConvention)
-    index = ore.IborIndex(indexName, period, settlementDays, currency,
-                          calendar, businessDayConvention, endOfMonth, dayCounter)
+def createIborIndex(name: str, indexConfig: dict, handle: ore.YieldTermStructureHandle):
+    dayCounter = indexConfig['dayCounter']
+    currency = indexConfig['currency']
+    calendar = indexConfig['calendar']
+    fixingDays = indexConfig['fixingDays']
+    tenor = indexConfig['tenor']
+    endOfMonth = indexConfig['endOfMonth']
+    convention = indexConfig['convention']
+    index = ore.IborIndex(name, tenor, fixingDays, currency,
+                          calendar, convention, endOfMonth, dayCounter)
     return index
-
-
-
 
 
 def getDependencyList(data: dict) -> dict:
     # possible curve related keys
-    pc = ['discountCurve', 'discountingCurve', 'collateralCurve']
+    pc = ['discountCurve', 'collateralCurve']
     # possible index related keys
     pi = ['index', 'shortIndex', 'longIndex']
 

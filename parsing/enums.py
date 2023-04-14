@@ -22,12 +22,3 @@ class CurveType(Enum):
 class IndexType(Enum):
     OvernightIndex = "OvernightIndex"
     IborIndex = "IborIndex"
-
-
-def main():
-    tmp = "Deposit"
-    print(HelperType(tmp))
-
-
-if __name__ == "__main__":
-    main()

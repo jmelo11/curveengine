@@ -1,4 +1,5 @@
-from ratehelpers import *
+
+from parsing.ratehelpers import *
 
 
 def test_createOISRateHelper():
@@ -9,7 +10,7 @@ def test_createOISRateHelper():
         'settlementDays': 2,
         'endOfMonth': False,
         'paymentLag': 2,
-        'paymentFrequency': 'Quarterly',
+        'fixedLegFrequency': 'Quarterly',
         'fwdStart': '0D',
         'index': 'EUR-EONIA',
         'discountCurve': 'EUR-EONIA'
@@ -108,7 +109,7 @@ def test_createFxSwapRateHelper():
         'convention': 'ModifiedFollowing',
         'endOfMonth': False,
         'baseCurrencyAsCollateral': True,
-        'collateralCurve': 'EUR',
+        'discountCurve': 'EUR',
         'tenor': '1Y'
     }
     marketConfig = {
@@ -127,8 +128,41 @@ def test_createFxSwapRateHelper():
     assert isinstance(helper, ore.FxSwapRateHelper)
 
 
+def test_createCrossCurrencySwapRateHelper():
+    helperConfig = {
+        "tenor": "2Y",
+        "dayCounter": "Actual360",
+        "calendar": "NullCalendar",
+        "convention": "ModifiedFollowing",
+        "endOfMonth": False,
+        "settlementDays": 2,
+        "discountCurve": "SOFR",
+        "index": "SOFR",
+        "fixedLegCurrency": "CLP",
+        "fwdStart": "0D",
+        "fixedLegFrequency": "Semiannual"
+    }
+    marketConfig = {
+        "rate": 0.0695,
+        "fxSpot": 786.28,
+        "spread": 0.0,
+    }
+    curves = {
+        'SOFR': ore.YieldTermStructureHandle(ore.FlatForward(2, ore.TARGET(), 0.04, ore.Actual360())),
+    }
+    indexes = {
+        'SOFR': ore.Euribor6M()
+    }
+
+    helperConfig = parse(**helperConfig)
+    helper = createCrossCcyFixFloatSwapHelper(
+        helperConfig, marketConfig, curves, indexes)
+    assert isinstance(helper, ore.CrossCcyFixFloatSwapHelper)
+
+
 test_createDepositRateHelper()
 test_createFixedRateBondHelper()
 test_createSwapRateHelper()
 test_createFxSwapRateHelper()
 test_createOISRateHelper()
+test_createCrossCurrencySwapRateHelper()

@@ -1,4 +1,4 @@
-from parsers import *
+from parsing.parsers import *
 
 
 def testParseCompounding():

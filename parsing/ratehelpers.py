@@ -1,5 +1,5 @@
-from parsers import *
-from others import *
+from parsing.parsers import *
+from parsing.others import *
 
 
 def createOISRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
@@ -10,17 +10,17 @@ def createOISRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, in
     settlementDays = helperConfig['settlementDays']
     endOfMonth = helperConfig['endOfMonth']
     paymentLag = helperConfig['paymentLag']
-    paymentFrequency = helperConfig['paymentFrequency']
+    fixedLegFrequency = helperConfig['fixedLegFrequency']
     fwdStart = helperConfig['fwdStart']
 
     rate = marketConfig['rate']
-    spread = marketConfig['spread']
     index = indexes[helperConfig['index']]
-    discountCurveHandle = curves[helperConfig['discountCurve']]
 
-    rate = ore.QuoteHandle(ore.SimpleQuote(rate))    
-    helper = ore.OISRateHelper(settlementDays, tenor, rate, index, discountCurveHandle, endOfMonth,
-                               paymentLag, businessDayConvention, paymentFrequency, calendar, fwdStart, spread)
+    discountCurve = curves[helperConfig['discountCurve']]
+
+    rate = ore.QuoteHandle(ore.SimpleQuote(rate))
+    helper = ore.OISRateHelper(settlementDays, tenor, rate, index, discountCurve, endOfMonth,
+                               paymentLag, businessDayConvention, fixedLegFrequency, calendar, fwdStart)
     return helper
 
 
@@ -32,6 +32,7 @@ def createDepositRateHelper(helperConfig: dict, marketConfig: dict, *args, **kwa
     convention = helperConfig['convention']
     endOfMonth = helperConfig['endOfMonth']
     dayCounter = helperConfig['dayCounter']
+
     helper = ore.DepositRateHelper(rate, tenor, settlementDays, calendar,
                                    convention, endOfMonth, dayCounter)
     return helper
@@ -152,7 +153,7 @@ def createFxSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict,
     spotFxQuote = ore.QuoteHandle(ore.SimpleQuote(spotFx))
 
     # Discounting curve
-    collateralCurve = curves[helperConfig['collateralCurve']]
+    discountCurve = curves[helperConfig['discountCurve']]
 
     # FxSwapRateHelper
     fxSwapRateHelper = ore.FxSwapRateHelper(
@@ -164,7 +165,7 @@ def createFxSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict,
         convention,
         endOfMonth,
         baseCurrencyAsCollateral,
-        collateralCurve,
+        discountCurve,
         calendar
     )
     return fxSwapRateHelper
@@ -193,7 +194,7 @@ def createSofrFutureRateHelper(helperConfig: dict, marketConfig: dict, curves: d
 
 def createTenorBasisSwap(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
     tenor = helperConfig['tenor']
-    shortPayTenor = helperConfig['shortPayTenor']
+    #shortPayTenor = helperConfig['shortPayTenor']
     spreadOnShort = helperConfig['spreadOnShort']
 
     # Index
@@ -213,7 +214,7 @@ def createTenorBasisSwap(helperConfig: dict, marketConfig: dict, curves: dict, i
         tenor,
         longIndex,
         shortIndex,
-        shortPayTenor,
+        ore.Period(),
         discountCurve,
         spreadOnShort,
         True
@@ -223,11 +224,11 @@ def createTenorBasisSwap(helperConfig: dict, marketConfig: dict, curves: dict, i
 
 
 def createCrossCcyFixFloatSwapHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
-    tenor = helperConfig['settlementDays']
+    tenor = helperConfig['tenor']
     dayCounter = helperConfig['dayCounter']
-    settlementDays = helperConfig['tenor']
+    settlementDays = helperConfig['settlementDays']
     endOfMonth = helperConfig['endOfMonth']
-    convention = helperConfig['tenor']
+    convention = helperConfig['convention']
     fixedLegFrequency = helperConfig['fixedLegFrequency']
     fixedLegCurrency = helperConfig['fixedLegCurrency']
     calendar = helperConfig['calendar']

@@ -5,11 +5,11 @@ from parsing.ratehelpers import *
 
 
 class CurveManager:
-    def __init__(self, data):
-        self.curveHandles = {}
-        self.curves = {}
-        self.indexes = {}
-        self.initilalize(data)
+    def __init__(self, data, curves={}, indexes={}):
+        self.curveHandles = {None: ore.RelinkableYieldTermStructureHandle()}
+        self.curves = curves
+        self.indexes = indexes
+        self.initialize(data)
 
     def getCurve(self, curveName):
         return self.curves[curveName]
@@ -28,91 +28,124 @@ class CurveManager:
 
         dependencies = getDependencyList(data)
         sortedList = topologicalSort(dependencies)
-
         for curveName in sortedList:
-            parsed = parse(tmpData[curveName])
-            self.__buildIndexes(parsed)
-            self.__buildCurve(parsed)
+            parsed = parse(**tmpData[curveName])
+            print(parsed)
+            if curveName not in self.indexes.keys():
+                self.__buildIndexes(parsed)
+            if curveName not in self.curves.keys():
+                self.__buildCurve(parsed)
 
     def __buildIndexes(self, data):
         name = data['curveName']
         config = data['curveIndex']
-        indexType = IndexType(config['indexType'])
-
-        handle = ore.YieldTermStructureHandle()
+        indexType = config['indexType']
+        handle = ore.RelinkableYieldTermStructureHandle()
         self.curveHandles[name] = handle
         if indexType == IndexType.IborIndex:
-            index = createIborIndex(config, handle)
-        elif indexType == IndexType.OISIndex:
-            index = createOvernightIndex(config, handle)
+            index = createIborIndex(name, config, handle)
+        elif indexType == IndexType.OvernightIndex:
+            index = createOvernightIndex(name, config, handle)
+        else:
+            raise Exception(
+                'Unknown index type: {}'.format(indexType))
         self.indexes[name] = index
 
     def __buildCurve(self, data):
         curveName = data['curveName']
-        if data['curveType'] == CurveType.Piecewise:
+        config = data['curveConfig']
+        if config['curveType'] == CurveType.Piecewise:
             curve = self.__buildPiecewiseCurve(data)
-        elif data['curveType'] == CurveType.Discount:
+        elif config['curveType'] == CurveType.Discount:
             curve = self.__buildDiscountingCurve(data)
-        elif data['curveType'] == CurveType.FlatForward:
+        elif config['curveType'] == CurveType.FlatForward:
             curve = self.__buildFlatForwardCurve(data)
         else:
-            raise Exception('Unknown curve type: {}'.format(data['curveType']))
+            raise Exception(
+                'Unknown curve type: {}'.format(config['curveType']))
 
         self.curveHandles[curveName].linkTo(curve)
+        self.indexes[curveName] = self.indexes[curveName].clone(
+            self.curveHandles[curveName])
         self.curves[curveName] = curve
 
     def __buildPiecewiseCurve(self, data):
         rateHelpers = []
         config = data['curveConfig']
-        for rateHelper in ['rateHelpers']:
-            helperType = HelperType(rateHelper['helperType'])
+        for rateHelper in config['rateHelpers']:
+            helperType = rateHelper['helperType']
             helperConfig = rateHelper['helperConfig']
+            if 'discountCurve' not in helperConfig.keys():
+                helperConfig['discountCurve'] = None
             marketConfig = rateHelper['marketConfig']
             try:
                 if helperType == HelperType.Deposit:
-                    createDepositRateHelper(
-                        helperConfig, marketConfig, self.curves, self.indexes)
+                    helper = createDepositRateHelper(
+                        helperConfig, marketConfig, self.curveHandles, self.indexes)
                 elif helperType == HelperType.OIS:
-                    createOISRateHelper(
-                        helperConfig, marketConfig, self.curves, self.indexes)
+                    helper = createOISRateHelper(
+                        helperConfig, marketConfig, self.curveHandles, self.indexes)
                 elif helperType == HelperType.Swap:
-                    createSwapRateHelper(
-                        helperConfig, marketConfig, self.curves, self.indexes)
+                    helper = createSwapRateHelper(
+                        helperConfig, marketConfig, self.curveHandles, self.indexes)
                 elif helperType == HelperType.TenorBasis:
-                    createTenorBasisSwap(
-                        helperConfig, marketConfig, self.curves, self.indexes)
+                    helper = createTenorBasisSwap(
+                        helperConfig, marketConfig, self.curveHandles, self.indexes)
                 elif helperType == HelperType.Xccy:
-                    createCrossCcyFixFloatSwapHelper(
-                        helperConfig, marketConfig, self.curves, self.indexes)
+                    helper = createCrossCcyFixFloatSwapHelper(
+                        helperConfig, marketConfig, self.curveHandles, self.indexes)
                 elif helperType == HelperType.FxSwap:
-                    createFxSwapRateHelper(
-                        helperConfig, marketConfig, self.curves, self.indexes)
+                    helper = createFxSwapRateHelper(
+                        helperConfig, marketConfig, self.curveHandles, self.indexes)
                 elif helperType == HelperType.SofrFuture:
-                    createSofrFutureRateHelper(
-                        helperConfig, marketConfig, self.curves, self.indexes)
+                    helper = createSofrFutureRateHelper(
+                        helperConfig, marketConfig, self.curveHandles, self.indexes)
                 elif helperType == HelperType.XccyBasis:
-                    createCrossCcyBasisSwapHelper(
-                        helperConfig, marketConfig, self.curves, self.indexes)
+                    helper = createCrossCcyBasisSwapHelper(
+                        helperConfig, marketConfig, self.curveHandles, self.indexes)
                 elif helperType == HelperType.Bond:
-                    createFixedRateBondHelper(
-                        helperConfig, marketConfig, self.curves, self.indexes)
+                    helper = createFixedRateBondHelper(
+                        helperConfig, marketConfig, self.curveHandles, self.indexes)
                 else:
                     raise Exception(
                         'Unknown rate helper type: {}'.format(helperType))
+            except KeyError as e:
+                raise KeyError('Failed to create rate helper {helper} at curve {curveName}: Key not found: {error} '.format(
+                    helper=helperType, curveName=data['curveName'], error=e))
             except Exception as e:
                 raise Exception('Failed to create rate helper {helper} at curve {curveName}: {error} '.format(
                     helper=helperType, curveName=data['curveName'], error=e))
-            rateHelpers.append(rateHelper)
+            rateHelpers.append(helper)
 
-        refDate = ore.Settings.instance().evaluationDate()
+        refDate = ore.Settings.instance().evaluationDate
         dayCounter = config['dayCounter']
-        curve = ore.PiecewiseYieldCurve(refDate, rateHelpers, dayCounter)
-        curve.enableExtrapolation(config['enableExtrapolation'])
-        curve.unregisterWithAll()
+
+        curve = ore.PiecewiseLogLinearDiscount(
+            refDate, rateHelpers, dayCounter)
+        if 'enableExtrapolation' in config.keys():
+            if config['enableExtrapolation']:
+                curve.enableExtrapolation()
+
         return curve
 
     def __buildDiscountingCurve(self, data):
-        raise NotImplementedError("Discounting curve not implemented yet")
+        config = data['curveConfig']
+        dates = [node['date'] for node in config['nodes']]
+        dfs = [node['value'] for node in config['nodes']]
+        dayCounter = config['dayCounter']
+        if dates[0] != ore.Settings.instance().evaluationDate:
+            raise Exception(
+                'Failed to create curve {}: first date in discount curve must be the evaluation date'.format(data['curveName']))
+
+        if dfs[0] != 1.0:
+            raise Exception(
+                'Failed to create curve {}: first discount factor in discount curve must be 1.0'.format(data['curveName']))
+
+        curve = ore.DiscountCurve(dates, dfs, dayCounter)
+        if 'enableExtrapolation' in config.keys():
+            if config['enableExtrapolation']:
+                curve.enableExtrapolation()
+        return curve
 
     def __buildFlatForwardCurve(self, data):
         raise NotImplementedError("Flat forward curve not implemented yet")
