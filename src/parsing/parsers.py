@@ -114,6 +114,23 @@ def parseMarketConfig(marketConfig):
     return results
 
 
+def parseOREDate(date: ore.Date) -> str:
+    """
+    Parse an ORE date to a string
+
+    Parameters
+    ----------
+    date : ore.Date
+        The ORE date
+
+    Returns
+    -------
+    str
+        The string representation of the date
+    """
+    return '{0}-{1}-{2}'.format(date.year(), date.month(), date.dayOfMonth())
+
+
 def parseNode(node):
     return {'date': parseDate(node['date']), 'value': node['value']}
 

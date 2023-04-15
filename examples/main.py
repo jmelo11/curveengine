@@ -1,12 +1,12 @@
 import json
-from curvemanager import CurveManager
+from curveengine import CurveEngine
 
 
 def main():
     with open('piecewise.json') as f:
         file = json.load(f)
 
-    cm = CurveManager(file)
+    cm = CurveEngine(file)
 
     for curveName, curve in cm.curves.items():
         print(curveName, curve.nodes())

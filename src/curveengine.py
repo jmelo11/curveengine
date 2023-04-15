@@ -4,7 +4,7 @@ from parsing.others import *
 from parsing.ratehelpers import *
 
 
-class CurveManager:
+class CurveEngine:
     def __init__(self, data, curves={}, indexes={}):
         self.curveHandles = {None: ore.RelinkableYieldTermStructureHandle()}
         self.curves = curves
