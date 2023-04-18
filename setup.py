@@ -3,9 +3,9 @@ from setuptools import setup, find_packages
 
 setup(
     name='curveengine',
-    version='1.0.1',
+    version='1.0.2',
     description='A simple curve bootstraping tool based on ORE/QuantLib',
-    long_description=open('readme.md').read(),
+    long_description=open('readmepipy.md').read(),
     author='Jose Melo',
     packages=find_packages(where='src'),
     py_modules=["curveengine"],
