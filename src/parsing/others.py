@@ -60,6 +60,7 @@ def createIborIndex(name: str, indexConfig: dict, handle: ore.YieldTermStructure
     return index
 
 
+
 def getDependencyList(data: dict) -> dict:
     """
     Get the dependency list for the curves
