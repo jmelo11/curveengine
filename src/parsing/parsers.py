@@ -2,20 +2,54 @@ import ORE as ore
 from parsing.enums import *
 
 
-def parse(**kwargs):
+def checkDictKeys(data: dict, keys: list, level: str = ''):
+    """
+    Check if all the keys are present in the dictionary.
+
+    Parameters
+    ----------
+    data : dict
+        The dictionary to be checked.
+    keys : list
+        A list of keys to be checked for presence.
+    level : str, optional
+        The level where the error occurred (default is '').
+
+    Raises
+    ------
+    KeyError
+        If any key is missing from the dictionary.
+    """
+    for key in keys:
+        try:
+            _ = data[key]
+        except KeyError:
+            raise KeyError(f"Missing key: '{key}' in {level}.")
+
+
+def parse(level, **kwargs):
     results = {}
     for key, value in kwargs.items():
+        level_key = level + '\\' + key
         if key in ['helperConfig', 'curveIndex', 'curveConfig']:
-            results[key] = parse(**value)
+            results[key] = parse(level=level_key, **value)
 
         elif key == 'nodes':
-            results[key] = [parseNode(v) for v in value]
+            try:
+                results[key] = [parseNode(v) for v in value]
+            except KeyError:
+                raise KeyError(
+                    f"Missing key: 'date' or 'rate' in {level_key}.")
+            except ValueError:
+                raise ValueError(
+                    f"Unable to parse item 'date' or 'rate' in {level_key}.")
 
         elif key == 'marketConfig':
-            results[key] = parseMarketConfig(value)
+            results[key] = parseMarketConfig(level_key, value)
 
         elif key in ['curves', 'rateHelpers']:
-            results[key] = [parse(**v) for v in value]
+            results[key] = [parse(level=level_key + '\\{}'.format(i), **v)
+                            for i, v in enumerate(value)]
 
         elif key in ['date', 'startDate', 'endDate']:
             results[key] = parseDate(value)
@@ -65,6 +99,7 @@ def parse(**kwargs):
                     'unable to parse item {0} with value {1}'.format(key, value))
 
         elif key in ['discountCurve', 'index', 'shortIndex', 'longIndex', 'curveName']:
+            checkDictKeys(kwargs, [key], level=level_key)
             if isinstance(value, str):
                 results[key] = value
             else:
@@ -72,6 +107,7 @@ def parse(**kwargs):
                     'unable to parse item {0} with value {1}'.format(key, value))
 
         elif key in ['couponRate']:
+            checkDictKeys(kwargs, [key], level=level_key)
             if isinstance(value, float):
                 results[key] = value
             else:
@@ -87,7 +123,7 @@ def parse(**kwargs):
     return results
 
 
-def parseMarketConfig(marketConfig):
+def parseMarketConfig(level, marketConfig):
     results = {}
     if isinstance(marketConfig, dict):
         for key, value in marketConfig.items():
@@ -95,6 +131,7 @@ def parseMarketConfig(marketConfig):
                 if isinstance(value, float):
                     results[key] = value
                 elif isinstance(value, dict):
+                    checkDictKeys(value, ['value'], level=level)
                     results[key] = value['value']
                 else:
                     raise ValueError(
@@ -103,6 +140,7 @@ def parseMarketConfig(marketConfig):
                 if isinstance(value, float):
                     results[key] = value
                 elif isinstance(value, dict):
+                    checkDictKeys(value, ['value'], level=level)
                     results[key] = value['value']
                 else:
                     raise ValueError(

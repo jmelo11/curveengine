@@ -60,20 +60,19 @@ def createIborIndex(name: str, indexConfig: dict, handle: ore.YieldTermStructure
     return index
 
 
-
 def getDependencyList(data: dict) -> dict:
     """
-    Get the dependency list for the curves
+    Get the dependency list for the curves.
 
     Parameters
     ----------
     data : dict
-        Dictionary containing the curve data
+        Dictionary containing the curve data.
 
     Returns
     -------
     dict
-        Dictionary containing the dependency list
+        Dictionary containing the dependency list.
 
     Notes
     -----
@@ -81,29 +80,41 @@ def getDependencyList(data: dict) -> dict:
     curve names as value. The set contains the names of the curves that the
     curve depends on.
     """
-    # possible curve related keys
+    # Possible curve related keys
     pc = ['discountCurve', 'collateralCurve']
-    # possible index related keys
+    # Possible index related keys
     pi = ['index', 'shortIndex', 'longIndex']
 
-    dependecies = {}
+    checkDictKeys(data, ['curves'], level='')
+
+    dependencies = {}
     for curve in data['curves']:
+        checkDictKeys(curve, ['curveName', 'curveConfig'], level='curves')
+
         curveName = curve['curveName']
-        if curveName not in dependecies.keys():
-            dependecies[curveName] = set()
+        if curveName not in dependencies.keys():
+            dependencies[curveName] = set()
 
         curveConfig = curve['curveConfig']
+        checkDictKeys(curveConfig, ['curveType',
+                      'rateHelpers'], level=r'{curve}\curves'.format(curve=curveName))
+
         curveType = CurveType(curveConfig['curveType'])
         if curveType == CurveType.Piecewise:
             for rateHelper in curveConfig['rateHelpers']:
-                config = rateHelper['helperConfig']
+                checkDictKeys(rateHelper, ['helperType', 'helperConfig'],
+                              level=r'{curve}\curves\rateHelpers'.format(curve=curveName))
+                helperConfig = rateHelper['helperConfig']
                 for key in pc:
-                    if key in config.keys():
-                        dependecies[curveName].add(config[key])
-                for key in pi:
-                    if key in config.keys():
-                        dependecies[curveName].add(config[key])
-    return dependecies
+                    if key in helperConfig:
+                        dependencies[curveName].add(helperConfig[key])
+                    for key in pi:
+                        if key in helperConfig:
+                            dependencies[curveName].add(helperConfig[key])
+    return dependencies
+
+
+
 
 
 def topologicalSort(dependencies):

@@ -30,7 +30,7 @@ class CurveEngine:
         dependencies = getDependencyList(data)
         sortedList = topologicalSort(dependencies)
         for curveName in sortedList:
-            parsed = parse(**tmpData[curveName])
+            parsed = parse(level=curveName,**tmpData[curveName])
             if curveName not in self.indexes.keys():
                 self.__buildIndexes(parsed)
             if curveName not in self.curves.keys():
@@ -72,7 +72,7 @@ class CurveEngine:
     def __buildPiecewiseCurve(self, data):
         rateHelpers = []
         config = data['curveConfig']
-        for rateHelper in config['rateHelpers']:
+        for i, rateHelper in enumerate(config['rateHelpers']):
             helperType = rateHelper['helperType']
             helperConfig = rateHelper['helperConfig']
             if 'discountCurve' not in helperConfig.keys():
@@ -110,11 +110,11 @@ class CurveEngine:
                     raise Exception(
                         'Unknown rate helper type: {}'.format(helperType))
             except KeyError as e:
-                raise KeyError('Failed to create rate helper {helper} at curve {curveName}: Key not found: {error} '.format(
-                    helper=helperType, curveName=data['curveName'], error=e))
+                raise KeyError('Failed to create rate helper {helper}/{i} at curve {curveName}: Key not found: {error} '.format(
+                    helper=helperType, curveName=data['curveName'], error=e, i=i))
             except Exception as e:
-                raise Exception('Failed to create rate helper {helper} at curve {curveName}: {error} '.format(
-                    helper=helperType, curveName=data['curveName'], error=e))
+                raise Exception('Failed to create rate helper {helper}/{i} at curve {curveName}: {error} '.format(
+                    helper=helperType, curveName=data['curveName'], error=e, i=i))
             rateHelpers.append(helper)
 
         refDate = ore.Settings.instance().evaluationDate
