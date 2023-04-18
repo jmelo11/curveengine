@@ -6,7 +6,7 @@ A simple curve bootstrapping tool. It uses ORE as backend and parses configurati
 ### Example
 For a more detail example, visit the example folder.
 
-´´´
+```
 {
     "refDate": "2023-02-14",
     "curves": [
@@ -624,4 +624,4 @@ For a more detail example, visit the example folder.
         }
     ]
 }
-´´´
+```
