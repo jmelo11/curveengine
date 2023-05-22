@@ -1,7 +1,7 @@
-from parsing.parsers import *
-from parsing.enums import *
-from parsing.others import *
-from parsing.ratehelpers import *
+from curveengine.parsing.parsers import *
+from curveengine.parsing.enums import *
+from curveengine.parsing.others import *
+from curveengine.parsing.ratehelpers import *
 
 
 class CurveEngine:
@@ -21,6 +21,7 @@ class CurveEngine:
     -------
     None
     '''
+
     def __init__(self, data, curves={}, indexes={}):
         self.curveHandles = {None: ore.RelinkableYieldTermStructureHandle()}
         self.curves = curves
@@ -40,6 +41,7 @@ class CurveEngine:
     ore.YieldTermStructure
         The curve with the given name.
     '''
+
     def getCurve(self, curveName):
         return self.curves[curveName]
 
@@ -56,6 +58,7 @@ class CurveEngine:
     ore.IborIndex or ore.OvernightIndex
         The index with the given name.
     '''
+
     def getIndex(self, indexName):
         return self.indexes[indexName]
 
@@ -71,7 +74,7 @@ class CurveEngine:
         dependencies = getDependencyList(data)
         sortedList = topologicalSort(dependencies)
         for curveName in sortedList:
-            parsed = parse(level=curveName,**tmpData[curveName])
+            parsed = parse(level=curveName, **tmpData[curveName])
             if curveName not in self.indexes.keys():
                 self.__buildIndexes(parsed)
             if curveName not in self.curves.keys():

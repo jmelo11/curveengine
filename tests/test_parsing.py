@@ -1,7 +1,7 @@
 import unittest
 import sys
 sys.path.append('..')
-from src.curveengine import *
+from curveengine.parsing import *
 
 
 class TestParsing(unittest.TestCase):

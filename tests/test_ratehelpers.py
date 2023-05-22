@@ -1,7 +1,7 @@
 import unittest
 import sys
 sys.path.append('..')
-from src.curveengine import *
+from curveengine.parsing import *
 
 class TestRateHelpers(unittest.TestCase):
 
@@ -62,8 +62,7 @@ class TestRateHelpers(unittest.TestCase):
             'couponRate': 0.05,
             'couponDayCounter': 'Actual360'
         }
-        marketConfig = {
-            'couponRate': 0.05,
+        marketConfig = {            
             'rate': 0.04
         }
         curves = {
@@ -72,7 +71,7 @@ class TestRateHelpers(unittest.TestCase):
         indexes = {}
         helperConfig = parse(level="test", **helperConfig)
         marketConfig = parse(level="test", **marketConfig)
-        helper = createFixedRateBondHelper(
+        helper = createFixedRateBondRateHelper(
             helperConfig, marketConfig, curves, indexes)
         self.assertIsInstance(helper, ore.BondHelper)
 
@@ -128,7 +127,7 @@ class TestRateHelpers(unittest.TestCase):
             helperConfig, marketConfig, curves, indexes)
         self.assertIsInstance(helper, ore.FxSwapRateHelper)
 
-    def test_createCrossCurrencySwapRateHelper(self):
+    def test_createCrossCcyFixFloatSwapRateHelper(self):
         helperConfig = {
             "tenor": "2Y",
             "dayCounter": "Actual360",
@@ -155,6 +154,6 @@ class TestRateHelpers(unittest.TestCase):
         }
 
         helperConfig = parse(level="test", **helperConfig)
-        helper = createCrossCcyFixFloatSwapHelper(
+        helper = createCrossCcyFixFloatSwapRateHelper(
             helperConfig, marketConfig, curves, indexes)
         self.assertIsInstance(helper, ore.CrossCcyFixFloatSwapHelper)

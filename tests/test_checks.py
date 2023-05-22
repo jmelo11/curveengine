@@ -1,4 +1,4 @@
-from src.parsing.checks import *
+from curveengine.parsing import *
 import unittest
 import sys
 sys.path.append('..')
@@ -248,13 +248,13 @@ class TestChecks(unittest.TestCase):
         self.assertRaises(ConfigurationError,
                           checkRateHelper, h3)
         self.assertIsNone(checkRateHelper(h4))
-    
+
     # TODO: Add more tests for the other rate helpers
-    ##  checkCrossCcyFixFloatSwapHelperHelper
-    ##  checkTenorBasisRateHelper
-    ##  checkCrossCcyBasisSwapRateHelper
-    ##  checkMarketConfig
-    ##  checkIndex
+    # checkCrossCcyFixFloatSwapHelperHelper
+    # checkTenorBasisRateHelper
+    # checkCrossCcyBasisSwapRateHelper
+    # checkMarketConfig
+    # checkIndex
 
     def test_piecewise_check(self):
         c1 = {
@@ -308,3 +308,102 @@ class TestChecks(unittest.TestCase):
         self.assertRaises(ConfigurationError,
                           checkPiecewiseCurve, c2)
         self.assertIsNone(checkPiecewiseCurve(c3))
+
+    def test_discount_check(self):
+        c1 = {
+            "curveType": "Something Invalid"
+        }
+
+        c2 = {
+            "curveType": "Discount",
+            "dayCounter": "Actual360",
+            "enableExtrapolation": True,
+            "rateHelpers": [
+
+            ]
+        }
+
+        c3 = {
+            "curveType": "Discount",
+            "dayCounter": "Actual360",
+            "enableExtrapolation": True,
+            "nodes": [
+                {
+                    "date": "2020-01-01",
+                    "value": 0.99
+                }
+            ]
+        }
+
+        self.assertRaises(ConfigurationError,
+                          checkDiscountCurve, c1)
+        self.assertRaises(ConfigurationError,
+                          checkDiscountCurve, c2)
+        self.assertIsNone(checkDiscountCurve(c3))
+
+    def test_curve_check(self):
+        c1 = {
+            "curveName": "Something Invalid",
+            "curveType": "Something Invalid"
+        }
+
+        c2 = {
+            "curveName": "Test",
+            "curveConfig": {
+                "curveType": "Curve",
+                "dayCounter": "Actual360",
+                "enableExtrapolation": True,
+                "rateHelpers": []
+            },
+            "curveIndex": {}
+        }
+
+        c3 = {
+            "curveName": "Test",
+            "curveConfig": {
+                "curveType": "Piecewise",
+                "dayCounter": "Actual360",
+                "enableExtrapolation": True,
+                "rateHelpers": [{
+                    "helperType": "OIS",
+                    "helperConfig": {
+                        "tenor": "1W",
+                        "dayCounter": "Actual360",
+                        "calendar": "NullCalendar",
+                        "convention": "Following",
+                        "endOfMonth": True,
+                        "frequency": "Annual",
+                        "settlementDays": 2,
+                        "paymentLag": 2,
+                        "telescopicValueDates": True,
+                        "index": "SOFR",
+                        "fixedLegFrequency": "Semiannual",
+                        "fwdStart": "0D"
+                    },
+                    "marketConfig": {
+                        "rate": {
+                            "value": 0.01,
+                        },
+                        "spread": {
+                            "value": 0.0,
+                        }
+                    }
+                }]
+            },
+            "curveIndex": {
+                "indexType": "IborIndex",
+                "tenor": "6M",
+                "dayCounter": "Actual360",
+                "currency": "CLP",
+                "fixingDays": 0,
+                "calendar": "NullCalendar",
+                "endOfMonth": False,
+                "convention": "Unadjusted"
+            }
+        }
+
+        self.assertRaises(ConfigurationError,
+                          checkCurve, c1)
+        self.assertRaises(ConfigurationError,
+                          checkCurve, c2)
+        self.assertIsNone(checkCurve(c3))

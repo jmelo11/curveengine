@@ -1,11 +1,10 @@
 import unittest
 import sys
 sys.path.append('..')
-from src.curveengine import *
+from curveengine.parsing import *
 
 
-
-class TestCreateOvernightIndex(unittest.TestCase):    
+class TestCreateOvernightIndex(unittest.TestCase):
 
     def test_create_overnight_index(self):
         # Set up input parameters for the function

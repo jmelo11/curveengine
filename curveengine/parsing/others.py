@@ -1,5 +1,5 @@
-from parsing.parsers import *
-from parsing.enums import *
+from curveengine.parsing.parsers import *
+from curveengine.parsing.enums import *
 from collections import deque
 
 

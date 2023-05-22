@@ -1,6 +1,6 @@
 import re
 from functools import partial
-from parsing.enums import *
+from curveengine.parsing.enums import *
 
 '''
 Example of a basic structure of the curve request:
@@ -146,7 +146,7 @@ def checkDayCounter(value) -> None:
     Parameters
     ----------
     value: str
-        The day counter. It can be Actual360, Actual365 or Thirty360
+        The day counter. It must match the DayCounter enum.
 
     Returns
     -------
@@ -156,8 +156,14 @@ def checkDayCounter(value) -> None:
     ------
     ValueError
         If the day counter is invalid
+
+    Also see
+    --------
+    checkIsInEnum
+    DayCounter
+
     '''
-    checkIsInEnum(value, ["Actual360", "Actual365", "Thirty360"])
+    checkIsInEnum(value, DayCounter.__members__)
 
 
 def checkFrequency(value) -> None:
@@ -167,7 +173,7 @@ def checkFrequency(value) -> None:
     Parameters
     ----------
     value: str
-        The frequency, it can be Annual, Semiannual, Quarterly, Monthly, Weekly, Daily or Once.
+        The frequency, matching the Frequency enum.
 
     Returns
     -------
@@ -177,9 +183,13 @@ def checkFrequency(value) -> None:
     ------
     ValueError
         If the frequency is invalid
+
+    Also see
+    --------
+    checkIsInEnum
+    Frequency
     '''
-    checkIsInEnum(value, ["Annual", "Semiannual",
-                  "Quarterly", "Monthly", "Weekly", "Daily", "Once"])
+    checkIsInEnum(value, Frequency.__members__)
 
 
 def checkCompounding(value) -> None:
@@ -189,7 +199,7 @@ def checkCompounding(value) -> None:
     Parameters
     ----------
     value: str
-        The compounding, it can be Simple, Compounded, Continuous or SimpleThenCompounded.
+        The compounding, matching the Compounding enum.
 
     Returns
     -------
@@ -199,9 +209,13 @@ def checkCompounding(value) -> None:
     ------
     ValueError
         If the compounding is invalid
+
+    Also see
+    --------
+    checkIsInEnum
+    Compounding
     '''
-    checkIsInEnum(value, ["Simple", "Compounded",
-                  "Continuous", "SimpleThenCompounded"])
+    checkIsInEnum(value, Compounding.__members__)
 
 
 def checkConvention(value) -> None:
@@ -211,7 +225,7 @@ def checkConvention(value) -> None:
     Parameters
     ----------
     value: str
-        The convention, it can be ModifiedFollowing, Following, ModifiedPreceding, Preceding or Unadjusted.
+        The convention, matching the Convention enum.
 
     Returns
     -------
@@ -221,9 +235,13 @@ def checkConvention(value) -> None:
     ------
     ValueError
         If the convention is invalid
+
+    Also see
+    --------
+    checkIsInEnum
+    Convention
     '''
-    checkIsInEnum(value, ["ModifiedFollowing", "Following",
-                  "ModifiedPreceding", "Preceding", "Unadjusted"])
+    checkIsInEnum(value, Convention.__members__)
 
 
 def checkCalendar(value) -> None:
@@ -233,7 +251,7 @@ def checkCalendar(value) -> None:
     Parameters
     ----------
     value: str
-        The calendar, it can be UnitedStates, Chile, TARGET, Brazil or NullCalendar.
+        The calendar, matching the Calendar enum.
 
     Returns
     -------
@@ -243,9 +261,13 @@ def checkCalendar(value) -> None:
     ------
     ValueError
         If the calendar is invalid
+
+    Also see
+    --------
+    checkIsInEnum
+    Calendar
     '''
-    checkIsInEnum(value, ["UnitedStates", "Chile",
-                  "TARGET", "Brazil", "NullCalendar"])
+    checkIsInEnum(value, Calendar.__members__)
 
 
 def checkCurrency(value) -> None:
@@ -255,7 +277,7 @@ def checkCurrency(value) -> None:
     Parameters
     ----------
     value: str
-        The currency, it can be USD, CLP, EUR, BRL, COP, MXN or CLF.
+        The currency, matching the Currency enum.
 
     Returns
     -------
@@ -265,8 +287,39 @@ def checkCurrency(value) -> None:
     ------
     ValueError
         If the currency is invalid
+
+    Also see
+    --------
+    checkIsInEnum
+    Currency
     '''
-    checkIsInEnum(value, ["USD", "CLP", "EUR", "BRL", "COP", "MXN", "CLF"])
+    checkIsInEnum(value, Currency.__members__)
+
+
+def checkDateGenerationRule(value) -> None:
+    '''
+    Check if the date generation rule is valid
+
+    Parameters
+    ----------
+    value: str
+        The date generation rule, matching the DateGenerationRule enum.
+
+    Returns
+    -------
+    None
+
+    Raises
+    ------
+    ValueError
+        If the date generation rule is invalid
+
+    Also see
+    --------
+    checkIsInEnum
+    DateGenerationRule
+    '''
+    checkIsInEnum(value, DateGenerationRule.__members__)
 
 
 def checkTenor(tenor: str) -> None:
@@ -287,7 +340,7 @@ def checkTenor(tenor: str) -> None:
     ConfigurationError
         If the tenor is invalid
     '''
-    regex = r'^\d+[DWMY]$'
+    regex = r'^(\d+[DWMY])+$'
     if not re.match(regex, tenor):
         raise ValueError(f'The tenor {tenor} is invalid')
 
@@ -607,7 +660,7 @@ def checkFxSwapRateHelper(data: dict) -> None:
             'Invalid FX swap rate helper') from exc
 
 
-def checkCrossCcyFixFloatSwapHelperHelper(data: dict) -> None:
+def checkCrossCcyFixFloatSwapRateHelper(data: dict) -> None:
     '''
     Check if the cross currency rate helper is valid
 
@@ -667,7 +720,7 @@ def checkCrossCcyFixFloatSwapHelperHelper(data: dict) -> None:
             'Invalid cross currency rate helper') from exc
 
 
-def checkTenorBasisRateHelper(data: dict) -> None:
+def checkTenorBasisSwapRateHelper(data: dict) -> None:
     '''
     Check if the tenor basis rate helper is valid
 
@@ -997,7 +1050,7 @@ def checkIndex(data: dict) -> None:
     '''
 
     reference = {
-        "indexType": partial(checkIsInEnum, enum=IndexType),
+        "indexType": partial(checkIsInEnum, enum=IndexType.__members__),
         "tenor": checkTenor,
         "dayCounter": checkDayCounter,
         "currency": checkCurrency,
@@ -1122,7 +1175,7 @@ def checkDiscountCurve(data: dict) -> None:
         "curveType": partial(checkIsInEnum, enum=[r.value for r in CurveType]),
         "dayCounter": checkDayCounter,
         "enableExtrapolation": partial(checkInstance, type=bool),
-        "discountFactors": checkNodeList
+        "nodes": checkNodeList
     }
 
     try:
@@ -1130,3 +1183,134 @@ def checkDiscountCurve(data: dict) -> None:
     except Exception as exc:
         raise ConfigurationError(
             'Invalid discount curve configuration') from exc
+
+
+def checkCurve(data: dict) -> None:
+    '''
+    Check if the curve is valid
+
+    Parameters
+    ----------
+    data: dict
+        The curve
+
+    Returns
+    -------
+    None
+
+    Raises
+    ------
+    ConfigurationError
+        If the curve is invalid
+
+    Details
+    -------
+    The curve should have the following example structure:
+
+    ```
+    "curve": {
+        "curveName": "CLP",
+        "curveConfig": {
+            "curveType": "Piecewise",
+            "dayCounter": "Actual360",
+            "enableExtrapolation": True,
+            "rateHelpers": []   # if curveType is Piecewise, otherwise nodes             
+
+        },
+        "curveIndex": {}
+    }
+    ```
+    '''
+    def checkBaseCurve(dict: dict) -> None:
+        if "curveType" not in dict:
+            raise ConfigurationError(
+                'Invalid curve configuration, curveType should be defined')
+        if dict["curveType"] == CurveType.Piecewise.value:
+            checkPiecewiseCurve(dict)
+        elif dict["curveType"] == CurveType.Discount.value:
+            checkDiscountCurve(dict)
+        else:
+            raise ConfigurationError(
+                'Invalid curve configuration, curveType should be Piecewise or Discount')
+
+    reference = {
+        "curveName": partial(checkInstance, type=str),
+        "curveConfig": checkBaseCurve,
+        "curveIndex": checkIndex
+    }
+
+    try:
+        checkDictStructure(data, reference)
+    except Exception as exc:
+        raise ConfigurationError(
+            'Invalid curve configuration') from exc
+
+
+def checkConfiguration(data: dict) -> None:
+    '''
+    Check if the configuration is valid
+
+    Parameters
+    ----------
+    data: dict
+        The configuration
+
+    Returns
+    -------
+    None
+
+    Raises
+    ------
+    ConfigurationError
+        If the configuration is invalid
+
+    Details
+    -------
+    The configuration should have the following example structure:
+
+    ```
+    "configuration": {
+        "refDate": "2020-01-01",
+        "curves": [
+                {
+                    "curveName": "CLP",
+                    "curveConfig": {
+                        "curveType": "Piecewise",
+                        "dayCounter": "Actual360",
+                        "enableExtrapolation": True,
+                        "rateHelpers": [
+                            ...
+                            ]
+                        },
+                    "curveIndex": {
+                        ...
+                    }
+                }
+            ]
+        }        
+    }
+    ```
+    '''
+
+    def checkCurveList(l: list) -> None:
+        reference = {
+            "curveName": partial(checkInstance, type=str),
+            "curveConfig": checkCurve,
+            "curveIndex": checkIndex
+        }
+        checkInstance(l, type=list)
+        if len(l) == 0:
+            raise ConfigurationError(
+                'Invalid configuration, curves should not be empty')
+        for curve in l:
+            checkDictStructure(curve, reference)
+
+    reference = {
+        "refDate": checkDate,
+        "curves": checkCurveList
+    }
+
+    try:
+        checkDictStructure(data, reference)
+    except Exception as exc:
+        raise ConfigurationError('Invalid configuration') from exc

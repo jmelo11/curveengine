@@ -1,5 +1,5 @@
 import ORE as ore
-from parsing.enums import *
+from curveengine.parsing.enums import *
 
 
 def checkDictKeys(data: dict, keys: list, level: str = ''):
@@ -199,15 +199,12 @@ def parseCompounding(compounding: str):
     ore.Compounding
         The ORE compounding enum
     """
-    if compounding == 'Simple':
-        return ore.Simple
-    elif compounding == 'Compounded':
-        return ore.Compounded
-    elif compounding == 'Continuous':
-        return ore.Continuous
-    else:
+    try:
+        value = Compounding[compounding]
+    except KeyError:
         raise NotImplementedError(
             'unknown compounding: {0}'.format(compounding))
+    return value.value
 
 
 def parseFrequency(frequency: str):
@@ -225,30 +222,11 @@ def parseFrequency(frequency: str):
         The ORE frequency enum
     """
 
-    if frequency == 'Once':
-        return ore.Once
-    elif frequency == 'Annual':
-        return ore.Annual
-    elif frequency == 'Semiannual':
-        return ore.Semiannual
-    elif frequency == 'EveryFourthMonth':
-        return ore.EveryFourthMonth
-    elif frequency == 'Quarterly':
-        return ore.Quarterly
-    elif frequency == 'Bimonthly':
-        return ore.Bimonthly
-    elif frequency == 'Monthly':
-        return ore.Monthly
-    elif frequency == 'EveryFourthWeek':
-        return ore.EveryFourthWeek
-    elif frequency == 'Biweekly':
-        return ore.Biweekly
-    elif frequency == 'Weekly':
-        return ore.Weekly
-    elif frequency == 'Daily':
-        return ore.Daily
-    else:
+    try:
+        value = Frequency[frequency]
+    except KeyError:
         raise NotImplementedError('unknown frequency: {0}'.format(frequency))
+    return value.value
 
 
 def parseDayCounter(dayCounter: ore.DayCounter) -> ore.DayCounter:
@@ -265,15 +243,12 @@ def parseDayCounter(dayCounter: ore.DayCounter) -> ore.DayCounter:
     ore.DayCounter
         The ORE day counter enum
     """
-    if dayCounter == 'Actual365':
-        return ore.Actual365Fixed()
-    elif dayCounter == 'Actual360':
-        return ore.Actual360()
-    elif dayCounter == 'Thirty360':
-        return ore.Thirty360(ore.Thirty360.BondBasis)
-    else:
+    try:
+        value = DayCounter[dayCounter]
+    except KeyError:
         raise NotImplementedError(
             'unknown day counter: {0}'.format(dayCounter))
+    return value.value
 
 
 def parseCalendar(calendar: str) -> ore.Calendar:
@@ -290,18 +265,11 @@ def parseCalendar(calendar: str) -> ore.Calendar:
     ore.Calendar
         The ORE calendar enum
     """
-    if calendar == 'TARGET':
-        return ore.TARGET()
-    elif calendar == 'UnitedStates':
-        return ore.UnitedStates(ore.UnitedStates.GovernmentBond)
-    elif calendar == 'Chile':
-        return ore.Chile()
-    elif calendar == 'Brazil':
-        return ore.Brazil()
-    elif calendar == 'NullCalendar':
-        return ore.NullCalendar()
-    else:
+    try:
+        value = Calendar[calendar]
+    except KeyError:
         raise NotImplementedError('unknown calendar: {0}'.format(calendar))
+    return value.value
 
 
 def parseBusinessDayConvention(businessDayConvention: str):
@@ -319,21 +287,12 @@ def parseBusinessDayConvention(businessDayConvention: str):
         The ORE business day convention enum
     """
 
-    if businessDayConvention == 'Following':
-        return ore.Following
-    elif businessDayConvention == 'ModifiedFollowing':
-        return ore.ModifiedFollowing
-    elif businessDayConvention == 'Preceding':
-        return ore.Preceding
-    elif businessDayConvention == 'ModifiedPreceding':
-        return ore.ModifiedPreceding
-    elif businessDayConvention == 'Unadjusted':
-        return ore.Unadjusted
-    elif businessDayConvention == 'HalfMonthModifiedFollowing':
-        return ore.HalfMonthModifiedFollowing
-    else:
+    try:
+        value = Convention[businessDayConvention]
+    except KeyError:
         raise NotImplementedError(
             'unknown business day convention: {0}'.format(businessDayConvention))
+    return value.value
 
 
 def parseTimeUnit(timeUnit: str):
@@ -350,16 +309,11 @@ def parseTimeUnit(timeUnit: str):
     ore.TimeUnit
         The ORE time unit enum
     """
-    if timeUnit == 'Days':
-        return ore.Days
-    elif timeUnit == 'Weeks':
-        return ore.Weeks
-    elif timeUnit == 'Months':
-        return ore.Months
-    elif timeUnit == 'Years':
-        return ore.Years
-    else:
+    try:
+        value = TimeUnit[timeUnit]
+    except KeyError:
         raise NotImplementedError('unknown time unit: {0}'.format(timeUnit))
+    return value.value
 
 
 def parseDateGenerationRule(dateGenerationRule: str):
@@ -376,27 +330,12 @@ def parseDateGenerationRule(dateGenerationRule: str):
     ore.DateGeneration
         The ORE date generation rule enum
     """
-    if dateGenerationRule == 'Backward':
-        return ore.DateGeneration.Backward
-    elif dateGenerationRule == 'Forward':
-        return ore.DateGeneration.Forward
-    elif dateGenerationRule == 'Zero':
-        return ore.DateGeneration.Zero
-    elif dateGenerationRule == 'ThirdWednesday':
-        return ore.DateGeneration.ThirdWednesday
-    elif dateGenerationRule == 'Twentieth':
-        return ore.DateGeneration.Twentieth
-    elif dateGenerationRule == 'TwentiethIMM':
-        return ore.DateGeneration.TwentiethIMM
-    elif dateGenerationRule == 'OldCDS':
-        return ore.DateGeneration.OldCDS
-    elif dateGenerationRule == 'CDS':
-        return ore.DateGeneration.CDS
-    elif dateGenerationRule == 'CDS2015':
-        return ore.DateGeneration.CDS2015
-    else:
+    try:
+        value = DateGenerationRule[dateGenerationRule]
+    except KeyError:
         raise NotImplementedError(
             'unknown date generation rule: {0}'.format(dateGenerationRule))
+    return value.value
 
 
 def parseDate(date: str) -> ore.Date:
@@ -452,28 +391,11 @@ def parseCurrency(currency: str) -> ore.Currency:
     ore.Currency
         The ORE currency
     """
-    if currency == 'USD':
-        return ore.USDCurrency()
-    elif currency == 'EUR':
-        return ore.EURCurrency()
-    elif currency == 'CLP':
-        return ore.CLPCurrency()
-    elif currency == 'BRL':
-        return ore.BRLCurrency()
-    elif currency == 'CLF':
-        return ore.CLFCurrency()
-    elif currency == 'JPY':
-        return ore.JPYCurrency()
-    elif currency == 'CHF':
-        return ore.CHFCurrency()
-    elif currency == 'COP':
-        return ore.COPCurrency()
-    elif currency == 'MXN':
-        return ore.MXNCurrency()
-    elif currency == 'PEN':
-        return ore.PENCurrency()
-    else:
+    try:
+        value = Currency[currency]
+    except KeyError:
         raise NotImplementedError('unknown currency: {0}'.format(currency))
+    return value.value
 
 
 def parseMonth(month: str):
@@ -490,29 +412,8 @@ def parseMonth(month: str):
     ore.Month
         The ORE month enum
     """
-    if month == 'January':
-        return ore.January
-    elif month == 'February':
-        return ore.February
-    elif month == 'March':
-        return ore.March
-    elif month == 'April':
-        return ore.April
-    elif month == 'May':
-        return ore.May
-    elif month == 'June':
-        return ore.June
-    elif month == 'July':
-        return ore.July
-    elif month == 'August':
-        return ore.August
-    elif month == 'September':
-        return ore.September
-    elif month == 'October':
-        return ore.October
-    elif month == 'November':
-        return ore.November
-    elif month == 'December':
-        return ore.December
-    else:
+    try:
+        value = Month[month]
+    except KeyError:
         raise NotImplementedError('unknown month: {0}'.format(month))
+    return value.value

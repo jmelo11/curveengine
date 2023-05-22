@@ -1,5 +1,5 @@
-from parsing.parsers import *
-from parsing.others import *
+from curveengine.parsing.parsers import *
+from curveengine.parsing.others import *
 
 
 def createOISRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
@@ -27,7 +27,6 @@ def createOISRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, in
     See Also
     ----------
     checkOISRateHelper
-
     """
     tenor = helperConfig['tenor']
     calendar = helperConfig['calendar']
@@ -78,6 +77,10 @@ def createDepositRateHelper(helperConfig: dict, marketConfig: dict, *args, **kwa
     -------
     ore.DepositRateHelper
         The rate helper
+
+    See Also
+    ----------
+    checkDepositRateHelper
     """
     tenor = helperConfig['tenor']
     settlementDays = helperConfig['settlementDays']
@@ -372,7 +375,7 @@ def createTenorBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, curve
 
     See Also
     ----------
-    checkTenorBasisSwapRateHelper
+    checkTenorBasisRateHelper
     """
     tenor = helperConfig['tenor']
     spreadOnShort = helperConfig['spreadOnShort']
