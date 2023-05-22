@@ -995,9 +995,9 @@ def checkRateHelper(data: dict) -> None:
     elif helperType == HelperType.FxSwap:
         reference["helperConfig"] = checkFxSwapRateHelper
     elif helperType == HelperType.Xccy:
-        reference["helperConfig"] = checkCrossCcyFixFloatSwapHelperHelper
+        reference["helperConfig"] = checkCrossCcyFixFloatSwapRateHelper
     elif helperType == HelperType.TenorBasis:
-        reference["helperConfig"] = checkTenorBasisRateHelper
+        reference["helperConfig"] = checkTenorBasisSwapRateHelper
     elif helperType == HelperType.XccyBasis:
         reference["helperConfig"] = checkCrossCcyBasisSwapRateHelper
     elif helperType == HelperType.OIS:
