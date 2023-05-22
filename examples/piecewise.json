@@ -453,6 +453,24 @@
             }
         },
         {
+            "curveName": "DiscountTest",
+            "curveConfig": {
+                "curveType": "Discount",
+                "dayCounter": "Actual360",
+                "enableExtrapolation": true,
+                "nodes": [
+                    {
+                        "date":"2023-02-14",
+                        "value": 1.0
+                    },
+                    {
+                        "date":"2025-02-14",
+                        "value": 0.5
+                    }
+                ]
+            }
+        },
+        {
             "curveName": "SOFR",
             "curveConfig": {
                 "curveType": "Piecewise",

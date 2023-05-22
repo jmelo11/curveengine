@@ -5,20 +5,61 @@ from parsing.ratehelpers import *
 
 
 class CurveEngine:
+    '''
+    Class for building curves and indexes from a JSON configuration file.
+
+    Parameters
+    ----------
+    data : dict
+        The JSON configuration file as a dictionary.
+    curves : dict, optional
+        A dictionary of curves to be populated by the engine. The default is {}.
+    indexes : dict, optional
+        A dictionary of indexes to be populated by the engine. The default is {}.
+
+    Returns
+    -------
+    None
+    '''
     def __init__(self, data, curves={}, indexes={}):
         self.curveHandles = {None: ore.RelinkableYieldTermStructureHandle()}
         self.curves = curves
         self.indexes = indexes
         localData = data.copy()
-        self.initialize(localData)
+        self.__initialize(localData)
+    '''
+    Get a curve by name.
 
+    Parameters
+    ----------
+    curveName : str
+        The name of the curve to get.
+
+    Returns
+    -------
+    ore.YieldTermStructure
+        The curve with the given name.
+    '''
     def getCurve(self, curveName):
         return self.curves[curveName]
 
+    '''
+    Get an index by name.
+
+    Parameters
+    ----------
+    indexName : str
+        The name of the index to get.
+
+    Returns
+    -------
+    ore.IborIndex or ore.OvernightIndex
+        The index with the given name.
+    '''
     def getIndex(self, indexName):
         return self.indexes[indexName]
 
-    def initialize(self, data):
+    def __initialize(self, data):
         refDate = parseDate(data['refDate'])
         ore.Settings.instance().evaluationDate = refDate
 
@@ -89,10 +130,10 @@ class CurveEngine:
                     helper = createSwapRateHelper(
                         helperConfig, marketConfig, self.curveHandles, self.indexes)
                 elif helperType == HelperType.TenorBasis:
-                    helper = createTenorBasisSwap(
+                    helper = createTenorBasisSwapRateHelper(
                         helperConfig, marketConfig, self.curveHandles, self.indexes)
                 elif helperType == HelperType.Xccy:
-                    helper = createCrossCcyFixFloatSwapHelper(
+                    helper = createCrossCcyFixFloatSwapRateHelper(
                         helperConfig, marketConfig, self.curveHandles, self.indexes)
                 elif helperType == HelperType.FxSwap:
                     helper = createFxSwapRateHelper(
@@ -101,10 +142,10 @@ class CurveEngine:
                     helper = createSofrFutureRateHelper(
                         helperConfig, marketConfig, self.curveHandles, self.indexes)
                 elif helperType == HelperType.XccyBasis:
-                    helper = createCrossCcyBasisSwapHelper(
+                    helper = createCrossCcyBasisSwapRateHelper(
                         helperConfig, marketConfig, self.curveHandles, self.indexes)
                 elif helperType == HelperType.Bond:
-                    helper = createFixedRateBondHelper(
+                    helper = createFixedRateBondRateHelper(
                         helperConfig, marketConfig, self.curveHandles, self.indexes)
                 else:
                     raise Exception(

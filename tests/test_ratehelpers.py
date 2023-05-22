@@ -1,6 +1,7 @@
 import unittest
-from curveengine import *
-
+import sys
+sys.path.append('..')
+from src.curveengine import *
 
 class TestRateHelpers(unittest.TestCase):
 
@@ -27,8 +28,8 @@ class TestRateHelpers(unittest.TestCase):
         indexes = {
             'EUR-EONIA': ore.Eonia()
         }
-        helperConfig = parse(**helperConfig)
-        marketConfig = parse(**marketConfig)
+        helperConfig = parse(level="test", **helperConfig)
+        marketConfig = parse(level="test", **marketConfig)
         helper = createOISRateHelper(
             helperConfig, marketConfig, curves, indexes)
         self.assertIsInstance(helper, ore.OISRateHelper)
@@ -45,8 +46,8 @@ class TestRateHelpers(unittest.TestCase):
         marketConfig = {
             'rate': 0.02
         }
-        helperConfig = parse(**helperConfig)
-        marketConfig = parse(**marketConfig)
+        helperConfig = parse(level="test", **helperConfig)
+        marketConfig = parse(level="test", **marketConfig)
         helper = createDepositRateHelper(helperConfig, marketConfig)
         self.assertIsInstance(helper, ore.DepositRateHelper)
 
@@ -69,8 +70,8 @@ class TestRateHelpers(unittest.TestCase):
             'EUR': ore.YieldTermStructureHandle(ore.FlatForward(2, ore.TARGET(), 0.05, ore.Actual360()))
         }
         indexes = {}
-        helperConfig = parse(**helperConfig)
-        marketConfig = parse(**marketConfig)
+        helperConfig = parse(level="test", **helperConfig)
+        marketConfig = parse(level="test", **marketConfig)
         helper = createFixedRateBondHelper(
             helperConfig, marketConfig, curves, indexes)
         self.assertIsInstance(helper, ore.BondHelper)
@@ -96,8 +97,8 @@ class TestRateHelpers(unittest.TestCase):
         indexes = {
             'EUR-6M': ore.Euribor6M()
         }
-        helperConfig = parse(**helperConfig)
-        marketConfig = parse(**marketConfig)
+        helperConfig = parse(level="test", **helperConfig)
+        marketConfig = parse(level="test", **marketConfig)
         helper = createSwapRateHelper(
             helperConfig, marketConfig, curves, indexes)
         self.assertIsInstance(helper, ore.SwapRateHelper)
@@ -121,8 +122,8 @@ class TestRateHelpers(unittest.TestCase):
         }
         indexes = {}
 
-        helperConfig = parse(**helperConfig)
-        marketConfig = parse(**marketConfig)
+        helperConfig = parse(level="test", **helperConfig)
+        marketConfig = parse(level="test", **marketConfig)
         helper = createFxSwapRateHelper(
             helperConfig, marketConfig, curves, indexes)
         self.assertIsInstance(helper, ore.FxSwapRateHelper)
@@ -153,7 +154,7 @@ class TestRateHelpers(unittest.TestCase):
             'SOFR': ore.Euribor6M()
         }
 
-        helperConfig = parse(**helperConfig)
+        helperConfig = parse(level="test", **helperConfig)
         helper = createCrossCcyFixFloatSwapHelper(
             helperConfig, marketConfig, curves, indexes)
         self.assertIsInstance(helper, ore.CrossCcyFixFloatSwapHelper)

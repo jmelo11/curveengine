@@ -41,7 +41,7 @@
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D"
                         },
-                        "marketConfig": {
+                        "marketConfig": {                            
                             "rate": {
                                 "value": 0.045555000000000005,
                                 "ticker": "USOSFR1Z CURNCY"

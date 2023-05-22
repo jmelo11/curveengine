@@ -1,5 +1,7 @@
 import unittest
-from curveengine import *
+import sys
+sys.path.append('..')
+from src.curveengine import *
 
 
 class TestParsing(unittest.TestCase):
@@ -129,7 +131,7 @@ class TestParsing(unittest.TestCase):
             'frequency': ore.Semiannual,
             'dayCounter': ore.Actual365Fixed()
         }
-        self.assertEqual(parse(**kwargs), expected_result)
+        self.assertEqual(parse(level="test", **kwargs), expected_result)
 
     def test_parse_kwargs_2(self):
         kwargs = {
@@ -150,7 +152,7 @@ class TestParsing(unittest.TestCase):
             'convention': ore.ModifiedFollowing,
             'calendar': ore.TARGET()
         }
-        self.assertEqual(parse(**kwargs), expected_result)
+        self.assertEqual(parse(level="test", **kwargs), expected_result)
 
     def test_parse_kwargs_3(self):
         kwargs = {
@@ -165,4 +167,4 @@ class TestParsing(unittest.TestCase):
             'calendar': ore.TARGET(),
             'dayCounter': ore.Actual360()
         }
-        self.assertEqual(parse(**kwargs), expected_result)
+        self.assertEqual(parse(level="test", **kwargs), expected_result)

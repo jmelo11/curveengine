@@ -1,8 +1,11 @@
 import unittest
-from curveengine import *
+import sys
+sys.path.append('..')
+from src.curveengine import *
 
 
-class TestCreateOvernightIndex(unittest.TestCase):
+
+class TestCreateOvernightIndex(unittest.TestCase):    
 
     def test_create_overnight_index(self):
         # Set up input parameters for the function
@@ -58,7 +61,7 @@ class TestCreateOvernightIndex(unittest.TestCase):
                         "curveType": "Piecewise",
                         "rateHelpers": [
                             {
-                                "object": "OISRateHelper",
+                                "helperType": "OISRateHelper",
                                 "name": "USD-6M",
                                 "helperConfig": {
                                     "index": "USD-LIBOR-6M",
@@ -77,7 +80,7 @@ class TestCreateOvernightIndex(unittest.TestCase):
                         "curveType": "Piecewise",
                         "rateHelpers": [
                             {
-                                "object": "OISRateHelper",
+                                "helperType": "OIS",
                                 "name": "USD-3M",
                                 "helperConfig": {
                                     "index": "USD-LIBOR-3M",
@@ -88,7 +91,7 @@ class TestCreateOvernightIndex(unittest.TestCase):
                                 }
                             },
                             {
-                                "object": "OISRateHelper",
+                                "helperType": "OIS",
                                 "name": "USD-1M",
                                 "helperConfig": {
                                     "index": "USD-LIBOR-1M",
@@ -105,12 +108,12 @@ class TestCreateOvernightIndex(unittest.TestCase):
                     "curveName": "RiskFreeCurve",
                     "curveConfig": {
                         "curveType": "Discount",
-                        "referenceCurve": "DiscountCurve",
-                        "spread": {
-                            "USD-LIBOR-1M": 0.002,
-                            "USD-LIBOR-3M": 0.005,
-                            "USD-LIBOR-6M": 0.01
-                        }
+                        "nodes":  [
+                            {
+                                "date": "2020-01-01",
+                                "value": 0.9
+                            }
+                        ]
                     }
                 }
             ]

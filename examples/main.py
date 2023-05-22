@@ -1,8 +1,9 @@
 import json
 from curveengine import CurveEngine
+import sys
 
 
-def main():
+def main():    
     with open('piecewise.json') as f:
         file = json.load(f)
 

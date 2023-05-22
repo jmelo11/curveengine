@@ -1,0 +1,310 @@
+from src.parsing.checks import *
+import unittest
+import sys
+sys.path.append('..')
+
+
+class TestChecks(unittest.TestCase):
+    def test_tenor_check(self):
+        self.assertRaises(ValueError, checkTenor, '1')
+        self.assertRaises(ValueError, checkTenor, 'MD')
+        self.assertIsNone(checkTenor('1Y'))
+        self.assertIsNone(checkTenor('1W'))
+        self.assertIsNone(checkTenor('1D'))
+        self.assertIsNone(checkTenor('1M'))
+        self.assertIsNone(checkTenor('1M1Y'))
+
+    def test_check_instance(self):
+        self.assertRaises(ValueError, checkInstance, 1, str)
+        self.assertIsNone(checkInstance(1, int))
+
+    def test_check_is_in_enum(self):
+        self.assertRaises(ValueError, checkIsInEnum, '1', ['2', '3'])
+        self.assertIsNone(checkIsInEnum('1', ['1', '2']))
+
+    def test_check_dict_structure(self):
+        reference = {'a': partial(checkInstance, type=int), 'b': partial(
+            checkInstance, type=str)}
+        self.assertRaises(KeyError, checkDictStructure, {'a': 1}, reference)
+        self.assertRaises(ValueError, checkDictStructure,
+                          {'a': 1, 'b': 1}, reference)
+        self.assertIsNone(checkDictStructure({'a': 1, 'b': 'test'}, reference))
+
+    def test_ois_check(self):
+        goodHelperConfig = {
+            "tenor": "1W",
+            "dayCounter": "Actual360",
+            "calendar": "NullCalendar",
+            "convention": "Following",
+            "endOfMonth": True,
+            "frequency": "Annual",
+            "settlementDays": 2,
+            "paymentLag": 2,
+            "telescopicValueDates": True,
+            "index": "SOFR",
+            "fixedLegFrequency": "Semiannual",
+            "fwdStart": "0D"
+        }
+        badHelperConfig = {
+            "tenor": "1W",
+            "dayCounter": "Actual360"
+        }
+        self.assertRaises(RateHelperConfigurationError,
+                          checkOISRateHelper, badHelperConfig)
+        self.assertIsNone(checkOISRateHelper(goodHelperConfig))
+
+    def test_deposit_check(self):
+        goodHelperConfig = {
+            "dayCounter": "Actual360",
+            "tenor": "1D",
+            "calendar": "NullCalendar",
+            "settlementDays": 0,
+            "endOfMonth": False,
+            "convention": "Unadjusted"
+        }
+        badHelperConfig = {
+            "dayCounter": "Actual360",
+            "tenor": "1D",
+            "calendar": "Something Invalid",
+            "settlementDays": 0,
+            "endOfMonth": False,
+            "convention": "Unadjusted"
+        }
+        self.assertRaises(RateHelperConfigurationError,
+                          checkDepositRateHelper, badHelperConfig)
+        self.assertIsNone(checkDepositRateHelper(goodHelperConfig))
+
+    def test_swap_check(self):
+        goodHelperConfig = {
+
+            "tenor": "2Y",
+            "dayCounter": "Thirty360",
+            "calendar": "NullCalendar",
+            "frequency": "Semiannual",
+            "settlementDays": 2,
+            "discountCurve": "SOFR",
+            "index": "LIBOR3M",
+            "endOfMonth": False,
+            "convention": "Unadjusted",
+            "fixedLegFrequency": "Semiannual",
+            "fwdStart": "0D"
+        }
+
+        badHelperConfig = {
+            "dayCounter": "Actual360",
+            "tenor": "1Y",
+            "calendar": "NullCalendar",
+            "fixedLegFrequency": "Semiannual",
+            "fixedLegConvention": "Unadjusted",
+            "fixedLegDayCounter": "Actual360",
+            "index": "USDLibor",
+            "floatingLegFrequency": "Quarterly",
+            "floatingLegConvention": "ModifiedFollowing",
+            "floatingLegDayCounter": "Actual360",
+            "settlementDays": 2,
+            "fixedLegTenor": "1Y",
+            "floatingLegTenor": "1Y",
+            "endOfMonth": False,
+            "something": "invalid"
+        }
+        self.assertRaises(RateHelperConfigurationError,
+                          checkSwapRateHelper, badHelperConfig)
+        self.assertIsNone(checkSwapRateHelper(goodHelperConfig))
+
+    def test_fixed_rate_bond_check(self):
+        goodHelperConfig = {
+            "calendar": "NullCalendar",
+            "convention": "Following",
+            "settlementDays": 2,
+            "couponDayCounter": "Actual360",
+            "couponRate": 0.05,
+            "frequency": "Annual",
+            "tenor": "2Y"  # needed if start date and end date are not provided
+        }
+        goodHelperConfig2 = {
+            "calendar": "NullCalendar",
+            "convention": "Following",
+            "settlementDays": 2,
+            "couponDayCounter": "Actual360",
+            "couponRate": 0.05,
+            "frequency": "Annual",
+            "startDate": "2019-01-01",
+            "endDate": "2020-01-01"
+        }
+
+        badHelperConfig = {
+            "dayCounter": "ActualActual",
+            "tenor": "1Y",
+            "calendar": "NullCalendar",
+            "settlementDays": 2,
+            "endOfMonth": False,
+            "convention": "Unadjusted",
+            "frequency": "Semiannual",
+            "discountCurve": "SOFR",
+            "faceAmount": 100,
+            "maturity": "2020-01-01",
+            "coupon": 0.05,
+            "issueDate": "2019-01-01",
+            "something": "invalid"
+        }
+        self.assertRaises(RateHelperConfigurationError,
+                          checkFixedRateBondRateHelper, badHelperConfig)
+        self.assertIsNone(checkFixedRateBondRateHelper(goodHelperConfig))
+        self.assertIsNone(checkFixedRateBondRateHelper(goodHelperConfig2))
+
+    def test_fxswap_check(self):
+        goodHelperConfig = {
+            "calendar": "NullCalendar",
+            "fixingDays": 0,
+            "endOfMonth": False,
+            "baseCurrencyAsCollateral": False,
+            "convention": "Following",
+            "discountCurve": "CLP_COLLUSD",
+            "endDate": "2023-04-09",
+            "tenor": "1Y",  # need if no end date is provided
+            "settlementDays": 0
+        }
+        badHelperConfig = {
+            "spotFx": 1.0,
+            "tenor": "1Y",
+            "calendar": "NullCalendar",
+            "settlementDays": 2,
+            "endOfMonth": False,
+            "convention": "Unadjusted",
+            "forwardPoints": 0.01,
+            "swapType": "Something Invalid"
+        }
+        self.assertRaises(RateHelperConfigurationError,
+                          checkFxSwapRateHelper, badHelperConfig)
+        self.assertIsNone(checkFxSwapRateHelper(goodHelperConfig))
+
+    def test_rateHelper_check(self):
+
+        h1 = {
+            "helperType": "Something Invalid"
+        }
+
+        h2 = {
+            "helperType": "OIS",
+            "helperConfig": {
+
+            },
+            "marketConfig": {
+
+            }
+        }
+
+        h3 = {
+            "helperType": "OIS",
+            "helperConfig": {
+                "tenor": "1W",
+                "dayCounter": "Actual360",
+                "calendar": "NullCalendar",
+                "convention": "Following",
+                "endOfMonth": True,
+                "frequency": "Annual",
+                "settlementDays": 2,
+                "paymentLag": 2,
+                "telescopicValueDates": True,
+                "index": "SOFR",
+                "fixedLegFrequency": "Semiannual",
+                "fwdStart": "0D"
+            },
+            "marketConfig": {
+
+            }
+        }
+
+        h4 = {
+            "helperType": "OIS",
+            "helperConfig": {
+                "tenor": "1W",
+                "dayCounter": "Actual360",
+                "calendar": "NullCalendar",
+                "convention": "Following",
+                "endOfMonth": True,
+                "frequency": "Annual",
+                "settlementDays": 2,
+                "paymentLag": 2,
+                "telescopicValueDates": True,
+                "index": "SOFR",
+                "fixedLegFrequency": "Semiannual",
+                "fwdStart": "0D"
+            },
+            "marketConfig": {
+                "rate": {
+                    "value": 0.01,
+                },
+                "spread": {
+                    "value": 0.0,
+                }
+            }
+        }
+
+        self.assertRaises(ConfigurationError,
+                          checkRateHelper, h1)
+        self.assertRaises(ConfigurationError,
+                          checkRateHelper, h2)
+        self.assertRaises(ConfigurationError,
+                          checkRateHelper, h3)
+        self.assertIsNone(checkRateHelper(h4))
+    
+    # TODO: Add more tests for the other rate helpers
+    ##  checkCrossCcyFixFloatSwapHelperHelper
+    ##  checkTenorBasisRateHelper
+    ##  checkCrossCcyBasisSwapRateHelper
+    ##  checkMarketConfig
+    ##  checkIndex
+
+    def test_piecewise_check(self):
+        c1 = {
+            "curveType": "Something Invalid"
+        }
+
+        c2 = {
+            "curveType": "Piecewise",
+            "dayCounter": "Actual360",
+            "enableExtrapolation": True,
+            "rateHelpers": [
+
+            ]
+        }
+
+        c3 = {
+            "curveType": "Piecewise",
+            "dayCounter": "Actual360",
+            "enableExtrapolation": True,
+            "rateHelpers": [
+                {
+                    "helperType": "OIS",
+                    "helperConfig": {
+                        "tenor": "1W",
+                        "dayCounter": "Actual360",
+                        "calendar": "NullCalendar",
+                        "convention": "Following",
+                        "endOfMonth": True,
+                        "frequency": "Annual",
+                        "settlementDays": 2,
+                        "paymentLag": 2,
+                        "telescopicValueDates": True,
+                        "index": "SOFR",
+                        "fixedLegFrequency": "Semiannual",
+                        "fwdStart": "0D"
+                    },
+                    "marketConfig": {
+                        "rate": {
+                            "value": 0.01,
+                        },
+                        "spread": {
+                            "value": 0.0,
+                        }
+                    }
+                }
+            ]
+        }
+
+        self.assertRaises(ConfigurationError,
+                          checkPiecewiseCurve, c1)
+        self.assertRaises(ConfigurationError,
+                          checkPiecewiseCurve, c2)
+        self.assertIsNone(checkPiecewiseCurve(c3))

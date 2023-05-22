@@ -1,0 +1,77 @@
+{
+    "refDate": "2023-04-19",
+    "curves": [
+        {
+            "curveName": "CF_CLP",
+            "curveConfig": {
+                "curveType": "Piecewise",
+                "dayCounter": "Actual360",
+                "enableExtrapolation": true,
+                "rateHelpers": [
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "dayCounter": "Actual360",
+                            "tenor": "1D",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.1125,
+                                "ticker": "CHOVCHOV INDEX"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "dayCounter": "Actual360",
+                            "tenor": "2M",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.1134,
+                                "ticker": "CHSWPB ICCH CURNCY"
+                            }
+                        }
+                    },
+
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "dayCounter": "Actual360",
+                            "tenor": "6M",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.1134,
+                                "ticker": "CHSWPB ICCH CURNCY"
+                            }
+                        }
+                    }
+                ]
+            },
+            "curveIndex": {
+                "indexType": "OvernightIndex",
+                "tenor": "1D",
+                "dayCounter": "Actual360",
+                "currency": "CLP",
+                "fixingDays": 0,
+                "calendar": "NullCalendar",
+                "endOfMonth": false,
+                "convention": "Unadjusted"
+            }
+        }
+    ]
+}

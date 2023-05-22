@@ -10,28 +10,9 @@ def createOISRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, in
     ----------
     helperConfig : dict
         The configuration for the helper
-        - tenor : str
-            The tenor of the helper
-        - calendar : str
-            The calendar
-        - convention : str
-            The business day convention
-        - settlementDays : int
-            The number of settlement days
-        - endOfMonth : bool
-            Whether the end of month rule is applied
-        - paymentLag : int
-            The payment lag
-        - fixedLegFrequency : str
-            The frequency of the fixed leg
-        - fwdStart : str
-            The forward start
-        - index : str
-            The index
+
     marketConfig : dict
         The market configuration for the helper
-        - rate : float
-            The rate
 
     curves : dict
         The curves
@@ -42,6 +23,11 @@ def createOISRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, in
     -------
     ore.OISRateHelper
         The rate helper
+
+    See Also
+    ----------
+    checkOISRateHelper
+
     """
     tenor = helperConfig['tenor']
     calendar = helperConfig['calendar']
@@ -106,7 +92,7 @@ def createDepositRateHelper(helperConfig: dict, marketConfig: dict, *args, **kwa
     return helper
 
 
-def createFixedRateBondHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
+def createFixedRateBondRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
     """
     Create a fixed rate bond helper
 
@@ -114,27 +100,9 @@ def createFixedRateBondHelper(helperConfig: dict, marketConfig: dict, curves: di
     ----------
     helperConfig : dict
         The configuration for the helper
-        - calendar : str
-            The calendar
-        - convention : str
-            The business day convention
-        - settlementDays : int
-            The number of settlement days
-        - couponDayCounter : str
-            The day counter for the coupon
-        - frequency : str
-            The frequency of the coupon
-        - tenor: str
-            The tenor of the helper
-            Optional, if not provided, startDate and endDate must be provided
-        - startDate : str
-            The start date of the helper
-        - endDate : str
-            The end date of the helper
+
     marketConfig : dict
         The market configuration for the helper
-        - couponRate : float
-            The coupon rate
         - rate : float or ore.InterestRate
             The rate
 
@@ -147,12 +115,16 @@ def createFixedRateBondHelper(helperConfig: dict, marketConfig: dict, curves: di
     -------
     ore.BondHelper
         The rate helper
+
+    See Also
+    ----------
+    checkFixedRateBondRateHelper
     """
     calendar = helperConfig['calendar']
     businessDayConvention = helperConfig['convention']
     settlementDays = helperConfig['settlementDays']
     couponDayCounter = helperConfig['couponDayCounter']
-    couponRate = marketConfig['couponRate']
+    couponRate = helperConfig['couponRate']
     frequency = helperConfig['frequency']
 
     if 'tenor' in helperConfig.keys():
@@ -220,28 +192,9 @@ def createSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, i
     ----------
     helperConfig : dict
         The configuration for the helper
-        - tenor : str
-            The tenor of the helper
-        - calendar : str
-            The calendar
-        - convention : str
-            The business day convention
-        - fixedLegFrequency : str
-            The frequency of the fixed leg
-        - dayCounter : str
-            The day counter
-        - index : str
-            The index
-        - discountCurve : str
-            The discounting curve
-        - fwdStart : int
-            The number of days for the forward start
+
     marketConfig : dict
-        The market configuration for the helper
-        - rate : float
-            The rate
-        - spread : float
-            The spread
+        The market configuration for the helper      
 
     curves : dict
         The curves
@@ -252,6 +205,10 @@ def createSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, i
     -------
     ore.SwapRateHelper
         The rate helper
+
+    See Also
+    ----------
+    checkSwapRateHelper
     """
     tenor = helperConfig['tenor']
     calendar = helperConfig['calendar']
@@ -287,30 +244,9 @@ def createFxSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict,
     ----------
     helperConfig : dict
         The configuration for the helper
-        - fixingDays : int
-            The number of fixing days
-        - calendar : str
-            The calendar
-        - convention : str
-            The business day convention
-        - endOfMonth : bool
-            Whether the end of month rule applies
-        - baseCurrencyAsCollateral : bool
-            Whether the base currency is used as collateral
-        - tenor : str
-            The tenor of the helper
-            Optional, if not provided, endDate must be provided
-        - endDate : str
-            The end date of the helper
-        - discountCurve : str
-            The discounting curve
 
     marketConfig : dict
         The market configuration for the helper
-        - fxPoints : float
-            The fx points
-        - fxSpot : float
-            The fx spot
 
     curves : dict
         The curves
@@ -321,6 +257,10 @@ def createFxSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict,
     -------
     ore.FxSwapRateHelper
         The rate helper
+
+    See Also
+    ----------
+    checkFxSwapRateHelper
     """
     fxPoints = marketConfig['fxPoints']
     spotFx = marketConfig['fxSpot']
@@ -370,18 +310,9 @@ def createSofrFutureRateHelper(helperConfig: dict, marketConfig: dict, curves: d
     ----------
     helperConfig : dict
         The configuration for the helper
-        - month : int
-            The month of the helper
-        - year : int
-            The year of the helper
-        - frequency : str
-            The frequency of the helper
+
     marketConfig : dict
         The market configuration for the helper
-        - price : float
-            The price
-        - convexity : float
-            The convexity
 
     curves : dict
         The curves
@@ -392,6 +323,10 @@ def createSofrFutureRateHelper(helperConfig: dict, marketConfig: dict, curves: d
     -------
     ore.SofrFutureRateHelper
         The rate helper
+
+    See Also
+    ----------
+    TODO: checkSofrFutureRateHelper
     """
     month = helperConfig['month']
     year = helperConfig['year']
@@ -413,7 +348,7 @@ def createSofrFutureRateHelper(helperConfig: dict, marketConfig: dict, curves: d
     return sofrFutureRateHelper
 
 
-def createTenorBasisSwap(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
+def createTenorBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
     """
     Create a tenor basis swap rate helper
 
@@ -421,21 +356,9 @@ def createTenorBasisSwap(helperConfig: dict, marketConfig: dict, curves: dict, i
     ----------
     helperConfig : dict
         The configuration for the helper
-        - tenor : str
-            The tenor of the helper
-        - spreadOnShort : bool
-            Whether the spread is on the short leg
-        - longIndex : str
-            The long index
-        - shortIndex : str
-            The short index
-        - discountCurve : str
-            The discounting curve
 
     marketConfig : dict
         The market configuration for the helper
-        - spread : float
-            The spread
 
     curves : dict
         The curves
@@ -446,6 +369,10 @@ def createTenorBasisSwap(helperConfig: dict, marketConfig: dict, curves: dict, i
     -------
     ore.TenorBasisSwapHelper
         The rate helper
+
+    See Also
+    ----------
+    checkTenorBasisSwapRateHelper
     """
     tenor = helperConfig['tenor']
     spreadOnShort = helperConfig['spreadOnShort']
@@ -476,43 +403,17 @@ def createTenorBasisSwap(helperConfig: dict, marketConfig: dict, curves: dict, i
     return tenorBasisSwapHelper
 
 
-def createCrossCcyFixFloatSwapHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
+def createCrossCcyFixFloatSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
     """
     Create a cross currency fix float swap rate helper
 
     Parameters
     ----------
     helperConfig : dict
-        The configuration for the helper
-        - tenor : str
-            The tenor of the helper
-        - dayCounter : str
-            The day counter
-        - settlementDays : int
-            The number of settlement days
-        - endOfMonth : bool
-            Whether the end of month rule applies
-        - convention : str
-            The business day convention
-        - fixedLegFrequency : str
-            The frequency of the fixed leg
-        - fixedLegCurrency : str
-            The currency of the fixed leg
-        - calendar : str
-            The calendar
-        - index : str
-            The index
-        - discountCurve : str
-            The discounting curve
+        The configuration for the helper        
 
     marketConfig : dict
         The market configuration for the helper
-        - rate : float
-            The rate
-        - fxSpot : float
-            The fx spot
-        - spread : float
-            The spread
 
     curves : dict
         The curves
@@ -523,6 +424,10 @@ def createCrossCcyFixFloatSwapHelper(helperConfig: dict, marketConfig: dict, cur
     -------
     ore.CrossCcyFixFloatSwapHelper
         The rate helper
+
+    See Also
+    ----------
+    checkCrossCcyFixFloatSwapRateHelper
     """
     tenor = helperConfig['tenor']
     dayCounter = helperConfig['dayCounter']
@@ -568,7 +473,7 @@ def createCrossCcyFixFloatSwapHelper(helperConfig: dict, marketConfig: dict, cur
     return crossCcyFixFloatSwapHelper
 
 
-def createCrossCcyBasisSwapHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
+def createCrossCcyBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
     """
     Create a cross currency basis swap rate helper
 
@@ -576,22 +481,6 @@ def createCrossCcyBasisSwapHelper(helperConfig: dict, marketConfig: dict, curves
     ----------
     helperConfig : dict
         The configuration for the helper
-        - tenor : str
-            The tenor of the helper
-        - calendar : str
-            The calendar
-        - settlementDays : int
-            The number of settlement days
-        - endOfMonth : bool
-            Whether the end of month rule applies
-        - convention : str
-            The business day convention
-        - flatIndex : str
-            The flat index
-        - spreadIndex : str
-            The spread index
-        - discountCurve : str
-            The discounting curve
 
     marketConfig : dict
         The market configuration for the helper
@@ -607,6 +496,10 @@ def createCrossCcyBasisSwapHelper(helperConfig: dict, marketConfig: dict, curves
     -------
     ore.CrossCcyBasisSwapHelper
         The rate helper
+
+    See Also
+    ----------
+    checkCrossCcyBasisSwapRateHelper
     """
     tenor = helperConfig['tenor']
     calendar = helperConfig['calendar']
