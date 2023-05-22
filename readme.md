@@ -2,6 +2,9 @@
 
 A simple curve bootstrapping tool. It uses ORE as backend and parses configuration files (see example below) and transform them into QL/ORE objects.
 
+## Documentation
+
+Documentation is available at [https://jmelo11.github.io/curveenginedocs/](https://jmelo11.github.io/curveenginedocs/)
 
 ### Example
 For a more detail example, visit the example folder.
