@@ -1,5 +1,5 @@
-from curveengine.parsing.parsers import *
-from curveengine.parsing.enums import *
+from .parsers import *
+from .enums import *
 from collections import deque
 
 
@@ -85,25 +85,16 @@ def getDependencyList(data: dict) -> dict:
     # Possible index related keys
     pi = ['index', 'shortIndex', 'longIndex']
 
-    checkDictKeys(data, ['curves'], level='')
-
     dependencies = {}
     for curve in data['curves']:
-        checkDictKeys(curve, ['curveName', 'curveConfig'], level='curves')
-
         curveName = curve['curveName']
         if curveName not in dependencies.keys():
             dependencies[curveName] = set()
 
         curveConfig = curve['curveConfig']
-        checkDictKeys(curveConfig, ['curveType',
-                      'rateHelpers'], level=r'{curve}\curves'.format(curve=curveName))
-
         curveType = CurveType(curveConfig['curveType'])
         if curveType == CurveType.Piecewise:
             for rateHelper in curveConfig['rateHelpers']:
-                checkDictKeys(rateHelper, ['helperType', 'helperConfig'],
-                              level=r'{curve}\curves\rateHelpers'.format(curve=curveName))
                 helperConfig = rateHelper['helperConfig']
                 for key in pc:
                     if key in helperConfig:
@@ -112,9 +103,6 @@ def getDependencyList(data: dict) -> dict:
                         if key in helperConfig:
                             dependencies[curveName].add(helperConfig[key])
     return dependencies
-
-
-
 
 
 def topologicalSort(dependencies):

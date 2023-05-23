@@ -1,7 +1,9 @@
+import sys, os
+parent_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(parent_dir + '/../src')
+
 import unittest
-import sys
-sys.path.append('..')
-from curveengine.parsing import *
+from curveengine import *
 
 
 class TestParsing(unittest.TestCase):
@@ -131,7 +133,7 @@ class TestParsing(unittest.TestCase):
             'frequency': ore.Semiannual,
             'dayCounter': ore.Actual365Fixed()
         }
-        self.assertEqual(parse(level="test", **kwargs), expected_result)
+        self.assertEqual(parse(**kwargs), expected_result)
 
     def test_parse_kwargs_2(self):
         kwargs = {
@@ -152,7 +154,7 @@ class TestParsing(unittest.TestCase):
             'convention': ore.ModifiedFollowing,
             'calendar': ore.TARGET()
         }
-        self.assertEqual(parse(level="test", **kwargs), expected_result)
+        self.assertEqual(parse(**kwargs), expected_result)
 
     def test_parse_kwargs_3(self):
         kwargs = {
@@ -167,4 +169,4 @@ class TestParsing(unittest.TestCase):
             'calendar': ore.TARGET(),
             'dayCounter': ore.Actual360()
         }
-        self.assertEqual(parse(level="test", **kwargs), expected_result)
+        self.assertEqual(parse(**kwargs), expected_result)

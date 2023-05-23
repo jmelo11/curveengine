@@ -1,6 +1,6 @@
 import re
 from functools import partial
-from curveengine.parsing.enums import *
+from .enums import *
 
 '''
 Example of a basic structure of the curve request:
@@ -870,7 +870,7 @@ def checkMarketConfig(data: dict, helperType: HelperType) -> None:
     |Deposit                 | rate                             |
     |Swap                    | rate, spread                     |    
     |FxSwap                  | fxSpot, fxPoints                 |    
-    |Xccy                    | rate, spread, fxSpot, fxPoints   |
+    |Xccy                    | rate, spread, fxSpot             |
     |TenorBasis              | spread                           |
     |XccyBasis               | spread, fxSpot, fxPoints         |
     |OIS                     | spread                           |
@@ -884,9 +884,9 @@ def checkMarketConfig(data: dict, helperType: HelperType) -> None:
         if 'value' not in data:
             raise ConfigurationError(
                 'Invalid price, missing value')
-        if not isinstance(data['value'], float):
+        if not isinstance(data['value'], float) and not isinstance(data['value'], int):
             raise ConfigurationError(
-                'Invalid price, value should be a float')
+                'Invalid price, value should be a float or int')
         if 'ticker' in data and not isinstance(data['ticker'], str):
             raise ConfigurationError(
                 'Invalid price, ticker should be a string')
@@ -910,8 +910,7 @@ def checkMarketConfig(data: dict, helperType: HelperType) -> None:
         reference = {
             "rate": checkPrice,
             "spread": checkPrice,
-            "fxSpot": checkPrice,
-            "fxPoints": checkPrice
+            "fxSpot": checkPrice,            
         }
     elif helperType == HelperType.TenorBasis:
         reference = {
@@ -941,7 +940,7 @@ def checkMarketConfig(data: dict, helperType: HelperType) -> None:
             'Invalid market config') from exc
 
 
-def checkRateHelper(data: dict) -> None:
+def checkRateHelper(data: dict, pos: int) -> None:
     '''
     Check if the rate helper is valid
 
@@ -982,7 +981,7 @@ def checkRateHelper(data: dict) -> None:
         checkDictStructure(data, reference)
     except Exception as exc:
         raise ConfigurationError(
-            'Invalid rate helper configuration or helper type') from exc
+            'Invalid rate helper configuration or helper type at pos {}'.format(pos)) from exc
 
     helperType = HelperType[data['helperType']]
 
@@ -1008,7 +1007,9 @@ def checkRateHelper(data: dict) -> None:
     try:
         checkDictStructure(data, reference)
     except Exception as exc:
-        raise ConfigurationError('Invalid rate helper configuration') from exc
+        raise RateHelperConfigurationError(
+            'Invalid rate helper {} configuration at pos {}'.format(helperType, pos)) from exc
+    
 
 
 ## Index checks ##
@@ -1106,8 +1107,8 @@ def checkPiecewiseCurve(data: dict) -> None:
         if len(l) == 0:
             raise ConfigurationError(
                 'Invalid piecewise curve configuration, rateHelpers should not be empty')
-        for helper in l:
-            checkRateHelper(helper)
+        for pos, helper in enumerate(l):
+            checkRateHelper(helper, pos)
 
     reference = {
         "curveType": partial(checkIsInEnum, enum=[r.value for r in CurveType]),
@@ -1185,7 +1186,7 @@ def checkDiscountCurve(data: dict) -> None:
             'Invalid discount curve configuration') from exc
 
 
-def checkCurve(data: dict) -> None:
+def checkCurve(data: dict, pos: int) -> None:
     '''
     Check if the curve is valid
 
@@ -1241,9 +1242,11 @@ def checkCurve(data: dict) -> None:
 
     try:
         checkDictStructure(data, reference)
-    except Exception as exc:
+    except ConfigurationError as exc:
         raise ConfigurationError(
-            'Invalid curve configuration') from exc
+            'Invalid curve configuration for {} curve'.format(data['curveName'])) from exc
+    except Exception as exc:
+        raise ConfigurationError('Invalid curve configuration at pos {}'.format(pos)) from exc
 
 
 def checkConfiguration(data: dict) -> None:
@@ -1291,19 +1294,13 @@ def checkConfiguration(data: dict) -> None:
     }
     ```
     '''
-
     def checkCurveList(l: list) -> None:
-        reference = {
-            "curveName": partial(checkInstance, type=str),
-            "curveConfig": checkCurve,
-            "curveIndex": checkIndex
-        }
         checkInstance(l, type=list)
         if len(l) == 0:
             raise ConfigurationError(
                 'Invalid configuration, curves should not be empty')
-        for curve in l:
-            checkDictStructure(curve, reference)
+        for pos, curve in enumerate(l):
+            checkCurve(curve, pos)
 
     reference = {
         "refDate": checkDate,

@@ -1,55 +1,18 @@
 import ORE as ore
-from curveengine.parsing.enums import *
+from .enums import *
 
 
-def checkDictKeys(data: dict, keys: list, level: str = ''):
-    """
-    Check if all the keys are present in the dictionary.
-
-    Parameters
-    ----------
-    data : dict
-        The dictionary to be checked.
-    keys : list
-        A list of keys to be checked for presence.
-    level : str, optional
-        The level where the error occurred (default is '').
-
-    Raises
-    ------
-    KeyError
-        If any key is missing from the dictionary.
-    """
-    for key in keys:
-        try:
-            _ = data[key]
-        except KeyError:
-            raise KeyError(f"Missing key: '{key}' in {level}.")
-
-
-def parse(level, **kwargs):
+def parse(**kwargs):
     results = {}
     for key, value in kwargs.items():
-        level_key = level + '\\' + key
         if key in ['helperConfig', 'curveIndex', 'curveConfig']:
-            results[key] = parse(level=level_key, **value)
+            results[key] = parse(**value)
 
         elif key == 'nodes':
-            try:
-                results[key] = [parseNode(v) for v in value]
-            except KeyError:
-                raise KeyError(
-                    f"Missing key: 'date' or 'rate' in {level_key}.")
-            except ValueError:
-                raise ValueError(
-                    f"Unable to parse item 'date' or 'rate' in {level_key}.")
-
-        elif key == 'marketConfig':
-            results[key] = parseMarketConfig(level_key, value)
+            results[key] = [parseNode(v) for v in value]
 
         elif key in ['curves', 'rateHelpers']:
-            results[key] = [parse(level=level_key + '\\{}'.format(i), **v)
-                            for i, v in enumerate(value)]
+            results[key] = [parse(**v) for v in value]
 
         elif key in ['date', 'startDate', 'endDate']:
             results[key] = parseDate(value)
@@ -85,34 +48,16 @@ def parse(level, **kwargs):
             results[key] = parsePeriod(value)
 
         elif key in ['endOfMonth', 'telescopicValueDates', 'spreadOnShortIndex', 'baseCurrencyAsCollateral', 'enableExtrapolation']:
-            if isinstance(value, bool):
-                results[key] = value
-            else:
-                raise ValueError(
-                    'unable to parse item {0} with value {1}'.format(key, value))
+            results[key] = value
 
         elif key in ['settlementDays', 'paymentLag', 'fixingDays', 'year']:
-            if isinstance(value, int):
-                results[key] = value
-            else:
-                raise ValueError(
-                    'unable to parse item {0} with value {1}'.format(key, value))
+            results[key] = value
 
         elif key in ['discountCurve', 'index', 'shortIndex', 'longIndex', 'curveName']:
-            checkDictKeys(kwargs, [key], level=level_key)
-            if isinstance(value, str):
-                results[key] = value
-            else:
-                raise ValueError(
-                    'unable to parse item {0} with value {1}'.format(key, value))
+            results[key] = value
 
         elif key in ['couponRate']:
-            checkDictKeys(kwargs, [key], level=level_key)
-            if isinstance(value, float):
-                results[key] = value
-            else:
-                raise ValueError(
-                    'unable to parse item {0} with value {1}'.format(key, value))
+            results[key] = value
 
         elif key == 'month':
             results[key] = parseMonth(value)
@@ -120,35 +65,6 @@ def parse(level, **kwargs):
         else:
             results[key] = value
 
-    return results
-
-
-def parseMarketConfig(level, marketConfig):
-    results = {}
-    if isinstance(marketConfig, dict):
-        for key, value in marketConfig.items():
-            if key in ['spread', 'fxSpot', 'fxPoints', 'price']:
-                if isinstance(value, float):
-                    results[key] = value
-                elif isinstance(value, dict):
-                    checkDictKeys(value, ['value'], level=level)
-                    results[key] = value['value']
-                else:
-                    raise ValueError(
-                        'unable to parse item in market config {0} with value {1}'.format(key, value))
-            elif key == 'rate':
-                if isinstance(value, float):
-                    results[key] = value
-                elif isinstance(value, dict):
-                    checkDictKeys(value, ['value'], level=level)
-                    results[key] = value['value']
-                else:
-                    raise ValueError(
-                        'unable to parse item in market config {0} with value {1}'.format(key, value))
-
-    else:
-        raise NotImplementedError(
-            'unknown market config type: {0}'.format(type(marketConfig)))
     return results
 
 

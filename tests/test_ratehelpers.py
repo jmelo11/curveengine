@@ -1,7 +1,9 @@
+import sys, os
+parent_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(parent_dir + '/../src')
+
 import unittest
-import sys
-sys.path.append('..')
-from curveengine.parsing import *
+from curveengine import *
 
 class TestRateHelpers(unittest.TestCase):
 

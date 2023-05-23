@@ -133,7 +133,7 @@
                             "tenor": "2Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Semiannual",
                             "settlementDays": 2,
@@ -148,6 +148,9 @@
                             "rate": {
                                 "value": 0.07915,
                                 "ticker": "CHSWP2 ICCH CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -157,7 +160,7 @@
                             "tenor": "3Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Semiannual",
                             "settlementDays": 2,
@@ -172,6 +175,9 @@
                             "rate": {
                                 "value": 0.06895,
                                 "ticker": "CHSWP3 ICCH CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -181,7 +187,7 @@
                             "tenor": "4Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Semiannual",
                             "settlementDays": 2,
@@ -196,6 +202,9 @@
                             "rate": {
                                 "value": 0.06325,
                                 "ticker": "CHSWP4 ICCH CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -205,7 +214,7 @@
                             "tenor": "5Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Semiannual",
                             "settlementDays": 2,
@@ -220,6 +229,9 @@
                             "rate": {
                                 "value": 0.0599,
                                 "ticker": "CHSWP5 ICCH CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -229,7 +241,7 @@
                             "tenor": "6Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Semiannual",
                             "settlementDays": 2,
@@ -244,6 +256,9 @@
                             "rate": {
                                 "value": 0.0582,
                                 "ticker": "CHSWP6 ICCH CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -253,7 +268,7 @@
                             "tenor": "7Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Semiannual",
                             "settlementDays": 2,
@@ -268,6 +283,9 @@
                             "rate": {
                                 "value": 0.05665,
                                 "ticker": "CHSWP7 ICCH CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -277,7 +295,7 @@
                             "tenor": "8Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Semiannual",
                             "settlementDays": 2,
@@ -292,6 +310,9 @@
                             "rate": {
                                 "value": 0.0558,
                                 "ticker": "CHSWP8 ICCH CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -301,7 +322,7 @@
                             "tenor": "9Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Semiannual",
                             "settlementDays": 2,
@@ -316,6 +337,9 @@
                             "rate": {
                                 "value": 0.054900000000000004,
                                 "ticker": "CHSWP9 ICCH CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -325,7 +349,7 @@
                             "tenor": "10Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Semiannual",
                             "settlementDays": 2,
@@ -340,6 +364,9 @@
                             "rate": {
                                 "value": 0.05495,
                                 "ticker": "CHSWP10 ICCH CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -349,7 +376,7 @@
                             "tenor": "15Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Semiannual",
                             "settlementDays": 2,
@@ -364,6 +391,9 @@
                             "rate": {
                                 "value": 0.05545,
                                 "ticker": "CHSWP15 ICCH CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -373,7 +403,7 @@
                             "tenor": "20Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Semiannual",
                             "settlementDays": 2,
@@ -388,6 +418,9 @@
                             "rate": {
                                 "value": 0.05545,
                                 "ticker": "CHSWP20 ICCH CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -397,7 +430,7 @@
                             "tenor": "25Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Semiannual",
                             "settlementDays": 2,
@@ -412,6 +445,9 @@
                             "rate": {
                                 "value": 0.0553,
                                 "ticker": "CHSWP25 ICCH CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -421,7 +457,7 @@
                             "tenor": "30Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Semiannual",
                             "settlementDays": 2,
@@ -436,6 +472,9 @@
                             "rate": {
                                 "value": 0.05545,
                                 "ticker": "CHSWP30 ICCH CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     }
@@ -460,14 +499,24 @@
                 "enableExtrapolation": true,
                 "nodes": [
                     {
-                        "date":"2023-02-14",
+                        "date": "2023-02-14",
                         "value": 1.0
                     },
                     {
-                        "date":"2025-02-14",
+                        "date": "2025-02-14",
                         "value": 0.5
                     }
                 ]
+            },
+            "curveIndex": {
+                "indexType": "OvernightIndex",
+                "tenor": "1D",
+                "dayCounter": "Actual360",
+                "currency": "CLP",
+                "fixingDays": 0,
+                "calendar": "NullCalendar",
+                "endOfMonth": false,
+                "convention": "Unadjusted"
             }
         },
         {
@@ -500,7 +549,7 @@
                             "tenor": "1W",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -514,6 +563,9 @@
                             "rate": {
                                 "value": 0.045555000000000005,
                                 "ticker": "USOSFR1Z CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -523,7 +575,7 @@
                             "tenor": "2W",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -537,6 +589,9 @@
                             "rate": {
                                 "value": 0.045568,
                                 "ticker": "USOSFR2Z CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -546,7 +601,7 @@
                             "tenor": "3W",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -560,6 +615,9 @@
                             "rate": {
                                 "value": 0.045591999999999994,
                                 "ticker": "USOSFR3Z CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -569,7 +627,7 @@
                             "tenor": "1M",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -583,6 +641,9 @@
                             "rate": {
                                 "value": 0.04564,
                                 "ticker": "USOSFRA CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -592,7 +653,7 @@
                             "tenor": "2M",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -606,6 +667,9 @@
                             "rate": {
                                 "value": 0.046838,
                                 "ticker": "USOSFRB CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -615,7 +679,7 @@
                             "tenor": "3M",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -629,6 +693,9 @@
                             "rate": {
                                 "value": 0.047723,
                                 "ticker": "USOSFRC CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -638,7 +705,7 @@
                             "tenor": "4M",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -652,6 +719,9 @@
                             "rate": {
                                 "value": 0.048595,
                                 "ticker": "USOSFRD CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -661,7 +731,7 @@
                             "tenor": "5M",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -675,6 +745,9 @@
                             "rate": {
                                 "value": 0.049455,
                                 "ticker": "USOSFRE CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -684,7 +757,7 @@
                             "tenor": "6M",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -698,6 +771,9 @@
                             "rate": {
                                 "value": 0.050135,
                                 "ticker": "USOSFRF CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -707,7 +783,7 @@
                             "tenor": "7M",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -721,6 +797,9 @@
                             "rate": {
                                 "value": 0.050730000000000004,
                                 "ticker": "USOSFRG CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -730,7 +809,7 @@
                             "tenor": "8M",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -744,6 +823,9 @@
                             "rate": {
                                 "value": 0.051129,
                                 "ticker": "USOSFRH CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -753,7 +835,7 @@
                             "tenor": "9M",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -767,6 +849,9 @@
                             "rate": {
                                 "value": 0.051465,
                                 "ticker": "USOSFRI CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -776,7 +861,7 @@
                             "tenor": "10M",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -790,6 +875,9 @@
                             "rate": {
                                 "value": 0.051711,
                                 "ticker": "USOSFRJ CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -799,7 +887,7 @@
                             "tenor": "11M",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -813,6 +901,9 @@
                             "rate": {
                                 "value": 0.051815,
                                 "ticker": "USOSFRK CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -822,7 +913,7 @@
                             "tenor": "12M",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -836,6 +927,9 @@
                             "rate": {
                                 "value": 0.051856,
                                 "ticker": "USOSFR1 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -845,7 +939,7 @@
                             "tenor": "18M",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -859,6 +953,9 @@
                             "rate": {
                                 "value": 0.049669,
                                 "ticker": "USOSFR1F CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -868,7 +965,7 @@
                             "tenor": "2Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -882,6 +979,9 @@
                             "rate": {
                                 "value": 0.046877,
                                 "ticker": "USOSFR2 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -891,7 +991,7 @@
                             "tenor": "3Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -905,6 +1005,9 @@
                             "rate": {
                                 "value": 0.042443,
                                 "ticker": "USOSFR3 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -914,7 +1017,7 @@
                             "tenor": "4Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -928,6 +1031,9 @@
                             "rate": {
                                 "value": 0.039656,
                                 "ticker": "USOSFR4 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -937,7 +1043,7 @@
                             "tenor": "5Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -951,6 +1057,9 @@
                             "rate": {
                                 "value": 0.037866,
                                 "ticker": "USOSFR5 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -960,7 +1069,7 @@
                             "tenor": "6Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -974,6 +1083,9 @@
                             "rate": {
                                 "value": 0.036718,
                                 "ticker": "USOSFR6 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -983,7 +1095,7 @@
                             "tenor": "7Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -997,6 +1109,9 @@
                             "rate": {
                                 "value": 0.035910000000000004,
                                 "ticker": "USOSFR7 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -1006,7 +1121,7 @@
                             "tenor": "8Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -1020,6 +1135,9 @@
                             "rate": {
                                 "value": 0.035323,
                                 "ticker": "USOSFR8 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -1029,7 +1147,7 @@
                             "tenor": "9Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -1043,6 +1161,9 @@
                             "rate": {
                                 "value": 0.03492,
                                 "ticker": "USOSFR9 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -1052,7 +1173,7 @@
                             "tenor": "10Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -1066,6 +1187,9 @@
                             "rate": {
                                 "value": 0.03464,
                                 "ticker": "USOSFR10 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -1075,7 +1199,7 @@
                             "tenor": "12Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -1089,6 +1213,9 @@
                             "rate": {
                                 "value": 0.034319999999999996,
                                 "ticker": "USOSFR12 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -1098,7 +1225,7 @@
                             "tenor": "15Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -1112,6 +1239,9 @@
                             "rate": {
                                 "value": 0.034053,
                                 "ticker": "USOSFR15 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -1121,7 +1251,7 @@
                             "tenor": "20Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -1135,6 +1265,9 @@
                             "rate": {
                                 "value": 0.03347,
                                 "ticker": "USOSFR20 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -1144,7 +1277,7 @@
                             "tenor": "25Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -1158,6 +1291,9 @@
                             "rate": {
                                 "value": 0.03234,
                                 "ticker": "USOSFR25 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -1167,7 +1303,7 @@
                             "tenor": "30Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -1181,6 +1317,9 @@
                             "rate": {
                                 "value": 0.031216,
                                 "ticker": "USOSFR30 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -1190,7 +1329,7 @@
                             "tenor": "40Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -1204,6 +1343,9 @@
                             "rate": {
                                 "value": 0.028935,
                                 "ticker": "USOSFR40 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     },
@@ -1213,7 +1355,7 @@
                             "tenor": "50Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "endOfMonth": true,
                             "frequency": "Annual",
                             "settlementDays": 2,
@@ -1227,6 +1369,9 @@
                             "rate": {
                                 "value": 0.026629999999999997,
                                 "ticker": "USOSFR50 CURNCY"
+                            },
+                            "spread": {
+                                "value": 0.0
                             }
                         }
                     }
@@ -1257,9 +1402,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2023-03-09T00:00:00.000Z",
+                            "endDate": "2023-03-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1280,9 +1425,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2023-04-09T00:00:00.000Z",
+                            "endDate": "2023-04-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1303,9 +1448,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2023-05-09T00:00:00.000Z",
+                            "endDate": "2023-05-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1326,9 +1471,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2023-06-09T00:00:00.000Z",
+                            "endDate": "2023-06-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1349,9 +1494,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2023-07-09T00:00:00.000Z",
+                            "endDate": "2023-07-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1372,9 +1517,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2023-08-09T00:00:00.000Z",
+                            "endDate": "2023-08-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1395,9 +1540,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2023-09-09T00:00:00.000Z",
+                            "endDate": "2023-09-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1418,9 +1563,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2023-10-09T00:00:00.000Z",
+                            "endDate": "2023-10-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1441,9 +1586,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2023-11-09T00:00:00.000Z",
+                            "endDate": "2023-11-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1464,9 +1609,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2023-12-09T00:00:00.000Z",
+                            "endDate": "2023-12-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1487,9 +1632,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2024-01-09T00:00:00.000Z",
+                            "endDate": "2024-01-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1510,9 +1655,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2024-02-09T00:00:00.000Z",
+                            "endDate": "2024-02-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1533,9 +1678,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2024-03-09T00:00:00.000Z",
+                            "endDate": "2024-03-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1556,9 +1701,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2024-04-09T00:00:00.000Z",
+                            "endDate": "2024-04-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1579,9 +1724,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2024-05-09T00:00:00.000Z",
+                            "endDate": "2024-05-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1602,9 +1747,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2024-06-09T00:00:00.000Z",
+                            "endDate": "2024-06-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1625,9 +1770,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2024-07-09T00:00:00.000Z",
+                            "endDate": "2024-07-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1648,9 +1793,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2024-08-09T00:00:00.000Z",
+                            "endDate": "2024-08-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1671,9 +1816,9 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": false,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "CLP_COLLUSD",
-                            "endDate": "2024-09-09T00:00:00.000Z",
+                            "endDate": "2024-09-09",
                             "settlementDays": 0
                         },
                         "marketConfig": {
@@ -1693,7 +1838,7 @@
                             "tenor": "2Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "CLP_COLLUSD",
@@ -1723,7 +1868,7 @@
                             "tenor": "3Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "CLP_COLLUSD",
@@ -1753,7 +1898,7 @@
                             "tenor": "4Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "CLP_COLLUSD",
@@ -1783,7 +1928,7 @@
                             "tenor": "5Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "CLP_COLLUSD",
@@ -1813,7 +1958,7 @@
                             "tenor": "6Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "CLP_COLLUSD",
@@ -1843,7 +1988,7 @@
                             "tenor": "7Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "CLP_COLLUSD",
@@ -1873,7 +2018,7 @@
                             "tenor": "8Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "CLP_COLLUSD",
@@ -1903,7 +2048,7 @@
                             "tenor": "9Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "CLP_COLLUSD",
@@ -1933,7 +2078,7 @@
                             "tenor": "10Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "CLP_COLLUSD",
@@ -1963,7 +2108,7 @@
                             "tenor": "15Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "CLP_COLLUSD",
@@ -1993,7 +2138,7 @@
                             "tenor": "20Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "CLP_COLLUSD",
@@ -2023,7 +2168,7 @@
                             "tenor": "25Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "CLP_COLLUSD",
@@ -2053,7 +2198,7 @@
                             "tenor": "30Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "CLP_COLLUSD",
@@ -2104,8 +2249,8 @@
                             "calendar": "NullCalendar",
                             "fixingDays": 0,
                             "endOfMonth": false,
-                            "baseCurrencyAsCollateral": true,
-                            "convention": "Following",
+                            "baseCurrencyAsCollateral": false,
+                            "convention": "Unadjusted",
                             "discountCurve": "SOFR",
                             "settlementDays": 0
                         },
@@ -2128,7 +2273,7 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": true,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "SOFR",
                             "settlementDays": 0
                         },
@@ -2151,7 +2296,7 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": true,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "SOFR",
                             "settlementDays": 0
                         },
@@ -2174,7 +2319,7 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": true,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "SOFR",
                             "settlementDays": 0
                         },
@@ -2197,7 +2342,7 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": true,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "SOFR",
                             "settlementDays": 0
                         },
@@ -2220,7 +2365,7 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": true,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "SOFR",
                             "settlementDays": 0
                         },
@@ -2243,7 +2388,7 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": true,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "SOFR",
                             "settlementDays": 0
                         },
@@ -2253,7 +2398,7 @@
                                 "ticker": "CLP CURNCY"
                             },
                             "fxPoints": {
-                                "value": 17,
+                                "value": 17.0,
                                 "ticker": "CHN5M ICCH CURNCY"
                             }
                         }
@@ -2266,7 +2411,7 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": true,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "SOFR",
                             "settlementDays": 0
                         },
@@ -2289,7 +2434,7 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": true,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "SOFR",
                             "settlementDays": 0
                         },
@@ -2312,7 +2457,7 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": true,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "SOFR",
                             "settlementDays": 0
                         },
@@ -2335,7 +2480,7 @@
                             "fixingDays": 0,
                             "endOfMonth": false,
                             "baseCurrencyAsCollateral": true,
-                            "convention": "Following",
+                            "convention": "Unadjusted",
                             "discountCurve": "SOFR",
                             "settlementDays": 0
                         },
@@ -2345,7 +2490,7 @@
                                 "ticker": "CLP CURNCY"
                             },
                             "fxPoints": {
-                                "value": 35,
+                                "value": 35.0,
                                 "ticker": "CHN18M ICCH CURNCY"
                             }
                         }
@@ -2356,7 +2501,7 @@
                             "tenor": "2Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "SOFR",
@@ -2386,7 +2531,7 @@
                             "tenor": "3Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "SOFR",
@@ -2416,7 +2561,7 @@
                             "tenor": "4Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "SOFR",
@@ -2446,7 +2591,7 @@
                             "tenor": "5Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "SOFR",
@@ -2476,7 +2621,7 @@
                             "tenor": "6Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "SOFR",
@@ -2506,7 +2651,7 @@
                             "tenor": "7Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "SOFR",
@@ -2536,7 +2681,7 @@
                             "tenor": "8Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "SOFR",
@@ -2566,7 +2711,7 @@
                             "tenor": "9Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "SOFR",
@@ -2596,7 +2741,7 @@
                             "tenor": "10Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "SOFR",
@@ -2626,7 +2771,7 @@
                             "tenor": "15Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "SOFR",
@@ -2656,7 +2801,7 @@
                             "tenor": "20Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "SOFR",
@@ -2686,7 +2831,7 @@
                             "tenor": "25Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "SOFR",
@@ -2716,7 +2861,7 @@
                             "tenor": "30Y",
                             "dayCounter": "Actual360",
                             "calendar": "NullCalendar",
-                            "convention": "ModifiedFollowing",
+                            "convention": "Unadjusted",
                             "endOfMonth": false,
                             "settlementDays": 2,
                             "discountCurve": "SOFR",

@@ -7,9 +7,6 @@ setup(
     description='A simple curve bootstraping tool based on ORE/QuantLib',
     long_description=open('readmepipy.md').read(),
     author='Jose Melo',
-    packages=find_packages(where='src'),
-    py_modules=["curveengine"],
-    package_dir={'': 'src'},
     package_data={
         "": ["*.py"]
     },

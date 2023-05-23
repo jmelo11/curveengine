@@ -1,7 +1,8 @@
-from curveengine.parsing.parsers import *
-from curveengine.parsing.enums import *
-from curveengine.parsing.others import *
-from curveengine.parsing.ratehelpers import *
+from .parsing.parsers import *
+from .parsing.enums import *
+from .parsing.others import *
+from .parsing.ratehelpers import *
+from .parsing.checks import *
 
 
 class CurveEngine:
@@ -27,7 +28,9 @@ class CurveEngine:
         self.curves = curves
         self.indexes = indexes
         localData = data.copy()
+        checkConfiguration(localData)
         self.__initialize(localData)
+
     '''
     Get a curve by name.
 
@@ -74,7 +77,7 @@ class CurveEngine:
         dependencies = getDependencyList(data)
         sortedList = topologicalSort(dependencies)
         for curveName in sortedList:
-            parsed = parse(level=curveName, **tmpData[curveName])
+            parsed = parse(**tmpData[curveName])
             if curveName not in self.indexes.keys():
                 self.__buildIndexes(parsed)
             if curveName not in self.curves.keys():
