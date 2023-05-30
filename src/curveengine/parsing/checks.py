@@ -111,8 +111,8 @@ def checkDate(value) -> None:
     ValueError
         If the date is invalid
     '''
-    if not re.match(r'^\d{4}-\d{2}-\d{2}$', value):
-        raise ValueError(f'{value} is not a valid date')
+    if not re.match(r'^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}:\d{2}(\.\d{1,6})?(Z|[+-]\d{2}:\d{2})?)?$', value):
+        raise ValueError(f'{value} is not a valid date or it does not follow the ISO format.')
 
 
 def checkIsInEnum(value: str, enum: list) -> None:

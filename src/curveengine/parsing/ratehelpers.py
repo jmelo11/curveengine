@@ -117,8 +117,8 @@ def createFixedRateBondRateHelper(helperConfig: dict, marketConfig: dict, curves
 
     if 'tenor' in helperConfig.keys():
         tenor = helperConfig['tenor']
-        startDate = ore.Settings.instance().evaluationDate()
-        maturityDate = startDate + ore.Period(tenor)
+        startDate = ore.Settings.instance().evaluationDate
+        maturityDate = startDate + tenor
     else:
         startDate = helperConfig['startDate']
         maturityDate = helperConfig['endDate']

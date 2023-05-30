@@ -272,7 +272,8 @@ def parseDate(date: str) -> ore.Date:
     if date == 'today':
         return ore.Date.todaysDate()
     else:
-        return ore.DateParser.parseFormatted(date, '%Y-%m-%d')
+        return ore.DateParser.parseISO(date[0:10])
+
 
 
 def parsePeriod(period: str) -> ore.Period:
@@ -289,6 +290,7 @@ def parsePeriod(period: str) -> ore.Period:
     ore.Period
         The ORE period
     """
+    
     tenor = ore.PeriodParser.parse(period)
     return tenor
 
