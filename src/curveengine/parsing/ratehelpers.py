@@ -2,7 +2,7 @@ from .parsers import *
 from .others import *
 
 
-def createOISRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
+def createOISRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
     """
     Create an OIS rate helper
 
@@ -14,8 +14,8 @@ def createOISRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, in
     marketConfig : dict
         The market configuration for the helper
 
-    curves : dict
-        The curves
+    curveHandles : dict
+        The curveHandles
     indexes : dict
         The indexes
 
@@ -40,7 +40,7 @@ def createOISRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, in
     index = indexes[helperConfig['index']]
 
     rate = marketConfig['rate']['value']
-    discountCurve = curves[helperConfig['discountCurve']]
+    discountCurve = curveHandles[helperConfig['discountCurve']]
 
     rate = ore.QuoteHandle(ore.SimpleQuote(rate))
     helper = ore.OISRateHelper(settlementDays, tenor, rate, index, discountCurve, endOfMonth,
@@ -82,7 +82,7 @@ def createDepositRateHelper(helperConfig: dict, marketConfig: dict, *args, **kwa
     return helper
 
 
-def createFixedRateBondRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
+def createFixedRateBondRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
     """
     Create a fixed rate bond helper
 
@@ -94,8 +94,8 @@ def createFixedRateBondRateHelper(helperConfig: dict, marketConfig: dict, curves
     marketConfig : dict
         The market configuration for the helper
 
-    curves : dict
-        The curves
+    curveHandles : dict
+        The curveHandles
     indexes : dict
         The indexes
 
@@ -172,7 +172,7 @@ def createFixedRateBondRateHelper(helperConfig: dict, marketConfig: dict, curves
     return bondHelper
 
 
-def createSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
+def createSwapRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
     """
     Create a swap rate helper
 
@@ -184,8 +184,8 @@ def createSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, i
     marketConfig : dict
         The market configuration for the helper      
 
-    curves : dict
-        The curves
+    curveHandles : dict
+        The curveHandles
     indexes : dict
         The indexes
 
@@ -215,7 +215,7 @@ def createSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, i
     index = indexes[helperConfig['index']]
 
     # Discounting curve
-    discountCurve = curves[helperConfig['discountCurve']]
+    discountCurve = curveHandles[helperConfig['discountCurve']]
 
     # Swap rate helper
     swapRateHelper = ore.SwapRateHelper(
@@ -224,7 +224,7 @@ def createSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, i
     return swapRateHelper
 
 
-def createFxSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
+def createFxSwapRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
     """
     Create a fx swap rate helper
 
@@ -236,8 +236,8 @@ def createFxSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict,
     marketConfig : dict
         The market configuration for the helper
 
-    curves : dict
-        The curves
+    curveHandles : dict
+        The curveHandles
     indexes : dict
         The indexes
 
@@ -272,7 +272,7 @@ def createFxSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict,
     spotFxQuote = ore.QuoteHandle(ore.SimpleQuote(spotFx))
 
     # Discounting curve
-    discountCurve = curves[helperConfig['discountCurve']]
+    discountCurve = curveHandles[helperConfig['discountCurve']]
 
     # FxSwapRateHelper
     fxSwapRateHelper = ore.FxSwapRateHelper(
@@ -290,7 +290,7 @@ def createFxSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict,
     return fxSwapRateHelper
 
 
-def createSofrFutureRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
+def createSofrFutureRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
     """
     Create a sofr future rate helper
 
@@ -302,8 +302,8 @@ def createSofrFutureRateHelper(helperConfig: dict, marketConfig: dict, curves: d
     marketConfig : dict
         The market configuration for the helper
 
-    curves : dict
-        The curves
+    curveHandles : dict
+        The curveHandles
     indexes : dict
         The indexes
 
@@ -336,7 +336,7 @@ def createSofrFutureRateHelper(helperConfig: dict, marketConfig: dict, curves: d
     return sofrFutureRateHelper
 
 
-def createTenorBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
+def createTenorBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
     """
     Create a tenor basis swap rate helper
 
@@ -348,8 +348,8 @@ def createTenorBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, curve
     marketConfig : dict
         The market configuration for the helper
 
-    curves : dict
-        The curves
+    curveHandles : dict
+        The curveHandles
     indexes : dict
         The indexes
 
@@ -374,7 +374,7 @@ def createTenorBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, curve
     spreadQuote = ore.QuoteHandle(ore.SimpleQuote(spread))
 
     # Discounting curve
-    discountCurve = curves[helperConfig['discountCurve']]
+    discountCurve = curveHandles[helperConfig['discountCurve']]
 
     # TenorBasisSwapHelper
     tenorBasisSwapHelper = ore.TenorBasisSwapHelper(
@@ -391,7 +391,7 @@ def createTenorBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, curve
     return tenorBasisSwapHelper
 
 
-def createCrossCcyFixFloatSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
+def createCrossCcyFixFloatSwapRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
     """
     Create a cross currency fix float swap rate helper
 
@@ -403,8 +403,8 @@ def createCrossCcyFixFloatSwapRateHelper(helperConfig: dict, marketConfig: dict,
     marketConfig : dict
         The market configuration for the helper
 
-    curves : dict
-        The curves
+    curveHandles : dict
+        The curveHandles
     indexes : dict
         The indexes
 
@@ -439,7 +439,7 @@ def createCrossCcyFixFloatSwapRateHelper(helperConfig: dict, marketConfig: dict,
     index = indexes[helperConfig['index']]
 
     # Discounting curve
-    discountCurve = curves[helperConfig['discountCurve']]
+    discountCurve = curveHandles[helperConfig['discountCurve']]
 
     # CrossCcyFixFloatSwapHelper
     crossCcyFixFloatSwapHelper = ore.CrossCcyFixFloatSwapHelper(
@@ -461,7 +461,7 @@ def createCrossCcyFixFloatSwapRateHelper(helperConfig: dict, marketConfig: dict,
     return crossCcyFixFloatSwapHelper
 
 
-def createCrossCcyBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, curves: dict, indexes: dict, *args, **kwargs):
+def createCrossCcyBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
     """
     Create a cross currency basis swap rate helper
 
@@ -475,8 +475,8 @@ def createCrossCcyBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, cu
         - spread : float
             The spread
 
-    curves : dict
-        The curves
+    curveHandles : dict
+        The curveHandles
     indexes : dict
         The indexes
 
@@ -495,9 +495,9 @@ def createCrossCcyBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, cu
     endOfMonth = helperConfig['endOfMonth']
     convention = helperConfig['convention']
 
-    # Discout curves
-    flatDiscountCurve = curves[helperConfig['discountCurve']]
-    spreadDiscountCurve = curves[helperConfig['discountCurve']]
+    # Discout curveHandles
+    flatDiscountCurve = curveHandles[helperConfig['discountCurve']]
+    spreadDiscountCurve = curveHandles[helperConfig['discountCurve']]
 
     # Index
     flatIndex = indexes[helperConfig['flatIndex']]
