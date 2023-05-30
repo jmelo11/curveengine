@@ -1,9 +1,9 @@
-import sys, os
+import unittest
+from curveengine import *
+import sys
+import os
 parent_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(parent_dir + '/../src')
-
-from curveengine import *
-import unittest
 
 
 class TestChecks(unittest.TestCase):
@@ -244,12 +244,12 @@ class TestChecks(unittest.TestCase):
         }
 
         self.assertRaises(ConfigurationError,
-                          checkRateHelper, h1)
+                          checkRateHelper, h1, 0)
         self.assertRaises(ConfigurationError,
-                          checkRateHelper, h2)
+                          checkRateHelper, h2, 0)
         self.assertRaises(ConfigurationError,
-                          checkRateHelper, h3)
-        self.assertIsNone(checkRateHelper(h4))
+                          checkRateHelper, h3, 0)
+        self.assertIsNone(checkRateHelper(h4, 0))
 
     # TODO: Add more tests for the other rate helpers
     # checkCrossCcyFixFloatSwapHelperHelper
@@ -405,7 +405,7 @@ class TestChecks(unittest.TestCase):
         }
 
         self.assertRaises(ConfigurationError,
-                          checkCurve, c1)
+                          checkCurve, c1, 0)
         self.assertRaises(ConfigurationError,
-                          checkCurve, c2)
-        self.assertIsNone(checkCurve(c3))
+                          checkCurve, c2, 0)
+        self.assertIsNone(checkCurve(c3, 0))

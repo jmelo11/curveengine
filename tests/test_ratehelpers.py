@@ -21,8 +21,12 @@ class TestRateHelpers(unittest.TestCase):
             'discountCurve': 'EUR-EONIA'
         }
         marketConfig = {
-            'rate': 0.01,
-            'spread': 0.0
+            'rate': {
+                'value': 0.03
+            },            
+            'spread': {
+                'value': 0.03
+            }
         }
         curves = {
             'EUR-EONIA': ore.YieldTermStructureHandle(ore.FlatForward(2, ore.TARGET(), 0.02, ore.Actual360()))
@@ -46,7 +50,9 @@ class TestRateHelpers(unittest.TestCase):
             'endOfMonth': False
         }
         marketConfig = {
-            'rate': 0.02
+              'rate': {
+                'value': 0.03
+            }
         }
         helperConfig = parse(level="test", **helperConfig)
         marketConfig = parse(level="test", **marketConfig)
@@ -65,7 +71,9 @@ class TestRateHelpers(unittest.TestCase):
             'couponDayCounter': 'Actual360'
         }
         marketConfig = {            
-            'rate': 0.04
+            'rate': {
+                'value': 0.03
+            }
         }
         curves = {
             'EUR': ore.YieldTermStructureHandle(ore.FlatForward(2, ore.TARGET(), 0.05, ore.Actual360()))
@@ -89,8 +97,12 @@ class TestRateHelpers(unittest.TestCase):
             'discountCurve': 'EUR-6M'
         }
         marketConfig = {
-            'rate': 0.03,
-            'spread': 0.0
+             'rate': {
+                'value': 0.03
+            },
+            'spread': {
+                'value': 0.03
+            }
         }
         curves = {
             'EUR-6M': ore.YieldTermStructureHandle(ore.FlatForward(2, ore.TARGET(), 0.04, ore.Actual360()))
@@ -115,8 +127,12 @@ class TestRateHelpers(unittest.TestCase):
             'tenor': '1Y'
         }
         marketConfig = {
-            'fxPoints': 1.1,
-            'fxSpot': 1.2
+            'fxPoints': {
+                'value': 1
+            },
+            'fxSpot': {
+                'value': 800
+            }
         }
         curves = {
             'EUR': ore.YieldTermStructureHandle(ore.FlatForward(2, ore.TARGET(), 0.04, ore.Actual360()))
@@ -144,9 +160,15 @@ class TestRateHelpers(unittest.TestCase):
             "fixedLegFrequency": "Semiannual"
         }
         marketConfig = {
-            "rate": 0.0695,
-            "fxSpot": 786.28,
-            "spread": 0.0,
+            "rate": {
+                'value': 0.01
+            },       
+            'fxSpot': {
+                'value': 800
+            },
+            "spread": {
+                'value': 0.01
+            }
         }
         curves = {
             'SOFR': ore.YieldTermStructureHandle(ore.FlatForward(2, ore.TARGET(), 0.04, ore.Actual360())),
