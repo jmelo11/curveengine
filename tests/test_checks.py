@@ -251,12 +251,114 @@ class TestChecks(unittest.TestCase):
                           checkRateHelper, h3, 0)
         self.assertIsNone(checkRateHelper(h4, 0))
 
+    def test_index_check(self):
+
+        h1 = {
+            "indexType": "OvernightIndex",
+            "tenor": "1D",
+            "fixingDays": 0,
+            "calendar": "NullCalendar",
+            "endOfMonth": False,
+            "convention": "Unadjusted"
+        }
+
+        h2 = {
+            "indexType": "OvernightIndex",
+            "tenor": "1D",
+            "dayCounter": "Actual360",
+            "currency": "USD",
+            "fixingDays": 0,
+            "calendar": "NullCalendar",
+            "endOfMonth": False,
+            "convention": "Unadjusted"
+        }
+
+        self.assertRaises(ConfigurationError,
+                          checkIndex, h1)
+        self.assertIsNone(checkIndex(h2))
+
+    def test_market_config_check(self):
+
+        h1 = {
+            "rate": {}
+        }
+
+        h2 = {
+            "rate": {
+                "value": 0.01
+            }
+        }
+
+        self.assertRaises(ConfigurationError,
+                          checkMarketConfig, h1, HelperType.Deposit)
+        self.assertIsNone(checkMarketConfig(h2,  HelperType.Deposit))
     # TODO: Add more tests for the other rate helpers
-    # checkCrossCcyFixFloatSwapHelperHelper
     # checkTenorBasisRateHelper
-    # checkCrossCcyBasisSwapRateHelper
-    # checkMarketConfig
-    # checkIndex
+
+    def test_tenor_basis_check(self):
+        goodHelperConfig = {
+            "tenor": "3M",
+            "longIndex": "LIBOR3M",
+            "shortIndex": "LIBOR1M",
+            "discountCurve": "SOFR",
+            "spreadOnShort": True
+        }
+        badHelperConfig = {
+            "tenor": "3M",
+            "spreadOnShort": True
+        }
+
+        self.assertRaises(RateHelperConfigurationError,
+                          checkTenorBasisSwapRateHelper, badHelperConfig)
+        self.assertIsNone(checkTenorBasisSwapRateHelper(goodHelperConfig))
+
+    def test_xccy_basis_check(self):
+        goodHelperConfig = {
+            "tenor": "3M",
+            "calendar": "NullCalendar",
+            "settlementDays": 2,
+            "endOfMonth": False,
+            "convention": "ModifiedFollowing",
+            "flatIndex": "LIBOR3M",
+            "spreadIndex": "LIBOR1M",
+            "discountCurve": "SOFR"
+        }
+        badHelperConfig = {
+            "tenor": "3M",
+            "calendar": "NullCalendar",
+            "settlementDays": 2,
+        }
+        self.assertRaises(RateHelperConfigurationError,
+                          checkCrossCcyBasisSwapRateHelper, badHelperConfig)
+        self.assertIsNone(checkCrossCcyBasisSwapRateHelper(goodHelperConfig))
+
+    def test_xccy_fix_float_check(self):
+        goodHelperConfig = {
+            "tenor": "2Y",
+            "dayCounter": "Actual360",
+            "calendar": "NullCalendar",
+            "convention": "ModifiedFollowing",
+            "endOfMonth": False,
+            "settlementDays": 2,
+            "discountCurve": "CLP_COLLUSD",
+            "index": "ICP",
+            "fixedLegCurrency": "CLF",
+            "fwdStart": "0D",
+            "fixedLegFrequency": "Semiannual"
+        }
+        badHelperConfig = {
+            "tenor": "2Y",
+            "dayCounter": "Actual360",
+            "calendar": "NullCalendar",
+            "index": "ICP",
+            "fixedLegCurrency": "CLF",
+            "fwdStart": "0D",
+            "fixedLegFrequency": "Semiannual"
+        }
+        self.assertRaises(RateHelperConfigurationError,
+                          checkCrossCcyFixFloatSwapRateHelper, badHelperConfig)
+        self.assertIsNone(
+            checkCrossCcyFixFloatSwapRateHelper(goodHelperConfig))
 
     def test_piecewise_check(self):
         c1 = {

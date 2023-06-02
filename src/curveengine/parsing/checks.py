@@ -684,18 +684,18 @@ def checkCrossCcyFixFloatSwapRateHelper(data: dict) -> None:
     The cross currency rate helper should have the following example structure:
     ```
     "helperConfig":  {
-                    "tenor": "2Y",
-                    "dayCounter": "Actual360",
-                    "calendar": "NullCalendar",
-                    "convention": "ModifiedFollowing",
-                    "endOfMonth": False,
-                    "settlementDays": 2,
-                    "discountCurve": "CLP_COLLUSD",
-                    "index": "ICP",
-                    "fixedLegCurrency": "CLF",
-                    "fwdStart": "0D",
-                    "fixedLegFrequency": "Semiannual"
-                }
+                "tenor": "2Y",
+                "dayCounter": "Actual360",
+                "calendar": "NullCalendar",
+                "convention": "ModifiedFollowing",
+                "endOfMonth": False,
+                "settlementDays": 2,
+                "discountCurve": "CLP_COLLUSD",
+                "index": "ICP",
+                "fixedLegCurrency": "CLF",
+                "fwdStart": "0D",
+                "fixedLegFrequency": "Semiannual"
+            }
     ```
     '''
 
