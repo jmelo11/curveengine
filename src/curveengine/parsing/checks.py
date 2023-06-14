@@ -416,11 +416,11 @@ def checkOISRateHelper(data: dict) -> None:
                         "telescopicValueDates": True,
                         "index": "SOFR",
                         "fixedLegFrequency": "Semiannual",
-                        "fwdStart": "0D"
+                        "fwdStart": "0D",
+                        "discountCurve": "SOFR"
                     }
     ```
     '''
-
     reference = {
         "tenor": checkTenor,
         "dayCounter": checkDayCounter,
@@ -433,7 +433,8 @@ def checkOISRateHelper(data: dict) -> None:
         "telescopicValueDates": partial(checkInstance, type=bool),
         "index": partial(checkInstance, type=str),
         "fixedLegFrequency": checkFrequency,
-        "fwdStart": checkTenor
+        "fwdStart": checkTenor,
+        "discountCurve": partial(checkInstance, type=str)
     }
     try:
         checkDictStructure(data, reference)
@@ -797,7 +798,9 @@ def checkCrossCcyBasisSwapRateHelper(data: dict) -> None:
                     "convention": "ModifiedFollowing",
                     "flatIndex": "LIBOR3M",
                     "spreadIndex": "LIBOR1M",
-                    "discountCurve": "SOFR"
+                    "flatDiscountCurve": "SOFR",
+                    "spreadDiscountCurve": "CLP_COLLUSD",
+                    "flatIsDomestic": True
                 }
     ```
     '''
@@ -810,7 +813,9 @@ def checkCrossCcyBasisSwapRateHelper(data: dict) -> None:
         "convention": checkConvention,
         "flatIndex": partial(checkInstance, type=str),
         "spreadIndex": partial(checkInstance, type=str),
-        "discountCurve": partial(checkInstance, type=str),
+        "flatDiscountCurve": partial(checkInstance, type=str),
+        "spreadDiscountCurve": partial(checkInstance, type=str),
+        "flatIsDomestic": partial(checkInstance, type=bool)
     }
 
     try:
@@ -872,7 +877,7 @@ def checkMarketConfig(data: dict, helperType: HelperType) -> None:
     |FxSwap                  | fxSpot, fxPoints                 |    
     |Xccy                    | rate, spread, fxSpot             |
     |TenorBasis              | spread                           |
-    |XccyBasis               | spread, fxSpot, fxPoints         |
+    |XccyBasis               | spread, fxSpot                   |
     |OIS                     | spread                           |
     |Bond                    | rate                             |
     '''
@@ -919,8 +924,7 @@ def checkMarketConfig(data: dict, helperType: HelperType) -> None:
     elif helperType == HelperType.XccyBasis:
         reference = {
             "spread": checkPrice,
-            "fxSpot": checkPrice,
-            "fxPoints": checkPrice
+            "fxSpot": checkPrice            
         }
     elif helperType == HelperType.OIS:
         reference = {

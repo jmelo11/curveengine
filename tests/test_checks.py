@@ -45,7 +45,8 @@ class TestChecks(unittest.TestCase):
             "telescopicValueDates": True,
             "index": "SOFR",
             "fixedLegFrequency": "Semiannual",
-            "fwdStart": "0D"
+            "fwdStart": "0D",
+            "discountCurve": "SOFR"
         }
         badHelperConfig = {
             "tenor": "1W",
@@ -231,7 +232,8 @@ class TestChecks(unittest.TestCase):
                 "telescopicValueDates": True,
                 "index": "SOFR",
                 "fixedLegFrequency": "Semiannual",
-                "fwdStart": "0D"
+                "fwdStart": "0D",
+                "discountCurve": "SOFR"
             },
             "marketConfig": {
                 "rate": {
@@ -314,14 +316,16 @@ class TestChecks(unittest.TestCase):
 
     def test_xccy_basis_check(self):
         goodHelperConfig = {
-            "tenor": "3M",
+            "tenor": "5Y",
             "calendar": "NullCalendar",
             "settlementDays": 2,
             "endOfMonth": False,
             "convention": "ModifiedFollowing",
-            "flatIndex": "LIBOR3M",
-            "spreadIndex": "LIBOR1M",
-            "discountCurve": "SOFR"
+            "flatIndex": "SOFR",
+            "spreadIndex": "ICP",
+            "flatDiscountCurve": "SOFR",
+            "spreadDiscountCurve": "CLP_COLLUSD",
+            "flatIsDomestic": True
         }
         badHelperConfig = {
             "tenor": "3M",
@@ -393,7 +397,8 @@ class TestChecks(unittest.TestCase):
                         "telescopicValueDates": True,
                         "index": "SOFR",
                         "fixedLegFrequency": "Semiannual",
-                        "fwdStart": "0D"
+                        "fwdStart": "0D",
+                        "discountCurve": "SOFR"
                     },
                     "marketConfig": {
                         "rate": {
@@ -482,7 +487,8 @@ class TestChecks(unittest.TestCase):
                         "telescopicValueDates": True,
                         "index": "SOFR",
                         "fixedLegFrequency": "Semiannual",
-                        "fwdStart": "0D"
+                        "fwdStart": "0D",
+                        "discountCurve": "SOFR"
                     },
                     "marketConfig": {
                         "rate": {
