@@ -7,12 +7,12 @@ import json
 
 
 def main():
-    with open(parent_dir+'/ejemplo.json') as f:
+    with open(parent_dir+'/test.json') as f:
         file = json.load(f)
 
     cm = CurveEngine(file)
-    for curveName, curve in cm.curves.items():
-        print(curveName, curve.nodes())
+    for date, value in cm.getCurve('SOFR').nodes():
+        print(date, value)
 
 
 if __name__ == '__main__':

@@ -121,9 +121,7 @@ class CurveEngine:
         config = data['curveConfig']
         for i, rateHelper in enumerate(config['rateHelpers']):
             helperType = rateHelper['helperType']
-            helperConfig = rateHelper['helperConfig']
-            if 'discountCurve' not in helperConfig.keys():
-                helperConfig['discountCurve'] = None
+            helperConfig = rateHelper['helperConfig']                        
             marketConfig = rateHelper['marketConfig']
         
             if helperType == HelperType.Deposit:
