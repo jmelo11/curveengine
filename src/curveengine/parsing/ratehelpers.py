@@ -494,30 +494,36 @@ def createCrossCcyBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, cu
     settlementDays = helperConfig['settlementDays']
     endOfMonth = helperConfig['endOfMonth']
     convention = helperConfig['convention']
+    flatIsDomestic = helperConfig['flatIsDomestic']
 
     # Discout curveHandles
-    flatDiscountCurve = curveHandles[helperConfig['discountCurve']]
-    spreadDiscountCurve = curveHandles[helperConfig['discountCurve']]
+    flatDiscountCurve: ore.RelinkableYieldTermStructureHandle = curveHandles[helperConfig['flatDiscountCurve']]   
+    spreadDiscountCurve: ore.RelinkableYieldTermStructureHandle = curveHandles[helperConfig['spreadDiscountCurve']]
 
     # Index
-    flatIndex = indexes[helperConfig['flatIndex']]
+    flatIndex: ore.IborIndex = indexes[helperConfig['flatIndex']]
     spreadIndex = indexes[helperConfig['spreadIndex']]
-
+    
     # QuoteHandle
     spread = marketConfig['spread']['value']
     spreadQuote = ore.QuoteHandle(ore.SimpleQuote(spread))
 
+    fxSpot = marketConfig['fxSpot']['value']
+    fxSpotQuote = ore.QuoteHandle(ore.SimpleQuote(fxSpot))
+
     # CrossCcyBasisSwapHelper
     crossCcyBasisSwapHelper = ore.CrossCcyBasisSwapHelper(
         spreadQuote,
-        tenor,
-        calendar,
+        fxSpotQuote,
         settlementDays,
+        calendar,
+        tenor,
+        convention,
         flatIndex,
         spreadIndex,
         flatDiscountCurve,
         spreadDiscountCurve,
         endOfMonth,
-        convention
+        flatIsDomestic
     )
     return crossCcyBasisSwapHelper
