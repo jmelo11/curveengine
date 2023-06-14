@@ -46,19 +46,7 @@ def parse(**kwargs):
 
         elif key in ['tenor', 'fwdStart', 'shortPayTenor']:
             results[key] = parsePeriod(value)
-
-        elif key in ['endOfMonth', 'telescopicValueDates', 'spreadOnShortIndex', 'baseCurrencyAsCollateral', 'enableExtrapolation']:
-            results[key] = value
-
-        elif key in ['settlementDays', 'paymentLag', 'fixingDays', 'year']:
-            results[key] = value
-
-        elif key in ['discountCurve', 'index', 'shortIndex', 'longIndex', 'curveName']:
-            results[key] = value
-
-        elif key in ['couponRate']:
-            results[key] = value
-
+            
         elif key == 'month':
             results[key] = parseMonth(value)
 
