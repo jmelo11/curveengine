@@ -1,0 +1,31 @@
+{
+    "refDate": "2023-05-06",
+    "curves": [
+        {
+            "curveName": "LIBOR6M",
+            "nodes": [
+                {
+                    "date": "2023-06-05",
+                    "value": 0.99
+                },
+                {
+                    "date": "2023-06-05",
+                    "value": 0.99
+                }
+            ]
+        },
+        {
+            "curveName": "LIBOR3M",
+            "nodes": [
+                {
+                    "date": "2023-06-05",
+                    "value": 0.99
+                },
+                {
+                    "date": "2023-06-05",
+                    "value": 0.99
+                }
+            ]
+        }
+    ]
+}

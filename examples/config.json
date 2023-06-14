@@ -40,6 +40,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -68,6 +69,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -96,6 +98,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -124,6 +127,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -152,6 +156,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -180,6 +185,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -208,6 +214,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -236,6 +243,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -264,6 +272,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -292,6 +301,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -320,6 +330,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -348,6 +359,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -376,6 +388,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -404,6 +417,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -432,6 +446,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -460,6 +475,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -488,6 +504,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -516,6 +533,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -544,6 +562,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -572,6 +591,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -600,6 +620,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -628,6 +649,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -656,6 +678,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -684,6 +707,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -712,6 +736,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -740,6 +765,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -768,6 +794,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -796,6 +823,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -824,6 +852,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -852,6 +881,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -880,6 +910,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -908,6 +939,7 @@
                             "settlementDays": 2,
                             "paymentLag": 2,
                             "telescopicValueDates": true,
+                            "discountCurve": "SOFR",
                             "index": "SOFR",
                             "fixedLegFrequency": "Semiannual",
                             "fwdStart": "0D",
@@ -2170,7 +2202,7 @@
                 "indexType": "OvernightIndex",
                 "tenor": "1D",
                 "dayCounter": "Actual360",
-                "currency": "USD",
+                "currency": "CLP",
                 "fixingDays": 0,
                 "calendar": "NullCalendar",
                 "endOfMonth": false,
@@ -3574,6 +3606,2680 @@
             "curveIndex": {
                 "indexType": "OvernightIndex",
                 "tenor": "1D",
+                "dayCounter": "Actual360",
+                "currency": "CLP",
+                "fixingDays": 0,
+                "calendar": "NullCalendar",
+                "endOfMonth": false,
+                "convention": "Unadjusted"
+            }
+        },
+        {
+            "curveName": "CF_CLP_PASIVO",
+            "curveConfig": {
+                "curveType": "Piecewise",
+                "dayCounter": "Actual360",
+                "enableExtrapolation": true,
+                "currency": "CLP",
+                "rateHelpers": [
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "7D",
+                            "identifier": "CF_CLP_PASIVO_7D",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_7D"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "14D",
+                            "identifier": "CF_CLP_PASIVO_14D",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_14D"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "1M",
+                            "identifier": "CF_CLP_PASIVO_1M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_1M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "2M",
+                            "identifier": "CF_CLP_PASIVO_2M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_2M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "3M",
+                            "identifier": "CF_CLP_PASIVO_3M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_3M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "4M",
+                            "identifier": "CF_CLP_PASIVO_4M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.031,
+                                "ticker": "CF_CLP_PASIVO_4M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "5M",
+                            "identifier": "CF_CLP_PASIVO_5M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_CLP_PASIVO_5M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "6M",
+                            "identifier": "CF_CLP_PASIVO_6M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.032,
+                                "ticker": "CF_CLP_PASIVO_6M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "7M",
+                            "identifier": "CF_CLP_PASIVO_7M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.033,
+                                "ticker": "CF_CLP_PASIVO_7M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "8M",
+                            "identifier": "CF_CLP_PASIVO_8M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_CLP_PASIVO_8M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "9M",
+                            "identifier": "CF_CLP_PASIVO_9M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.036,
+                                "ticker": "CF_CLP_PASIVO_9M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "10M",
+                            "identifier": "CF_CLP_PASIVO_10M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_10M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "11M",
+                            "identifier": "CF_CLP_PASIVO_11M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_11M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "12M",
+                            "identifier": "CF_CLP_PASIVO_12M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_12M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "13M",
+                            "identifier": "CF_CLP_PASIVO_13M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_13M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "18M",
+                            "identifier": "CF_CLP_PASIVO_18M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_18M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "2Y",
+                            "identifier": "CF_CLP_PASIVO_2Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_2Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "3Y",
+                            "identifier": "CF_CLP_PASIVO_3Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_3Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "4Y",
+                            "identifier": "CF_CLP_PASIVO_4Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_4Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "5Y",
+                            "identifier": "CF_CLP_PASIVO_5Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_5Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "7Y",
+                            "identifier": "CF_CLP_PASIVO_7Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_7Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "10Y",
+                            "identifier": "CF_CLP_PASIVO_10Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.031,
+                                "ticker": "CF_CLP_PASIVO_10Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "12Y",
+                            "identifier": "CF_CLP_PASIVO_12Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_CLP_PASIVO_12Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "15Y",
+                            "identifier": "CF_CLP_PASIVO_15Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.032,
+                                "ticker": "CF_CLP_PASIVO_15Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "20Y",
+                            "identifier": "CF_CLP_PASIVO_20Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.033,
+                                "ticker": "CF_CLP_PASIVO_20Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "25Y",
+                            "identifier": "CF_CLP_PASIVO_25Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_CLP_PASIVO_25Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "30Y",
+                            "identifier": "CF_CLP_PASIVO_30Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.036,
+                                "ticker": "CF_CLP_PASIVO_30Y"
+                            }
+                        }
+                    }
+                ]
+            },
+            "curveIndex": {
+                "indexType": "IborIndex",
+                "tenor": "1M",
+                "dayCounter": "Actual360",
+                "currency": "CLP",
+                "fixingDays": 0,
+                "calendar": "NullCalendar",
+                "endOfMonth": false,
+                "convention": "Unadjusted"
+            }
+        },
+        {
+            "curveName": "CF_CLP_PASIVO",
+            "curveConfig": {
+                "curveType": "Piecewise",
+                "dayCounter": "Actual360",
+                "enableExtrapolation": true,
+                "currency": "CLP",
+                "rateHelpers": [
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "7D",
+                            "identifier": "CF_CLP_PASIVO_7D",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_7D"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "14D",
+                            "identifier": "CF_CLP_PASIVO_14D",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_14D"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "1M",
+                            "identifier": "CF_CLP_PASIVO_1M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_1M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "2M",
+                            "identifier": "CF_CLP_PASIVO_2M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_2M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "3M",
+                            "identifier": "CF_CLP_PASIVO_3M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_3M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "4M",
+                            "identifier": "CF_CLP_PASIVO_4M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.031,
+                                "ticker": "CF_CLP_PASIVO_4M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "5M",
+                            "identifier": "CF_CLP_PASIVO_5M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_CLP_PASIVO_5M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "6M",
+                            "identifier": "CF_CLP_PASIVO_6M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.032,
+                                "ticker": "CF_CLP_PASIVO_6M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "7M",
+                            "identifier": "CF_CLP_PASIVO_7M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.033,
+                                "ticker": "CF_CLP_PASIVO_7M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "8M",
+                            "identifier": "CF_CLP_PASIVO_8M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_CLP_PASIVO_8M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "9M",
+                            "identifier": "CF_CLP_PASIVO_9M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.036,
+                                "ticker": "CF_CLP_PASIVO_9M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "10M",
+                            "identifier": "CF_CLP_PASIVO_10M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_10M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "11M",
+                            "identifier": "CF_CLP_PASIVO_11M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_11M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "12M",
+                            "identifier": "CF_CLP_PASIVO_12M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_12M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "13M",
+                            "identifier": "CF_CLP_PASIVO_13M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_13M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "18M",
+                            "identifier": "CF_CLP_PASIVO_18M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_18M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "2Y",
+                            "identifier": "CF_CLP_PASIVO_2Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_2Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "3Y",
+                            "identifier": "CF_CLP_PASIVO_3Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_3Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "4Y",
+                            "identifier": "CF_CLP_PASIVO_4Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_4Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "5Y",
+                            "identifier": "CF_CLP_PASIVO_5Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_5Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "7Y",
+                            "identifier": "CF_CLP_PASIVO_7Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_CLP_PASIVO_7Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "10Y",
+                            "identifier": "CF_CLP_PASIVO_10Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.031,
+                                "ticker": "CF_CLP_PASIVO_10Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "12Y",
+                            "identifier": "CF_CLP_PASIVO_12Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_CLP_PASIVO_12Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "15Y",
+                            "identifier": "CF_CLP_PASIVO_15Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.032,
+                                "ticker": "CF_CLP_PASIVO_15Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "20Y",
+                            "identifier": "CF_CLP_PASIVO_20Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.033,
+                                "ticker": "CF_CLP_PASIVO_20Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "25Y",
+                            "identifier": "CF_CLP_PASIVO_25Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_CLP_PASIVO_25Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "30Y",
+                            "identifier": "CF_CLP_PASIVO_30Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.036,
+                                "ticker": "CF_CLP_PASIVO_30Y"
+                            }
+                        }
+                    }
+                ]
+            },
+            "curveIndex": {
+                "indexType": "IborIndex",
+                "tenor": "1M",
+                "dayCounter": "Actual360",
+                "currency": "CLP",
+                "fixingDays": 0,
+                "calendar": "NullCalendar",
+                "endOfMonth": false,
+                "convention": "Unadjusted"
+            }
+        },
+        {
+            "curveName": "CF_UF_PASIVO",
+            "curveConfig": {
+                "curveType": "Piecewise",
+                "dayCounter": "Actual360",
+                "enableExtrapolation": true,
+                "currency": "CLF",
+                "rateHelpers": [
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "7D",
+                            "identifier": "CF_UF_PASIVO_7D",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_PASIVO_7D"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "14D",
+                            "identifier": "CF_UF_PASIVO_14D",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_PASIVO_14D"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "1M",
+                            "identifier": "CF_UF_PASIVO_1M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_PASIVO_1M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "2M",
+                            "identifier": "CF_UF_PASIVO_2M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_PASIVO_2M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "3M",
+                            "identifier": "CF_UF_PASIVO_3M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_PASIVO_3M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "4M",
+                            "identifier": "CF_UF_PASIVO_4M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.031,
+                                "ticker": "CF_UF_PASIVO_4M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "5M",
+                            "identifier": "CF_UF_PASIVO_5M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_UF_PASIVO_5M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "6M",
+                            "identifier": "CF_UF_PASIVO_6M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.032,
+                                "ticker": "CF_UF_PASIVO_6M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "7M",
+                            "identifier": "CF_UF_PASIVO_7M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.033,
+                                "ticker": "CF_UF_PASIVO_7M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "8M",
+                            "identifier": "CF_UF_PASIVO_8M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_UF_PASIVO_8M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "9M",
+                            "identifier": "CF_UF_PASIVO_9M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.036,
+                                "ticker": "CF_UF_PASIVO_9M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "10M",
+                            "identifier": "CF_UF_PASIVO_10M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_PASIVO_10M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "11M",
+                            "identifier": "CF_UF_PASIVO_11M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_PASIVO_11M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "12M",
+                            "identifier": "CF_UF_PASIVO_12M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_PASIVO_12M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "13M",
+                            "identifier": "CF_UF_PASIVO_13M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_PASIVO_13M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "18M",
+                            "identifier": "CF_UF_PASIVO_18M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_PASIVO_18M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "2Y",
+                            "identifier": "CF_UF_PASIVO_2Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_PASIVO_2Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "3Y",
+                            "identifier": "CF_UF_PASIVO_3Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_PASIVO_3Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "4Y",
+                            "identifier": "CF_UF_PASIVO_4Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_PASIVO_4Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "5Y",
+                            "identifier": "CF_UF_PASIVO_5Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_PASIVO_5Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "7Y",
+                            "identifier": "CF_UF_PASIVO_7Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_PASIVO_7Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "10Y",
+                            "identifier": "CF_UF_PASIVO_10Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.031,
+                                "ticker": "CF_UF_PASIVO_10Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "12Y",
+                            "identifier": "CF_UF_PASIVO_12Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_UF_PASIVO_12Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "15Y",
+                            "identifier": "CF_UF_PASIVO_15Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.032,
+                                "ticker": "CF_UF_PASIVO_15Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "20Y",
+                            "identifier": "CF_UF_PASIVO_20Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.033,
+                                "ticker": "CF_UF_PASIVO_20Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "25Y",
+                            "identifier": "CF_UF_PASIVO_25Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_UF_PASIVO_25Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "30Y",
+                            "identifier": "CF_UF_PASIVO_30Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.036,
+                                "ticker": "CF_UF_PASIVO_30Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "40Y",
+                            "identifier": "CF_UF_PASIVO_40Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.036,
+                                "ticker": "CF_UF_PASIVO_40Y"
+                            }
+                        }
+                    }
+                ]
+            },
+            "curveIndex": {
+                "indexType": "IborIndex",
+                "tenor": "1M",
+                "dayCounter": "Actual360",
+                "currency": "CLF",
+                "fixingDays": 0,
+                "calendar": "NullCalendar",
+                "endOfMonth": false,
+                "convention": "Unadjusted"
+            }
+        },
+        {
+            "curveName": "CF_UF_ACTIVO",
+            "curveConfig": {
+                "curveName": "CF_UF_ACTIVO",
+                "curveType": "Piecewise",
+                "dayCounter": "Actual360",
+                "enableExtrapolation": true,
+                "currency": "CLF",
+                "rateHelpers": [
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "7D",
+                            "identifier": "CF_UF_ACTIVO_7D",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_ACTIVO_7D"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "14D",
+                            "identifier": "CF_UF_ACTIVO_14D",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_ACTIVO_14D"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "1M",
+                            "identifier": "CF_UF_ACTIVO_1M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_ACTIVO_1M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "2M",
+                            "identifier": "CF_UF_ACTIVO_2M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_ACTIVO_2M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "3M",
+                            "identifier": "CF_UF_ACTIVO_3M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_ACTIVO_3M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "4M",
+                            "identifier": "CF_UF_ACTIVO_4M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.031,
+                                "ticker": "CF_UF_ACTIVO_4M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "5M",
+                            "identifier": "CF_UF_ACTIVO_5M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_UF_ACTIVO_5M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "6M",
+                            "identifier": "CF_UF_ACTIVO_6M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.032,
+                                "ticker": "CF_UF_ACTIVO_6M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "7M",
+                            "identifier": "CF_UF_ACTIVO_7M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.033,
+                                "ticker": "CF_UF_ACTIVO_7M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "8M",
+                            "identifier": "CF_UF_ACTIVO_8M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_UF_ACTIVO_8M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "9M",
+                            "identifier": "CF_UF_ACTIVO_9M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.036,
+                                "ticker": "CF_UF_ACTIVO_9M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "10M",
+                            "identifier": "CF_UF_ACTIVO_10M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_ACTIVO_10M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "11M",
+                            "identifier": "CF_UF_ACTIVO_11M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_ACTIVO_11M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "12M",
+                            "identifier": "CF_UF_ACTIVO_12M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_ACTIVO_12M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "13M",
+                            "identifier": "CF_UF_ACTIVO_13M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_ACTIVO_13M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "18M",
+                            "identifier": "CF_UF_ACTIVO_18M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_ACTIVO_18M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "2Y",
+                            "identifier": "CF_UF_ACTIVO_2Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_ACTIVO_2Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "3Y",
+                            "identifier": "CF_UF_ACTIVO_3Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_ACTIVO_3Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "4Y",
+                            "identifier": "CF_UF_ACTIVO_4Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_ACTIVO_4Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "5Y",
+                            "identifier": "CF_UF_ACTIVO_5Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_ACTIVO_5Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "7Y",
+                            "identifier": "CF_UF_ACTIVO_7Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_UF_ACTIVO_7Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "10Y",
+                            "identifier": "CF_UF_ACTIVO_10Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.031,
+                                "ticker": "CF_UF_ACTIVO_10Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "12Y",
+                            "identifier": "CF_UF_ACTIVO_12Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_UF_ACTIVO_12Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "15Y",
+                            "identifier": "CF_UF_ACTIVO_15Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.032,
+                                "ticker": "CF_UF_ACTIVO_15Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "20Y",
+                            "identifier": "CF_UF_ACTIVO_20Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.033,
+                                "ticker": "CF_UF_ACTIVO_20Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "25Y",
+                            "identifier": "CF_UF_ACTIVO_25Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.035,
+                                "ticker": "CF_UF_ACTIVO_25Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "30Y",
+                            "identifier": "CF_UF_ACTIVO_30Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.036,
+                                "ticker": "CF_UF_ACTIVO_30Y"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Bond",
+                        "helperConfig": {
+                            "tenor": "40Y",
+                            "identifier": "CF_UF_ACTIVO_40Y",
+                            "couponRate": 0.03,
+                            "couponDayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "frequency": "Semiannual"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.036,
+                                "ticker": "CF_UF_ACTIVO_40Y"
+                            }
+                        }
+                    }
+                ]
+            },
+            "curveIndex": {
+                "indexType": "IborIndex",
+                "tenor": "1M",
+                "dayCounter": "Actual360",
+                "currency": "CLF",
+                "fixingDays": 0,
+                "calendar": "NullCalendar",
+                "endOfMonth": false,
+                "convention": "Unadjusted"
+            }
+        },
+        {
+            "curveName": "CF_USD_SINTETICO_PASIVO",
+            "curveConfig": {
+                "curveType": "Piecewise",
+                "dayCounter": "Actual360",
+                "enableExtrapolation": true,
+                "currency": "USD",
+                "rateHelpers": [
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "7D",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_7D",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_7D"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "14D",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_14D",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_14D"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "1M",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_1M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_1M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "2M",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_2M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_2M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "3M",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_3M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_3M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "4M",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_4M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_4M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "5M",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_5M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_5M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "6M",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_6M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_6M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "7M",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_7M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_7M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "8M",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_8M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_8M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "9M",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_9M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_9M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "10M",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_10M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_10M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "11M",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_11M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_11M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "12M",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_12M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_12M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "13M",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_13M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_13M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "Deposit",
+                        "helperConfig": {
+                            "tenor": "18M",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_18M",
+                            "dayCounter": "Actual360",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted"
+                        },
+                        "marketConfig": {
+                            "rate": {
+                                "value": 0.03,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_18M"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "XccyBasis",
+                        "helperConfig": {
+                            "tenor": "2Y",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "flatIndex": "SOFR",
+                            "spreadIndex": "ICP",
+                            "flatDiscountCurve": "CF_USD_SINTETICO_PASIVO",
+                            "spreadDiscountCurve": "ICP",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_2Y",
+                            "flatIsDomestic": false
+                        },
+                        "marketConfig": {
+                            "spread": {
+                                "value": 0.008,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_2Y_SPREAD"
+                            },
+                            "fxSpot": {
+                                "value": 808.51,
+                                "ticker": "CLP CURNCY"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "XccyBasis",
+                        "helperConfig": {
+                            "tenor": "3Y",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "flatIndex": "SOFR",
+                            "spreadIndex": "ICP",
+                            "flatDiscountCurve": "CF_USD_SINTETICO_PASIVO",
+                            "spreadDiscountCurve": "ICP",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_3Y",
+                            "flatIsDomestic": false
+                        },
+                        "marketConfig": {
+                            "spread": {
+                                "value": 0.008,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_3Y_SPREAD"
+                            },
+                            "fxSpot": {
+                                "value": 808.51,
+                                "ticker": "CLP CURNCY"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "XccyBasis",
+                        "helperConfig": {
+                            "tenor": "4Y",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "flatIndex": "SOFR",
+                            "spreadIndex": "ICP",
+                            "flatDiscountCurve": "CF_USD_SINTETICO_PASIVO",
+                            "spreadDiscountCurve": "ICP",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_4Y",
+                            "flatIsDomestic": false
+                        },
+                        "marketConfig": {
+                            "spread": {
+                                "value": 0.008,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_4Y_SPREAD"
+                            },
+                            "fxSpot": {
+                                "value": 808.51,
+                                "ticker": "CLP CURNCY"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "XccyBasis",
+                        "helperConfig": {
+                            "tenor": "5Y",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "flatIndex": "SOFR",
+                            "spreadIndex": "ICP",
+                            "flatDiscountCurve": "CF_USD_SINTETICO_PASIVO",
+                            "spreadDiscountCurve": "ICP",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_5Y",
+                            "flatIsDomestic": false
+                        },
+                        "marketConfig": {
+                            "spread": {
+                                "value": 0.008,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_5Y_SPREAD"
+                            },
+                            "fxSpot": {
+                                "value": 808.51,
+                                "ticker": "CLP CURNCY"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "XccyBasis",
+                        "helperConfig": {
+                            "tenor": "7Y",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "flatIndex": "SOFR",
+                            "spreadIndex": "ICP",
+                            "flatDiscountCurve": "CF_USD_SINTETICO_PASIVO",
+                            "spreadDiscountCurve": "ICP",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_7Y",
+                            "flatIsDomestic": false
+                        },
+                        "marketConfig": {
+                            "spread": {
+                                "value": 0.008,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_7Y_SPREAD"
+                            },
+                            "fxSpot": {
+                                "value": 808.51,
+                                "ticker": "CLP CURNCY"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "XccyBasis",
+                        "helperConfig": {
+                            "tenor": "10Y",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "flatIndex": "SOFR",
+                            "spreadIndex": "ICP",
+                            "flatDiscountCurve": "CF_USD_SINTETICO_PASIVO",
+                            "spreadDiscountCurve": "ICP",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_10Y",
+                            "flatIsDomestic": false
+                        },
+                        "marketConfig": {
+                            "spread": {
+                                "value": 0.008,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_10Y_SPREAD"
+                            },
+                            "fxSpot": {
+                                "value": 808.51,
+                                "ticker": "CLP CURNCY"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "XccyBasis",
+                        "helperConfig": {
+                            "tenor": "15Y",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "flatIndex": "SOFR",
+                            "spreadIndex": "ICP",
+                            "flatDiscountCurve": "CF_USD_SINTETICO_PASIVO",
+                            "spreadDiscountCurve": "ICP",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_15Y",
+                            "flatIsDomestic": false
+                        },
+                        "marketConfig": {
+                            "spread": {
+                                "value": 0.008,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_15Y_SPREAD"
+                            },
+                            "fxSpot": {
+                                "value": 808.51,
+                                "ticker": "CLP CURNCY"
+                            }
+                        }
+                    },
+                    {
+                        "helperType": "XccyBasis",
+                        "helperConfig": {
+                            "tenor": "20Y",
+                            "calendar": "NullCalendar",
+                            "settlementDays": 0,
+                            "endOfMonth": false,
+                            "convention": "Unadjusted",
+                            "flatIndex": "SOFR",
+                            "spreadIndex": "ICP",
+                            "flatDiscountCurve": "CF_USD_SINTETICO_PASIVO",
+                            "spreadDiscountCurve": "ICP",
+                            "identifier": "CF_USD_SINTETICO_PASIVO_20Y",
+                            "flatIsDomestic": false
+                        },
+                        "marketConfig": {
+                            "spread": {
+                                "value": 0.008,
+                                "ticker": "CF_USD_SINTETICO_PASIVO_20Y_SPREAD"
+                            },
+                            "fxSpot": {
+                                "value": 808.51,
+                                "ticker": "CLP CURNCY"
+                            }
+                        }
+                    }
+                ]
+            },
+            "curveIndex": {
+                "indexType": "IborIndex",
+                "tenor": "1M",
                 "dayCounter": "Actual360",
                 "currency": "USD",
                 "fixingDays": 0,

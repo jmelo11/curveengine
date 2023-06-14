@@ -7,11 +7,11 @@ import json
 
 
 def main():
-    with open(parent_dir+'/test.json') as f:
+    with open(parent_dir+'/config.json') as f:
         file = json.load(f)
 
     cm = CurveEngine(file)
-    for date, value in cm.getCurve('SOFR').nodes():
+    for date, value in cm.getCurve('CF_USD_SINTETICO_PASIVO').nodes():
         print(date, value)
 
 
