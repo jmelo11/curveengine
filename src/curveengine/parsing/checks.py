@@ -112,7 +112,8 @@ def checkDate(value) -> None:
         If the date is invalid
     '''
     if not re.match(r'^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}:\d{2}(\.\d{1,6})?(Z|[+-]\d{2}:\d{2})?)?$', value):
-        raise ValueError(f'{value} is not a valid date or it does not follow the ISO format.')
+        raise ValueError(
+            f'{value} is not a valid date or it does not follow the ISO format.')
 
 
 def checkIsInEnum(value: str, enum: list) -> None:
@@ -915,7 +916,7 @@ def checkMarketConfig(data: dict, helperType: HelperType) -> None:
         reference = {
             "rate": checkPrice,
             "spread": checkPrice,
-            "fxSpot": checkPrice,            
+            "fxSpot": checkPrice,
         }
     elif helperType == HelperType.TenorBasis:
         reference = {
@@ -924,7 +925,7 @@ def checkMarketConfig(data: dict, helperType: HelperType) -> None:
     elif helperType == HelperType.XccyBasis:
         reference = {
             "spread": checkPrice,
-            "fxSpot": checkPrice            
+            "fxSpot": checkPrice
         }
     elif helperType == HelperType.OIS:
         reference = {
@@ -1013,7 +1014,6 @@ def checkRateHelper(data: dict, pos: int) -> None:
     except Exception as exc:
         raise RateHelperConfigurationError(
             'Invalid rate helper {} configuration at pos {}'.format(helperType, pos)) from exc
-    
 
 
 ## Index checks ##
@@ -1100,6 +1100,7 @@ def checkPiecewiseCurve(data: dict) -> None:
             "curveType": "Piecewise",
             "dayCounter": "Actual360",
             "enableExtrapolation": True,
+            "currency": "CLP",
             "rateHelpers": [
                 ...
             ]
@@ -1118,6 +1119,7 @@ def checkPiecewiseCurve(data: dict) -> None:
         "curveType": partial(checkIsInEnum, enum=[r.value for r in CurveType]),
         "dayCounter": checkDayCounter,
         "enableExtrapolation": partial(checkInstance, type=bool),
+        "currency": partial(checkIsInEnum, enum=[r.name for r in Currency]),
         "rateHelpers": checkRateHelperList
     }
 
@@ -1155,6 +1157,7 @@ def checkDiscountCurve(data: dict) -> None:
             "curveType": "Discount",
             "dayCounter": "Actual360",
             "enableExtrapolation": True,
+            "currency": "CLP",
             "nodes": [
                 {
                     "date": "2020-01-01",
@@ -1180,6 +1183,7 @@ def checkDiscountCurve(data: dict) -> None:
         "curveType": partial(checkIsInEnum, enum=[r.value for r in CurveType]),
         "dayCounter": checkDayCounter,
         "enableExtrapolation": partial(checkInstance, type=bool),
+        "currency": partial(checkIsInEnum, enum=[r.name for r in Currency]),
         "nodes": checkNodeList
     }
 
@@ -1219,6 +1223,7 @@ def checkCurve(data: dict, pos: int) -> None:
             "curveType": "Piecewise",
             "dayCounter": "Actual360",
             "enableExtrapolation": True,
+            "currency": "CLP",
             "rateHelpers": []   # if curveType is Piecewise, otherwise nodes             
 
         },
@@ -1250,7 +1255,8 @@ def checkCurve(data: dict, pos: int) -> None:
         raise ConfigurationError(
             'Invalid curve configuration for {} curve'.format(data['curveName'])) from exc
     except Exception as exc:
-        raise ConfigurationError('Invalid curve configuration at pos {}'.format(pos)) from exc
+        raise ConfigurationError(
+            'Invalid curve configuration at pos {}'.format(pos)) from exc
 
 
 def checkConfiguration(data: dict) -> None:
@@ -1285,6 +1291,7 @@ def checkConfiguration(data: dict) -> None:
                         "curveType": "Piecewise",
                         "dayCounter": "Actual360",
                         "enableExtrapolation": True,
+                        "currency": "CLP",
                         "rateHelpers": [
                             ...
                             ]

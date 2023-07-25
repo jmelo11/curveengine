@@ -46,7 +46,7 @@ def parse(**kwargs):
 
         elif key in ['tenor', 'fwdStart', 'shortPayTenor']:
             results[key] = parsePeriod(value)
-            
+
         elif key == 'month':
             results[key] = parseMonth(value)
 
@@ -70,7 +70,14 @@ def parseOREDate(date: ore.Date) -> str:
     str
         The string representation of the date
     """
-    return '{0}-{1}-{2}'.format(date.year(), date.month(), date.dayOfMonth())
+    day = date.dayOfMonth()
+    if day < 10:
+        day = '0' + str(date.dayOfMonth())
+
+    month = date.month()
+    if date.month() < 10:
+        month = '0' + str(date.month())
+    return '{0}-{1}-{2}'.format(date.year(), month, day)
 
 
 def parseNode(node):
@@ -263,7 +270,6 @@ def parseDate(date: str) -> ore.Date:
         return ore.DateParser.parseISO(date[0:10])
 
 
-
 def parsePeriod(period: str) -> ore.Period:
     """
     Parse a period string to an ORE period
@@ -278,7 +284,7 @@ def parsePeriod(period: str) -> ore.Period:
     ore.Period
         The ORE period
     """
-    
+
     tenor = ore.PeriodParser.parse(period)
     return tenor
 

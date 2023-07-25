@@ -1,9 +1,9 @@
 import unittest
-from curveengine import *
 import sys
 import os
 parent_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(parent_dir + '/../src')
+from curveengine import *
 
 
 class TestChecks(unittest.TestCase):
@@ -79,7 +79,6 @@ class TestChecks(unittest.TestCase):
 
     def test_swap_check(self):
         goodHelperConfig = {
-
             "tenor": "2Y",
             "dayCounter": "Thirty360",
             "calendar": "NullCalendar",
@@ -382,6 +381,7 @@ class TestChecks(unittest.TestCase):
             "curveType": "Piecewise",
             "dayCounter": "Actual360",
             "enableExtrapolation": True,
+            "currency": "USD",
             "rateHelpers": [
                 {
                     "helperType": "OIS",
@@ -436,6 +436,7 @@ class TestChecks(unittest.TestCase):
             "curveType": "Discount",
             "dayCounter": "Actual360",
             "enableExtrapolation": True,
+            "currency": "USD",
             "nodes": [
                 {
                     "date": "2020-01-01",
@@ -473,6 +474,7 @@ class TestChecks(unittest.TestCase):
                 "curveType": "Piecewise",
                 "dayCounter": "Actual360",
                 "enableExtrapolation": True,
+                "currency": "USD",
                 "rateHelpers": [{
                     "helperType": "OIS",
                     "helperConfig": {
