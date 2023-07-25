@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='curveengine',
-    version='1.1.4',
+    version='1.1.5',
     description='A simple curve bootstraping tool based on ORE/QuantLib',
     long_description=open('readmepipy.md').read(),
     author='Jose Melo',
@@ -15,7 +15,7 @@ setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License"
     ],
-    python_requires='>=3.10',
+    python_requires='>=3.9',
     install_requires=[
         'open-source-risk-engine']
 )

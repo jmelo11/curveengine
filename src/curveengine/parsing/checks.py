@@ -1168,9 +1168,13 @@ def checkDiscountCurve(data: dict) -> None:
     ```
     '''
     def checkNodeList(l: list) -> None:
+        def checkValue(value):
+            if not isinstance(value, float) and not isinstance(value, int):
+                raise ValueError(
+                    f'The value {value} is not an instance of float or int.')
         ref = {
             "date": checkDate,
-            "value": partial(checkInstance, type=float)
+            "value": checkValue
         }
         checkInstance(l, type=list)
         if len(l) == 0:
