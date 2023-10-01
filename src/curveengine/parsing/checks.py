@@ -376,9 +376,12 @@ def checkInstance(value: any, type: type) -> None:
     ValueError
         If the value is not an instance of the type
     '''
+    tmpvalue = value
+    if type == int and isinstance(tmpvalue, float):
+        tmpvalue = int(value)
 
-    if not isinstance(value, type):
-        raise ValueError(f'The value {value} is not an instance of {type}.')
+    if not isinstance(tmpvalue, type):
+        raise ValueError(f'The value {tmpvalue} is not an instance of {type}.')
 
 
 ## Rate helpers checks ##

@@ -392,7 +392,7 @@ class TestChecks(unittest.TestCase):
                         "convention": "Following",
                         "endOfMonth": True,
                         "frequency": "Annual",
-                        "settlementDays": 2,
+                        "settlementDays": 2.0,
                         "paymentLag": 2,
                         "telescopicValueDates": True,
                         "index": "SOFR",
