@@ -6,10 +6,19 @@ A simple curve bootstrapping tool. It uses ORE as backend and parses configurati
 
 Documentation is available at [https://jmelo11.github.io/curveenginedocs/](https://jmelo11.github.io/curveenginedocs/)
 
-### Example
+## Build
+
+For building the project, you need to have cmake installed. Then, run the following commands:
+
+```cmd
+python -m build
+```
+
+## Example
+
 For a more detail example, visit the example folder.
 
-```
+```json
 {
     "refDate": "2023-02-14",
     "curves": [
