@@ -1,0 +1,17 @@
+[project]
+name = "curveengine"
+version = "1.1.5"
+authors = [
+  { name="Jose Melo", email="jmelo@live.com" },
+]
+description = "A simple curve bootstraping tool based on ORE/QuantLib"
+readme = "readme.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jmelo11/curveengine"
