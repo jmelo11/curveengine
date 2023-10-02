@@ -47,6 +47,9 @@ def parse(**kwargs):
         elif key in ['tenor', 'fwdStart', 'shortPayTenor']:
             results[key] = parsePeriod(value)
 
+        elif key in ['settlementDays', 'paymentLag', 'fixingDays']:
+            results[key] = int(value)
+
         elif key == 'month':
             results[key] = parseMonth(value)
 
@@ -76,6 +79,7 @@ def parseOREDate(date: ore.Date) -> str:
 
     month = date.month()
     if date.month() < 10:
+
         month = '0' + str(date.month())
     return '{0}-{1}-{2}'.format(date.year(), month, day)
 
