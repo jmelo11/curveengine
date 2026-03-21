@@ -27,6 +27,7 @@ class CurveEngine:
         self.curveHandles = {None: ore.RelinkableYieldTermStructureHandle()}
         self.curves = {} if curves is None else curves
         self.indexes = {} if indexes is None else indexes
+        self.quotes = {}
         localData = data.copy()
         checkConfiguration(localData)
         self.__initialize(localData)
@@ -65,6 +66,9 @@ class CurveEngine:
     def getIndex(self, indexName):
         return self.indexes[indexName]
 
+    def getQuotes(self, curveName):
+        return self.quotes[curveName]
+
     def __initialize(self, data):
         refDate = parseDate(data['refDate'])
         ore.Settings.instance().evaluationDate = refDate
@@ -102,7 +106,8 @@ class CurveEngine:
         curveName = data['curveName']
         config = data['curveConfig']
         if config['curveType'] == CurveType.Piecewise:
-            curve = self.__buildPiecewiseCurve(data)
+            curve, curveQuotes = self.__buildPiecewiseCurve(data)
+            self.quotes[curveName] = curveQuotes
         elif config['curveType'] == CurveType.Discount:
             curve = self.__buildDiscountingCurve(data)
         elif config['curveType'] == CurveType.FlatForward:
@@ -118,42 +123,46 @@ class CurveEngine:
 
     def __buildPiecewiseCurve(self, data):
         rateHelpers = []
+        curveQuotes = []
         config = data['curveConfig']
         for i, rateHelper in enumerate(config['rateHelpers']):
             helperType = rateHelper['helperType']
-            helperConfig = rateHelper['helperConfig']                        
+            helperConfig = rateHelper['helperConfig']
             marketConfig = rateHelper['marketConfig']
-        
+
             if helperType == HelperType.Deposit:
-                helper = createDepositRateHelper(
+                helper, quotes = createDepositRateHelper(
                     helperConfig, marketConfig, self.curveHandles, self.indexes)
             elif helperType == HelperType.OIS:
-                helper = createOISRateHelper(
+                helper, quotes = createOISRateHelper(
                     helperConfig, marketConfig, self.curveHandles, self.indexes)
             elif helperType == HelperType.Swap:
-                helper = createSwapRateHelper(
+                helper, quotes = createSwapRateHelper(
                     helperConfig, marketConfig, self.curveHandles, self.indexes)
             elif helperType == HelperType.TenorBasis:
-                helper = createTenorBasisSwapRateHelper(
+                helper, quotes = createTenorBasisSwapRateHelper(
                     helperConfig, marketConfig, self.curveHandles, self.indexes)
             elif helperType == HelperType.Xccy:
-                helper = createCrossCcyFixFloatSwapRateHelper(
+                helper, quotes = createCrossCcyFixFloatSwapRateHelper(
                     helperConfig, marketConfig, self.curveHandles, self.indexes)
             elif helperType == HelperType.FxSwap:
-                helper = createFxSwapRateHelper(
+                helper, quotes = createFxSwapRateHelper(
                     helperConfig, marketConfig, self.curveHandles, self.indexes)
             elif helperType == HelperType.SofrFuture:
-                helper = createSofrFutureRateHelper(
+                helper, quotes = createSofrFutureRateHelper(
                     helperConfig, marketConfig, self.curveHandles, self.indexes)
             elif helperType == HelperType.XccyBasis:
-                helper = createCrossCcyBasisSwapRateHelper(
+                helper, quotes = createCrossCcyBasisSwapRateHelper(
+                    helperConfig, marketConfig, self.curveHandles, self.indexes)
+            elif helperType == HelperType.OvernightIborBasis:
+                helper, quotes = createOvernightIborBasisSwapRateHelper(
                     helperConfig, marketConfig, self.curveHandles, self.indexes)
             elif helperType == HelperType.Bond:
-                helper = createFixedRateBondRateHelper(
+                helper, quotes = createFixedRateBondRateHelper(
                     helperConfig, marketConfig, self.curveHandles, self.indexes)
-          
-            rateHelpers.append(helper)
 
+            rateHelpers.append(helper)
+            curveQuotes.append(quotes)
         refDate = ore.Settings.instance().evaluationDate
         dayCounter = config['dayCounter']
 
@@ -163,7 +172,7 @@ class CurveEngine:
             if config['enableExtrapolation']:
                 curve.enableExtrapolation()
 
-        return curve
+        return curve, curveQuotes
 
     def __buildDiscountingCurve(self, data):
         config = data['curveConfig']

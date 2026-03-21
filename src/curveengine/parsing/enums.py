@@ -15,6 +15,7 @@ class HelperType(Enum):
     Swap = "Swap"
     TenorBasis = "TenorBasis"
     XccyBasis = "XccyBasis"
+    OvernightIborBasis = "OvernightIborBasis"
 
 
 class CurveType(Enum):

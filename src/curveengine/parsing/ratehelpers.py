@@ -42,10 +42,12 @@ def createOISRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: di
     rate = marketConfig['rate']['value']
     discountCurve = curveHandles[helperConfig['discountCurve']]
 
-    rate = ore.QuoteHandle(ore.SimpleQuote(rate))
-    helper = ore.OISRateHelper(settlementDays, tenor, rate, index, discountCurve, endOfMonth,
+    rateQuote = ore.SimpleQuote(rate)
+    rateHandle = ore.QuoteHandle(rateQuote)
+    helper = ore.OISRateHelper(settlementDays, tenor, rateHandle, index, discountCurve, endOfMonth,
                                paymentLag, businessDayConvention, fixedLegFrequency, calendar, fwdStart)
-    return helper
+    quotes = {'rate': rateQuote}
+    return helper, quotes
 
 
 def createDepositRateHelper(helperConfig: dict, marketConfig: dict, *args, **kwargs):
@@ -56,10 +58,10 @@ def createDepositRateHelper(helperConfig: dict, marketConfig: dict, *args, **kwa
     ----------
     helperConfig : dict
         The configuration for the helper
-       
+
     marketConfig : dict
         The market configuration for the helper
-       
+
     Returns
     -------
     ore.DepositRateHelper
@@ -76,10 +78,12 @@ def createDepositRateHelper(helperConfig: dict, marketConfig: dict, *args, **kwa
     endOfMonth = helperConfig['endOfMonth']
     dayCounter = helperConfig['dayCounter']
 
-    rate = ore.QuoteHandle(ore.SimpleQuote(marketConfig['rate']['value']))
-    helper = ore.DepositRateHelper(rate, tenor, settlementDays, calendar,
+    rateQuote = ore.SimpleQuote(marketConfig['rate']['value'])
+    rateHandle = ore.QuoteHandle(rateQuote)
+    helper = ore.DepositRateHelper(rateHandle, tenor, settlementDays, calendar,
                                    convention, endOfMonth, dayCounter)
-    return helper
+    quotes = {'rate': rateQuote}
+    return helper, quotes
 
 
 def createFixedRateBondRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
@@ -164,12 +168,14 @@ def createFixedRateBondRateHelper(helperConfig: dict, marketConfig: dict, curveH
         rateFrequency)
 
     # Bond helper
+    cleanPriceQuote = ore.SimpleQuote(cleanPrice)
     bondHelper = ore.BondHelper(
-        ore.QuoteHandle(ore.SimpleQuote(cleanPrice)),
+        ore.QuoteHandle(cleanPriceQuote),
         fixedRateBond
     )
 
-    return bondHelper
+    quotes = {'cleanPrice': cleanPriceQuote}
+    return bondHelper, quotes
 
 
 def createSwapRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
@@ -208,8 +214,10 @@ def createSwapRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: d
     # QuoteHandle
     rate = marketConfig['rate']['value']
     spread = marketConfig['spread']['value']
-    rateQuote = ore.QuoteHandle(ore.SimpleQuote(rate))
-    spreadQuote = ore.QuoteHandle(ore.SimpleQuote(spread))
+    rateSimpleQuote = ore.SimpleQuote(rate)
+    spreadSimpleQuote = ore.SimpleQuote(spread)
+    rateQuote = ore.QuoteHandle(rateSimpleQuote)
+    spreadQuote = ore.QuoteHandle(spreadSimpleQuote)
 
     # Index
     index = indexes[helperConfig['index']]
@@ -221,7 +229,8 @@ def createSwapRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: d
     swapRateHelper = ore.SwapRateHelper(
         rateQuote, tenor, calendar, fixedLegFrequency, convention, dayCounter, index, spreadQuote, fwdStart, discountCurve
     )
-    return swapRateHelper
+    quotes = {'rate': rateSimpleQuote, 'spread': spreadSimpleQuote}
+    return swapRateHelper, quotes
 
 
 def createFxSwapRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
@@ -268,8 +277,10 @@ def createFxSwapRateHelper(helperConfig: dict, marketConfig: dict, curveHandles:
         tenor = ore.Period(days, ore.Days)
 
     # QuoteHandle
-    fwdPointQuote = ore.QuoteHandle(ore.SimpleQuote(fxPoints))
-    spotFxQuote = ore.QuoteHandle(ore.SimpleQuote(spotFx))
+    fxPointsSimpleQuote = ore.SimpleQuote(fxPoints)
+    spotFxSimpleQuote = ore.SimpleQuote(spotFx)
+    fwdPointQuote = ore.QuoteHandle(fxPointsSimpleQuote)
+    spotFxQuote = ore.QuoteHandle(spotFxSimpleQuote)
 
     # Discounting curve
     discountCurve = curveHandles[helperConfig['discountCurve']]
@@ -287,7 +298,8 @@ def createFxSwapRateHelper(helperConfig: dict, marketConfig: dict, curveHandles:
         discountCurve,
         calendar
     )
-    return fxSwapRateHelper
+    quotes = {'fxPoints': fxPointsSimpleQuote, 'fxSpot': spotFxSimpleQuote}
+    return fxSwapRateHelper, quotes
 
 
 def createSofrFutureRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
@@ -322,8 +334,10 @@ def createSofrFutureRateHelper(helperConfig: dict, marketConfig: dict, curveHand
     # QuoteHandle
     price = marketConfig['price']
     convexity = marketConfig['convexity']
-    priceQuote = ore.QuoteHandle(ore.SimpleQuote(price))
-    convexityQuote = ore.QuoteHandle(ore.SimpleQuote(convexity))
+    priceSimpleQuote = ore.SimpleQuote(price)
+    convexitySimpleQuote = ore.SimpleQuote(convexity)
+    priceQuote = ore.QuoteHandle(priceSimpleQuote)
+    convexityQuote = ore.QuoteHandle(convexitySimpleQuote)
 
     # SofrFutureRateHelper
     sofrFutureRateHelper = ore.SofrFutureRateHelper(
@@ -333,7 +347,8 @@ def createSofrFutureRateHelper(helperConfig: dict, marketConfig: dict, curveHand
         frequency,
         convexityQuote
     )
-    return sofrFutureRateHelper
+    quotes = {'price': priceSimpleQuote, 'convexity': convexitySimpleQuote}
+    return sofrFutureRateHelper, quotes
 
 
 def createTenorBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
@@ -371,7 +386,8 @@ def createTenorBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, curve
 
     # QuoteHandle
     spread = marketConfig['spread']['value']
-    spreadQuote = ore.QuoteHandle(ore.SimpleQuote(spread))
+    spreadSimpleQuote = ore.SimpleQuote(spread)
+    spreadQuote = ore.QuoteHandle(spreadSimpleQuote)
 
     # Discounting curve
     discountCurve = curveHandles[helperConfig['discountCurve']]
@@ -382,13 +398,71 @@ def createTenorBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, curve
         tenor,
         longIndex,
         shortIndex,
-        ore.Period(),
         discountCurve,
         spreadOnShort,
-        True
+        True,  # pay index is given
+        False  # receive index is not given
     )
 
-    return tenorBasisSwapHelper
+    quotes = {'spread': spreadSimpleQuote}
+    return tenorBasisSwapHelper, quotes
+
+
+def createOvernightIborBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
+    """
+    Create an overnight ibor basis swap rate helper
+
+    Parameters
+    ----------
+    helperConfig : dict
+        The configuration for the helper
+
+    marketConfig : dict
+        The market configuration for the helper
+
+    curveHandles : dict
+        The curveHandles
+    indexes : dict
+        The indexes
+
+    Returns
+    -------
+    ore.OvernightIborBasisSwapRateHelper
+        The rate helper
+
+    See Also
+    ----------
+    checkOvernightIborBasisSwapRateHelper
+    """
+    tenor = helperConfig['tenor']
+    settlementDays = helperConfig['settlementDays']
+    calendar = helperConfig['calendar']
+    convention = helperConfig['convention']
+    endOfMonth = helperConfig['endOfMonth']
+
+    overnightIndex = indexes[helperConfig['overnightIndex']]
+    iborIndex = indexes[helperConfig['iborIndex']]
+
+    spread = marketConfig['spread']['value']
+    spreadSimpleQuote = ore.SimpleQuote(spread)
+    spreadQuote = ore.QuoteHandle(spreadSimpleQuote)
+
+    discountCurve = curveHandles[helperConfig['discountCurve']]
+
+    helper = ore.OvernightIborBasisSwapRateHelper(
+        spreadQuote,
+        tenor,
+        settlementDays,
+        calendar,
+        convention,
+        endOfMonth,
+        overnightIndex,
+        iborIndex,
+        discountCurve
+    )
+
+    quotes = {'spread': spreadSimpleQuote}
+    return helper, quotes
 
 
 def createCrossCcyFixFloatSwapRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
@@ -431,9 +505,12 @@ def createCrossCcyFixFloatSwapRateHelper(helperConfig: dict, marketConfig: dict,
     spotFx = marketConfig['fxSpot']['value']
     spread = marketConfig['spread']['value']
 
-    rateQuote = ore.QuoteHandle(ore.SimpleQuote(rate))
-    spotFxQuote = ore.QuoteHandle(ore.SimpleQuote(spotFx))
-    spreadQuote = ore.QuoteHandle(ore.SimpleQuote(spread))
+    rateSimpleQuote = ore.SimpleQuote(rate)
+    spotFxSimpleQuote = ore.SimpleQuote(spotFx)
+    spreadSimpleQuote = ore.SimpleQuote(spread)
+    rateQuote = ore.QuoteHandle(rateSimpleQuote)
+    spotFxQuote = ore.QuoteHandle(spotFxSimpleQuote)
+    spreadQuote = ore.QuoteHandle(spreadSimpleQuote)
 
     # Index
     index = indexes[helperConfig['index']]
@@ -458,7 +535,9 @@ def createCrossCcyFixFloatSwapRateHelper(helperConfig: dict, marketConfig: dict,
         spreadQuote,
         endOfMonth
     )
-    return crossCcyFixFloatSwapHelper
+    quotes = {'rate': rateSimpleQuote,
+              'fxSpot': spotFxSimpleQuote, 'spread': spreadSimpleQuote}
+    return crossCcyFixFloatSwapHelper, quotes
 
 
 def createCrossCcyBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, curveHandles: dict, indexes: dict, *args, **kwargs):
@@ -497,19 +576,23 @@ def createCrossCcyBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, cu
     flatIsDomestic = helperConfig['flatIsDomestic']
 
     # Discout curveHandles
-    flatDiscountCurve: ore.RelinkableYieldTermStructureHandle = curveHandles[helperConfig['flatDiscountCurve']]   
-    spreadDiscountCurve: ore.RelinkableYieldTermStructureHandle = curveHandles[helperConfig['spreadDiscountCurve']]
+    flatDiscountCurve: ore.RelinkableYieldTermStructureHandle = curveHandles[
+        helperConfig['flatDiscountCurve']]
+    spreadDiscountCurve: ore.RelinkableYieldTermStructureHandle = curveHandles[
+        helperConfig['spreadDiscountCurve']]
 
     # Index
     flatIndex: ore.IborIndex = indexes[helperConfig['flatIndex']]
     spreadIndex = indexes[helperConfig['spreadIndex']]
-    
+
     # QuoteHandle
     spread = marketConfig['spread']['value']
-    spreadQuote = ore.QuoteHandle(ore.SimpleQuote(spread))
+    spreadSimpleQuote = ore.SimpleQuote(spread)
+    spreadQuote = ore.QuoteHandle(spreadSimpleQuote)
 
     fxSpot = marketConfig['fxSpot']['value']
-    fxSpotQuote = ore.QuoteHandle(ore.SimpleQuote(fxSpot))
+    fxSpotSimpleQuote = ore.SimpleQuote(fxSpot)
+    fxSpotQuote = ore.QuoteHandle(fxSpotSimpleQuote)
 
     # CrossCcyBasisSwapHelper
     crossCcyBasisSwapHelper = ore.CrossCcyBasisSwapHelper(
@@ -526,4 +609,5 @@ def createCrossCcyBasisSwapRateHelper(helperConfig: dict, marketConfig: dict, cu
         endOfMonth,
         flatIsDomestic
     )
-    return crossCcyBasisSwapHelper
+    quotes = {'spread': spreadSimpleQuote, 'fxSpot': fxSpotSimpleQuote}
+    return crossCcyBasisSwapHelper, quotes

@@ -772,6 +772,59 @@ def checkTenorBasisSwapRateHelper(data: dict) -> None:
             'Invalid tenor basis rate helper') from exc
 
 
+def checkOvernightIborBasisSwapRateHelper(data: dict) -> None:
+    '''
+    Check if the overnight ibor basis swap rate helper is valid
+
+    Parameters
+    ----------
+    data: dict
+        The overnight ibor basis swap rate helper
+
+    Returns
+    -------
+    None
+
+    Raises
+    ------
+    RateHelperConfigurationError
+        If the rate helper is invalid
+
+    Details
+    -------
+    The overnight ibor basis swap rate helper should have the following example structure:
+    ```
+    "helperConfig": {
+                    "tenor": "3M",
+                    "settlementDays": 0,
+                    "calendar": "NullCalendar",
+                    "convention": "Unadjusted",
+                    "endOfMonth": false,
+                    "overnightIndex": "SOFR",
+                    "iborIndex": "TermSOFR3m",
+                    "discountCurve": "SOFR"
+                }
+    ```
+    '''
+
+    reference = {
+        "tenor": checkTenor,
+        "settlementDays": partial(checkInstance, type=int),
+        "calendar": checkCalendar,
+        "convention": checkConvention,
+        "endOfMonth": partial(checkInstance, type=bool),
+        "overnightIndex": partial(checkInstance, type=str),
+        "iborIndex": partial(checkInstance, type=str),
+        "discountCurve": partial(checkInstance, type=str)
+    }
+
+    try:
+        checkDictStructure(data, reference)
+    except Exception as exc:
+        raise RateHelperConfigurationError(
+            'Invalid overnight ibor basis swap rate helper') from exc
+
+
 def checkCrossCcyBasisSwapRateHelper(data: dict) -> None:
     '''
     Check if the cross currency basis rate helper is valid
@@ -934,6 +987,10 @@ def checkMarketConfig(data: dict, helperType: HelperType) -> None:
         reference = {
             "spread": checkPrice
         }
+    elif helperType == HelperType.OvernightIborBasis:
+        reference = {
+            "spread": checkPrice
+        }
     elif helperType == HelperType.Bond:
         reference = {
             "rate": checkPrice
@@ -1009,6 +1066,8 @@ def checkRateHelper(data: dict, pos: int) -> None:
         reference["helperConfig"] = checkCrossCcyBasisSwapRateHelper
     elif helperType == HelperType.OIS:
         reference["helperConfig"] = checkOISRateHelper
+    elif helperType == HelperType.OvernightIborBasis:
+        reference["helperConfig"] = checkOvernightIborBasisSwapRateHelper
     elif helperType == HelperType.Bond:
         reference["helperConfig"] = checkFixedRateBondRateHelper
 

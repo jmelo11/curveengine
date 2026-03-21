@@ -56,7 +56,7 @@ def createIborIndex(name: str, indexConfig: dict, handle: ore.YieldTermStructure
     endOfMonth = indexConfig['endOfMonth']
     convention = indexConfig['convention']
     index = ore.IborIndex(name, tenor, fixingDays, currency,
-                          calendar, convention, endOfMonth, dayCounter)
+                          calendar, convention, endOfMonth, dayCounter, handle)
     return index
 
 
